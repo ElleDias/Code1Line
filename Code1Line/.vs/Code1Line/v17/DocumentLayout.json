@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\ioutlierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\ioutlierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +15,16 @@
       "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\imonitoramentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\imetricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\imetricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\imensagemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\imensagemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\ifuncaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\ifuncaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iequiperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,44 +35,12 @@
       "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\idepartamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\repositories\\metricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:repositories\\metricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\repositories\\funcaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:repositories\\funcaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iusuariofuncaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\iusuariofuncaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iusuarioequipereposiotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\iusuarioequipereposiotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iusuariodepartamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\iusuariodepartamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\imetricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\imetricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\ifuncaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\ifuncaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iacessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\iacessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iatividaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\iatividaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interfaces\\iacessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interfaces\\iacessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,201 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IMonitoramentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMonitoramentoRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IMonitoramentoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMonitoramentoRepository.cs",
-              "RelativeToolTip": "Interfaces\\IMonitoramentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:55:22.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MetricaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\MetricaRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\MetricaRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\MetricaRepository.cs",
-              "RelativeToolTip": "Repositories\\MetricaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:55:07.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FuncaoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\FuncaoRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\FuncaoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\FuncaoRepository.cs",
-              "RelativeToolTip": "Repositories\\FuncaoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:55:06.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IDepartamentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IDepartamentoRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IDepartamentoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IDepartamentoRepository.cs",
-              "RelativeToolTip": "Interfaces\\IDepartamentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:54:57.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IEquipeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IEquipeRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IEquipeRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IEquipeRepository.cs",
-              "RelativeToolTip": "Interfaces\\IEquipeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:54:58.542Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IOutlierRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IOutlierRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IOutlierRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IOutlierRepository.cs",
-              "RelativeToolTip": "Interfaces\\IOutlierRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:55:01.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IUsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioRepository.cs",
-              "RelativeToolTip": "Interfaces\\IUsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:55:04.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IMensagemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMensagemRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IMensagemRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMensagemRepository.cs",
-              "RelativeToolTip": "Interfaces\\IMensagemRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:54:59.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IUsuarioFuncaoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioFuncaoRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IUsuarioFuncaoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioFuncaoRepository.cs",
-              "RelativeToolTip": "Interfaces\\IUsuarioFuncaoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:55:03.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IUsuarioEquipeReposiotry.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioEquipeReposiotry.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IUsuarioEquipeReposiotry.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioEquipeReposiotry.cs",
-              "RelativeToolTip": "Interfaces\\IUsuarioEquipeReposiotry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:55:02.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IUsuarioDepartamentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioDepartamentoRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IUsuarioDepartamentoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioDepartamentoRepository.cs",
-              "RelativeToolTip": "Interfaces\\IUsuarioDepartamentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:55:02.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IFuncaoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IFuncaoRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IFuncaoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IFuncaoRepository.cs",
-              "RelativeToolTip": "Interfaces\\IFuncaoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:54:59.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IAtividadeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IAtividadeRepository.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IAtividadeRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IAtividadeRepository.cs",
-              "RelativeToolTip": "Interfaces\\IAtividadeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T18:54:56.779Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "IMetricaRepository.cs",
               "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMetricaRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IMetricaRepository.cs",
               "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMetricaRepository.cs",
               "RelativeToolTip": "Interfaces\\IMetricaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T18:54:52.75Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 2,
+              "Title": "IMonitoramentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMonitoramentoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IMonitoramentoRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMonitoramentoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IMonitoramentoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:55:22.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IOutlierRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IOutlierRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IOutlierRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IOutlierRepository.cs",
+              "RelativeToolTip": "Interfaces\\IOutlierRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:55:01.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:55:04.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IMensagemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMensagemRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IMensagemRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IMensagemRepository.cs",
+              "RelativeToolTip": "Interfaces\\IMensagemRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:54:59.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IFuncaoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IFuncaoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IFuncaoRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IFuncaoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IFuncaoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:54:59.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEquipeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IEquipeRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IEquipeRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IEquipeRepository.cs",
+              "RelativeToolTip": "Interfaces\\IEquipeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T19:03:53.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDepartamentoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IDepartamentoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IDepartamentoRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IDepartamentoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IDepartamentoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T19:03:38.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "IAcessoRepository.cs",
               "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IAcessoRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IAcessoRepository.cs",
               "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IAcessoRepository.cs",
               "RelativeToolTip": "Interfaces\\IAcessoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-02T18:54:55.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IAtividadeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IAtividadeRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IAtividadeRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interfaces\\IAtividadeRepository.cs",
+              "RelativeToolTip": "Interfaces\\IAtividadeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T18:54:56.779Z",
               "EditorCaption": ""
             }
           ]

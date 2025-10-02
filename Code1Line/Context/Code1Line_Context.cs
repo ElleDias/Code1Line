@@ -21,7 +21,7 @@ namespace Code1Line.Context
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(
-                    "Server=NOTE16-S28\\SQLEXPRESS;Database=Code1Line;User Id=sa;Pwd=Senai@134;TrustServerCertificate=true;");
+                    "Server=NOTE16-S28\\SQLEXPRESS;Database=ProjetoC1LDB;User Id=sa;Pwd=Senai@134;TrustServerCertificate=true;");
             }
         }
     }

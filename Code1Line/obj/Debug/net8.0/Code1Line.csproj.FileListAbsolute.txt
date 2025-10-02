@@ -173,3 +173,6 @@ C:\Users\56184436864\Desktop\Code1Line\Code1Line\bin\Debug\net8.0\runtimes\win\l
 C:\Users\56184436864\Desktop\Code1Line\Code1Line\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\56184436864\Desktop\Code1Line\Code1Line\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\56184436864\Desktop\Code1Line\Code1Line\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\55747955829\Desktop\TCC-Vortex\Code1Line\Code1Line\obj\Debug\net8.0\Code1Line.dll
+C:\Users\55747955829\Desktop\TCC-Vortex\Code1Line\Code1Line\obj\Debug\net8.0\refint\Code1Line.dll
+C:\Users\55747955829\Desktop\TCC-Vortex\Code1Line\Code1Line\obj\Debug\net8.0\Code1Line.pdb

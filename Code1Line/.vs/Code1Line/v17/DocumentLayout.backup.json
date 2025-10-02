@@ -3,100 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\monitoramentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\monitoramentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\usuariofuncao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\usuariofuncao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\usuariofuncaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\usuariofuncaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\usuarioequipereposiotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\usuarioequipereposiotry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\usuariodepartamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\usuariodepartamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\outlierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\outlierrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\metricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\metricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\mensagensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\mensagensrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\funcaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\funcaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\equiperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\equiperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\departamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\departamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\atividaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\atividaderepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\interface\\acessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:interface\\acessorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\usuarioequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\usuarioequipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\usuariodepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\usuariodepartamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\outlier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\outlier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\monitoramento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\monitoramento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\metrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\metrica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\mensagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\mensagens.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\departamento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\atividade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\atividade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\domains\\acessos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:domains\\acessos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -111,80 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MonitoramentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\MonitoramentoRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\MonitoramentoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\MonitoramentoRepository.cs",
-              "RelativeToolTip": "Interface\\MonitoramentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAgwEwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:18:21.645Z",
+              "WhenOpened": "2025-10-02T16:13:07.947Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "OutlierRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\OutlierRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\OutlierRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\OutlierRepository.cs",
-              "RelativeToolTip": "Interface\\OutlierRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:10:25.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioDepartamentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\UsuarioDepartamentoRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\UsuarioDepartamentoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\UsuarioDepartamentoRepository.cs",
-              "RelativeToolTip": "Interface\\UsuarioDepartamentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:17:16.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioEquipeReposiotry.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\UsuarioEquipeReposiotry.cs",
-              "RelativeDocumentMoniker": "Interface\\UsuarioEquipeReposiotry.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\UsuarioEquipeReposiotry.cs",
-              "RelativeToolTip": "Interface\\UsuarioEquipeReposiotry.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:15:22.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsuarioFuncaoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\UsuarioFuncaoRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\UsuarioFuncaoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\UsuarioFuncaoRepository.cs",
-              "RelativeToolTip": "Interface\\UsuarioFuncaoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:15:38.913Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\UsuarioRepository.cs",
-              "RelativeToolTip": "Interface\\UsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:02:57.882Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
@@ -194,235 +53,36 @@
               "RelativeDocumentMoniker": "Domains\\UsuarioFuncao.cs",
               "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\UsuarioFuncao.cs",
               "RelativeToolTip": "Domains\\UsuarioFuncao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:09:19.286Z",
+              "WhenOpened": "2025-10-02T16:12:56.012Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MetricaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\MetricaRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\MetricaRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\MetricaRepository.cs",
-              "RelativeToolTip": "Interface\\MetricaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "DTO\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:10:40.509Z",
+              "WhenOpened": "2025-10-02T16:09:18.982Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "MensagensRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\MensagensRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\MensagensRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\MensagensRepository.cs",
-              "RelativeToolTip": "Interface\\MensagensRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:11:11.241Z",
+              "WhenOpened": "2025-10-02T16:08:50.372Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FuncaoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\FuncaoRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\FuncaoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\FuncaoRepository.cs",
-              "RelativeToolTip": "Interface\\FuncaoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:10:55.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EquipeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\EquipeRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\EquipeRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\EquipeRepository.cs",
-              "RelativeToolTip": "Interface\\EquipeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:16:18.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DepartamentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\DepartamentoRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\DepartamentoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\DepartamentoRepository.cs",
-              "RelativeToolTip": "Interface\\DepartamentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:10:06.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AtividadeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\AtividadeRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\AtividadeRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\AtividadeRepository.cs",
-              "RelativeToolTip": "Interface\\AtividadeRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:09:42.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AcessoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\AcessoRepository.cs",
-              "RelativeDocumentMoniker": "Interface\\AcessoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Interface\\AcessoRepository.cs",
-              "RelativeToolTip": "Interface\\AcessoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:16:02.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UsuarioEquipe.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\UsuarioEquipe.cs",
-              "RelativeDocumentMoniker": "Domains\\UsuarioEquipe.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\UsuarioEquipe.cs",
-              "RelativeToolTip": "Domains\\UsuarioEquipe.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:09:11.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UsuarioDepartamento.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\UsuarioDepartamento.cs",
-              "RelativeDocumentMoniker": "Domains\\UsuarioDepartamento.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\UsuarioDepartamento.cs",
-              "RelativeToolTip": "Domains\\UsuarioDepartamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:08:58.228Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Usuario.cs",
-              "RelativeDocumentMoniker": "Domains\\Usuario.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Usuario.cs",
-              "RelativeToolTip": "Domains\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:03:21.275Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Outlier.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Outlier.cs",
-              "RelativeDocumentMoniker": "Domains\\Outlier.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Outlier.cs",
-              "RelativeToolTip": "Domains\\Outlier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:08:41.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Monitoramento.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Monitoramento.cs",
-              "RelativeDocumentMoniker": "Domains\\Monitoramento.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Monitoramento.cs",
-              "RelativeToolTip": "Domains\\Monitoramento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:08:26.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Metrica.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Metrica.cs",
-              "RelativeDocumentMoniker": "Domains\\Metrica.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Metrica.cs",
-              "RelativeToolTip": "Domains\\Metrica.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:08:06.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Mensagens.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Mensagens.cs",
-              "RelativeDocumentMoniker": "Domains\\Mensagens.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Mensagens.cs",
-              "RelativeToolTip": "Domains\\Mensagens.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:07:22.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Departamento.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Departamento.cs",
-              "RelativeDocumentMoniker": "Domains\\Departamento.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Departamento.cs",
-              "RelativeToolTip": "Domains\\Departamento.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:06:02.723Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Atividade.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Atividade.cs",
-              "RelativeDocumentMoniker": "Domains\\Atividade.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Atividade.cs",
-              "RelativeToolTip": "Domains\\Atividade.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:07:16.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Acessos.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Acessos.cs",
-              "RelativeDocumentMoniker": "Domains\\Acessos.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Domains\\Acessos.cs",
-              "RelativeToolTip": "Domains\\Acessos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T19:06:48.376Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

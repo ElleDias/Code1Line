@@ -1,6 +1,6 @@
 ﻿namespace Code1Line.Domains
 {
-    public class Departamento
+    public class Equipe
     {
     }
 }

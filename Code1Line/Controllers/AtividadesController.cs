@@ -7,5 +7,6 @@ namespace Code1Line.Controllers
     [ApiController]
     public class AtividadesController : ControllerBase
     {
+
     }
 }

@@ -1,0 +1,33 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "ToDo API",
+    "description": "Aplicação para gerenciamento de filmes e Gêneros",
+    "termsOfService": "https://example.com/terms",
+    "contact": {
+      "name": "Danielle",
+      "url": "https://example.com/contact"
+    },
+    "license": {
+      "name": "Example License",
+      "url": "https://example.com/license"
+    },
+    "version": "v1"
+  },
+  "paths": { },
+  "components": {
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Value: Bearer TokenJWT ",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 ﻿using Code1Line.Domains;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
+namespace Code1Line.Interfaces
+{
     public interface IUsuarioRepository
     {
-        void Cadastrar(Usuario novoUsuario);
-
-        Usuario BuscarPorId(Guid id);
-
-        Usuario BuscarPorEmailESenha(string email, string senha);
+        
     }
+}

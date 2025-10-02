@@ -1,6 +1,6 @@
 ﻿namespace Code1Line.Repositories
 {
-    public class UsuarioFuncaoRepository
+    public interface IUsuarioEquipeReposiotry
     {
     }
 }

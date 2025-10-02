@@ -1,6 +1,6 @@
 ﻿using Code1Line.Context;
 using Code1Line.Domains;
-using Code1Line.Interface;
+using Code1Line.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Code1Line.Repositories
@@ -9,41 +9,34 @@ namespace Code1Line.Repositories
     {
         private readonly Code1Line_Context _context;
 
-        public DepartamentoRepository(Code1Line_Context context)
+        public void Atualizar(Guid id, Departamento departamento)
         {
-            _context = context;
+            throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Departamento>> ListarAsync()
+        public Departamento BuscarPorId(Guid id)
         {
-            return await _context.Departamento.ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task<Departamento?> BuscarPorIdAsync(int id)
+        public void Cadastrar(Departamento novoDepartamento)
         {
-            return await _context.Departamento.FindAsync(id);
+            throw new NotImplementedException();
         }
 
-        public async Task CadastrarAsync(Departamento departamento)
+        public void Deletar(Guid id)
         {
-            await _context.Departamento.AddAsync(departamento);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task AtualizarAsync(Departamento departamento)
+        public List<Departamento> Listar()
         {
-            _context.Departamento.Update(departamento);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task DeletarAsync(int id)
+        public List<Departamento> ListarPorId(Guid id)
         {
-            var departamento = await _context.Departamento.FindAsync(id);
-            if (departamento != null)
-            {
-                _context.Departamento.Remove(departamento);
-                await _context.SaveChangesAsync();
-            }
+            throw new NotImplementedException();
         }
     }
 }

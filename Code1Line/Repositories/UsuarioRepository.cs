@@ -16,41 +16,39 @@ namespace Code1Line.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Usuario>> ListarAsync()
+        public void Atualizar(Guid id, Usuario usuario)
         {
-            return await _context.Usuario.ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task<Usuario> BuscarPorIdAsync(int id)
+        public Usuario BuscarPorId(Guid id)
         {
-            return await _context.Usuario.FindAsync(id);
+            throw new NotImplementedException();
         }
 
-        public async Task<Usuario> BuscarPorEmailAsync(string email)
+        public void Cadastrar(Usuario usuario)
         {
-            return await _context.Usuario.FirstOrDefaultAsync(u => u.Email == email);
+            throw new NotImplementedException();
         }
 
-        public async Task AdicionarAsync(Usuario usuario)
+        public void Deletar(Guid id)
         {
-            await _context.Usuario.AddAsync(usuario);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task AtualizarAsync(Usuario usuario)
+        public List<Usuario> Listar()
         {
-            _context.Usuario.Update(usuario);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task RemoverAsync(int id)
+        public List<Usuario> ListarPorId(Guid id)
         {
-            var usuario = await _context.Usuario.FindAsync(id);
-            if (usuario != null)
-            {
-                _context.Usuario.Remove(usuario);
-                await _context.SaveChangesAsync();
-            }
+            throw new NotImplementedException();
+        }
+
+        public Usuario Login(string email, string senha)
+        {
+            throw new NotImplementedException();
         }
     }
 }

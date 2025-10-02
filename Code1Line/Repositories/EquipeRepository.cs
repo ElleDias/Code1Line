@@ -1,50 +1,41 @@
 ﻿using Code1Line.Context;
 using Code1Line.Domains;
-using Code1Line.Interface;
 using Code1Line.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Code1Line.Repositories
 {
     public class EquipeRepository : IEquipeRepository
-    {
-        private readonly Code1Line_Context _context;
+    {        
 
-        public EquipeRepository(Code1Line_Context context)
+        public void Atualizar(Guid id, Equipe equipe)
         {
-            _context = context;
+            throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Equipe>> ListarAsync()
+        public Equipe BuscarPorId(Guid id)
         {
-            return await _context.Equipe.ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task<Equipe?> BuscarPorIdAsync(Guid id)
+        public void Cadastrar(Equipe novaEquipe)
         {
-            return await _context.Equipe.FindAsync(id);
+            throw new NotImplementedException();
         }
 
-        public async Task CadastrarAsync(Equipe equipe)
+        public void Deletar(Guid id)
         {
-            await _context.Equipe.AddAsync(equipe);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task AtualizarAsync(Equipe equipe)
+        public List<Equipe> Listar()
         {
-            _context.Equipe.Update(equipe);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task DeletarAsync(Guid id)
+        public List<Equipe> ListarPorId(Guid id)
         {
-            var equipe = await _context.Equipe.FindAsync(id);
-            if (equipe != null)
-            {
-                _context.Equipe.Remove(equipe);
-                await _context.SaveChangesAsync();
-            }
+            throw new NotImplementedException();
         }
     }
 }

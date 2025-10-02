@@ -2,7 +2,7 @@
 using Code1Line.Interfaces;
 using Code1Line.Context; // aqui está o seu DbContext
 using Microsoft.EntityFrameworkCore;
-using Code1Line.Interface;
+using Code1Line.Interfaces;
 
 namespace Code1Line.Repositories
 {
@@ -15,48 +15,34 @@ namespace Code1Line.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Acessos>> ListarAsync()
+        public void Atualizar(Guid id, Acessos acesso)
         {
-            return await _context.Acessos
-                .Include(a => a.Usuario) // traz também o usuário
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task<Acessos?> BuscarPorIdAsync(Guid id)
+        public Acessos BuscarPorId(Guid id)
         {
-            return await _context.Acessos
-                .Include(a => a.Usuario)
-                .FirstOrDefaultAsync(a => a.IdAcessos == id);
+            throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Acessos>> BuscarPorUsuarioAsync(Guid idUsuario)
+        public void Cadastrar(Acessos novoAcesso)
         {
-            return await _context.Acessos
-                .Where(a => a.IdUsuario == idUsuario)
-                .Include(a => a.Usuario)
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task CadastrarAsync(Acessos acesso)
+        public void Deletar(Guid id)
         {
-            await _context.Acessos.AddAsync(acesso);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task AtualizarAsync(Acessos acesso)
+        public List<Acessos> Listar()
         {
-            _context.Acessos.Update(acesso);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task DeletarAsync(Guid id)
+        public List<Acessos> ListarPorId(Guid id)
         {
-            var acesso = await _context.Acessos.FindAsync(id);
-            if (acesso != null)
-            {
-                _context.Acessos.Remove(acesso);
-                await _context.SaveChangesAsync();
-            }
+            throw new NotImplementedException();
         }
     }
 }

@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Swashbuckle.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// =====================
 // Controllers + JSON Options
+// =====================
 builder.Services
     .AddControllers()
     .AddJsonOptions(options =>
@@ -20,11 +20,15 @@ builder.Services
             System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
     });
 
-// DbContext
+// =====================
+// DbContext (EF Core)
+// =====================
 builder.Services.AddDbContext<Code1Line_Context>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+// =====================
 // JWT Authentication
+// =====================
 builder.Services.AddAuthentication("JwtBearer")
     .AddJwtBearer("JwtBearer", options =>
     {
@@ -33,15 +37,18 @@ builder.Services.AddAuthentication("JwtBearer")
             ValidateIssuer = true,
             ValidateAudience = true,
             ValidateLifetime = true,
-            IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
-                builder.Configuration["Jwt:Key"] ?? "default-key")),
+            IssuerSigningKey = new SymmetricSecurityKey(
+                System.Text.Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"] ?? "default-key")
+            ),
             ClockSkew = TimeSpan.FromMinutes(5),
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
         };
     });
 
+// =====================
 // CORS
+// =====================
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", policy =>
@@ -52,15 +59,17 @@ builder.Services.AddCors(options =>
     });
 });
 
+// =====================
 // Swagger
+// =====================
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "ToDo API",
-        Description = "Aplicação para gerenciamento de filmes e Gêneros",
+        Title = "Code1Line API",
+        Description = "API para gerenciamento de usuários, departamentos, equipes, funções e métricas",
         TermsOfService = new Uri("https://example.com/terms"),
         Contact = new OpenApiContact
         {
@@ -74,8 +83,7 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 
-    
-
+    // JWT Authentication no Swagger
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -83,7 +91,7 @@ builder.Services.AddSwaggerGen(options =>
         Scheme = "Bearer",
         BearerFormat = "JWT",
         In = ParameterLocation.Header,
-        Description = "Value: Bearer TokenJWT ",
+        Description = "Digite: Bearer {token}"
     });
 
     options.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -102,23 +110,25 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+// =====================
+// Build app
+// =====================
 var app = builder.Build();
 
-// Swagger somente em Dev
-if (app.Environment.IsDevelopment())
+// =====================
+// Middleware
+// =====================
+
+// Sempre habilitar Swagger, para evitar 404
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
-        options.RoutePrefix = string.Empty;
-    });
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+    options.RoutePrefix = "swagger"; // Acesse via /swagger
+});
 
 app.UseHttpsRedirection();
-
 app.UseCors("CorsPolicy");
-
 app.UseAuthentication();
 app.UseAuthorization();
 

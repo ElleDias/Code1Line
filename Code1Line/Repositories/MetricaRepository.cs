@@ -2,7 +2,7 @@
 using Code1Line.Interfaces;
 using Code1Line.Context;
 using Microsoft.EntityFrameworkCore;
-using Code1Line.Interface;
+using Code1Line.Interfaces;
 
 namespace Code1Line.Repositories
 {
@@ -15,48 +15,34 @@ namespace Code1Line.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Metrica>> ListarAsync()
+        public void Atualizar(Guid id, Metrica metrica)
         {
-            return await _context.Metrica
-                .Include(m => m.Usuario) // carrega o usuário junto
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task<Metrica?> BuscarPorIdAsync(Guid id)
+        public Metrica BuscarPorId(Guid id)
         {
-            return await _context.Metrica
-                .Include(m => m.Usuario)
-                .FirstOrDefaultAsync(m => m.IdMetrica == id);
+            throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Metrica>> BuscarPorUsuarioAsync(Guid idUsuario)
+        public void Cadastrar(Metrica novaMetrica)
         {
-            return await _context.Metrica
-                .Where(m => m.IdUsuario == idUsuario)
-                .Include(m => m.Usuario)
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task CadastrarAsync(Metrica metrica)
+        public void Deletar(Guid id)
         {
-            await _context.Metrica.AddAsync(metrica);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task AtualizarAsync(Metrica metrica)
+        public List<Metrica> Listar()
         {
-            _context.Metrica.Update(metrica);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task DeletarAsync(Guid id)
+        public List<Metrica> ListarPorId(Guid id)
         {
-            var metrica = await _context.Metrica.FindAsync(id);
-            if (metrica != null)
-            {
-                _context.Metrica.Remove(metrica);
-                await _context.SaveChangesAsync();
-            }
+            throw new NotImplementedException();
         }
     }
 }

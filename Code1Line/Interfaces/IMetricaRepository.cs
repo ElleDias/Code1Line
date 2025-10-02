@@ -1,6 +1,6 @@
 ﻿using Code1Line.Domains;
 
-namespace Code1Line.Interface
+namespace Code1Line.Interfaces
 {
     public interface IMetricaRepository
     {

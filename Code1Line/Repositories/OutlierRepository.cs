@@ -2,7 +2,7 @@
 using Code1Line.Interfaces;
 using Code1Line.Context;
 using Microsoft.EntityFrameworkCore;
-using Code1Line.Interface;
+using Code1Line.Interfaces;
 
 namespace Code1Line.Repositories
 {
@@ -15,48 +15,34 @@ namespace Code1Line.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Outlier>> ListarAsync()
+        public void Atualizar(Guid id, Outlier outlier)
         {
-            return await _context.Outlier
-                .Include(o => o.Usuario) // carrega o usuário relacionado
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task<Outlier?> BuscarPorIdAsync(Guid id)
+        public Outlier BuscarPorId(Guid id)
         {
-            return await _context.Outlier
-                .Include(o => o.Usuario)
-                .FirstOrDefaultAsync(o => o.IdOutlier == id);
+            throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Outlier>> BuscarPorUsuarioAsync(Guid idUsuario)
+        public void Cadastrar(Outlier novoOutlier)
         {
-            return await _context.Outlier
-                .Where(o => o.IdUsuario == idUsuario)
-                .Include(o => o.Usuario)
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task CadastrarAsync(Outlier outlier)
+        public void Deletar(Guid id)
         {
-            await _context.Outlier.AddAsync(outlier);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task AtualizarAsync(Outlier outlier)
+        public List<Outlier> Listar()
         {
-            _context.Outlier.Update(outlier);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task DeletarAsync(Guid id)
+        public List<Outlier> ListarPorId(Guid id)
         {
-            var outlier = await _context.Outlier.FindAsync(id);
-            if (outlier != null)
-            {
-                _context.Outlier.Remove(outlier);
-                await _context.SaveChangesAsync();
-            }
+            throw new NotImplementedException();
         }
     }
 }

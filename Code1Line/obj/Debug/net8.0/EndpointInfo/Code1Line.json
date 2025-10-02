@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.4",
   "info": {
-    "title": "ToDo API",
-    "description": "Aplicação para gerenciamento de filmes e Gêneros",
+    "title": "Code1Line API",
+    "description": "API para gerenciamento de usuários, departamentos, equipes, funções e métricas",
     "termsOfService": "https://example.com/terms",
     "contact": {
       "name": "Danielle",
@@ -19,7 +19,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "Value: Bearer TokenJWT ",
+        "description": "Digite: Bearer {token}",
         "name": "Authorization",
         "in": "header"
       }

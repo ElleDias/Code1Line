@@ -2,7 +2,7 @@
 using Code1Line.Interfaces;
 using Code1Line.Context;
 using Microsoft.EntityFrameworkCore;
-using Code1Line.Interface;
+using Code1Line.Interfaces;
 
 namespace Code1Line.Repositories
 {
@@ -15,48 +15,34 @@ namespace Code1Line.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Atividades>> ListarAsync()
+        public void Atualizar(Guid id, Atividades atividade)
         {
-            return await _context.Atividades
-                .Include(a => a.Usuario) // traz os dados do usuário junto
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task<Atividades?> BuscarPorIdAsync(Guid id)
+        public Atividades BuscarPorId(Guid id)
         {
-            return await _context.Atividades
-                .Include(a => a.Usuario)
-                .FirstOrDefaultAsync(a => a.IdAtividades == id);
+            throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<Atividades>> BuscarPorUsuarioAsync(Guid idUsuario)
+        public void Cadastrar(Atividades novaAtividade)
         {
-            return await _context.Atividades
-                .Where(a => a.IdUsuario == idUsuario)
-                .Include(a => a.Usuario)
-                .ToListAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task CadastrarAsync(Atividades atividade)
+        public void Deletar(Guid id)
         {
-            await _context.Atividades.AddAsync(atividade);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task AtualizarAsync(Atividades atividade)
+        public List<Atividades> Listar()
         {
-            _context.Atividades.Update(atividade);
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
-        public async Task DeletarAsync(Guid id)
+        public List<Atividades> ListarPorId(Guid id)
         {
-            var atividade = await _context.Atividades.FindAsync(id);
-            if (atividade != null)
-            {
-                _context.Atividades.Remove(atividade);
-                await _context.SaveChangesAsync();
-            }
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,0 +1,140 @@
+.main_cadastro {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.fundo_loom {
+    flex: 1;
+    background-image: url("../../assets/img/fundoLoom.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.fundo_loom h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.fundo_loom p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.section_cadastro {
+    flex: 1;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.form_cadastro {
+    width: 80%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_cadastro h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.form_cadastro h2 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+/* Inputs */
+.campo_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+}
+
+.campo_input label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.campo_input input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #444;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+      align-items: center;
+}
+
+.campo_input input:focus {
+    border-bottom: 1px solid #00c896;
+}
+
+/* Botão */
+.btn_cadastrar {
+    margin-top: 20px;
+    padding: 12px;
+    background: #043d35;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.btn_cadastrar:hover {
+    background: #06614e;
+
+}
+
+/* Link abaixo do botão */
+.login_link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login_link:hover {
+    color: #fff;
+}
+
+.nomeDoBotao{
+  margin-top: 15px;
+}
+
+.logo_superior {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nomeDoBotao{
+    align-items: center;
+}
+
+.form_cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza horizontalmente */
+}

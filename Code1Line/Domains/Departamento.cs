@@ -1,5 +1,8 @@
-﻿namespace Code1Line.Domains
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Code1Line.Domains
 {
+    [Table("Departamento")]
     public class Departamento
     {
         public int Id { get; set; }

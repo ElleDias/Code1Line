@@ -1,5 +1,8 @@
-﻿namespace Code1Line.Domains
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Code1Line.Domains
 {
+    [Table("Funcao")]
     public class Funcao
     {
         public int Id { get; set; }

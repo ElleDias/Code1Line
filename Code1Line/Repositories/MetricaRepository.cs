@@ -2,7 +2,8 @@
 using Code1Line.Interfaces;
 using Code1Line.Context;
 using Microsoft.EntityFrameworkCore;
-using Code1Line.Interfaces;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Code1Line.Repositories
 {
@@ -17,32 +18,54 @@ namespace Code1Line.Repositories
 
         public void Atualizar(Guid id, Metrica metrica)
         {
-            throw new NotImplementedException();
+            var metricaExistente = _context.Metrica.Find(id);
+            if (metricaExistente != null)
+            {
+                metricaExistente.IdUsuario = metrica.IdUsuario;
+                metricaExistente.HorasProdutivas = metrica.HorasProdutivas;
+                metricaExistente.HorasInprodutivas = metrica.HorasInprodutivas;
+                metricaExistente.HorasNeutras = metrica.HorasNeutras;
+                metricaExistente.Periodo = metrica.Periodo;
+                _context.SaveChanges();
+            }
         }
 
         public Metrica BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Metrica
+                           .Include(m => m.Usuario)
+                           .FirstOrDefault(m => m.IdMetrica == id);
         }
 
         public void Cadastrar(Metrica novaMetrica)
         {
-            throw new NotImplementedException();
+            _context.Metrica.Add(novaMetrica);
+            _context.SaveChanges();
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var metrica = _context.Metrica.Find(id);
+            if (metrica != null)
+            {
+                _context.Metrica.Remove(metrica);
+                _context.SaveChanges();
+            }
         }
 
         public List<Metrica> Listar()
         {
-            throw new NotImplementedException();
+            return _context.Metrica
+                           .Include(m => m.Usuario)
+                           .ToList();
         }
 
         public List<Metrica> ListarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Metrica
+                           .Include(m => m.Usuario)
+                           .Where(m => m.IdMetrica == id)
+                           .ToList();
         }
     }
 }

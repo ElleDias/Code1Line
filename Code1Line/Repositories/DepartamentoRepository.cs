@@ -9,34 +9,53 @@ namespace Code1Line.Repositories
     {
         private readonly Code1Line_Context _context;
 
+        public DepartamentoRepository(Code1Line_Context context)
+        {
+            _context = context;
+        }
+
         public void Atualizar(Guid id, Departamento departamento)
         {
-            throw new NotImplementedException();
+            var departamentoExistente = _context.Departamento.Find(id);
+            if (departamentoExistente != null)
+            {
+                departamentoExistente.Nome = departamento.Nome;
+                departamentoExistente.Descricao = departamento.Descricao;
+                _context.SaveChanges();
+            }
         }
 
         public Departamento BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Departamento.FirstOrDefault(d => d.Id == id);
         }
 
         public void Cadastrar(Departamento novoDepartamento)
         {
-            throw new NotImplementedException();
+            _context.Departamento.Add(novoDepartamento);
+            _context.SaveChanges();
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var departamento = _context.Departamento.Find(id);
+            if (departamento != null)
+            {
+                _context.Departamento.Remove(departamento);
+                _context.SaveChanges();
+            }
         }
 
         public List<Departamento> Listar()
         {
-            throw new NotImplementedException();
+            return _context.Departamento.ToList();
         }
 
         public List<Departamento> ListarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Departamento
+                           .Where(d => d.Id == id)
+                           .ToList();
         }
     }
 }

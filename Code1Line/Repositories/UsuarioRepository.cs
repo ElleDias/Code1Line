@@ -2,7 +2,7 @@
 using Code1Line.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Linq;
 using Code1Line.Interfaces;
 
 namespace Code1Line.Repositories
@@ -18,37 +18,55 @@ namespace Code1Line.Repositories
 
         public void Atualizar(Guid id, Usuario usuario)
         {
-            throw new NotImplementedException();
+            var usuarioExistente = _context.Usuario.Find(id);
+            if (usuarioExistente != null)
+            {
+                usuarioExistente.Nome = usuario.Nome;
+                usuarioExistente.Email = usuario.Email;
+                usuarioExistente.Senha = usuario.Senha;
+                usuarioExistente.Cargo = usuario.Cargo;
+                usuarioExistente.Status = usuario.Status;
+                _context.SaveChanges();
+            }
         }
 
         public Usuario BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Usuario.FirstOrDefault(u => u.IdUsuario == id);
         }
 
         public void Cadastrar(Usuario usuario)
         {
-            throw new NotImplementedException();
+            _context.Usuario.Add(usuario);
+            _context.SaveChanges();
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var usuario = _context.Usuario.Find(id);
+            if (usuario != null)
+            {
+                _context.Usuario.Remove(usuario);
+                _context.SaveChanges();
+            }
         }
 
         public List<Usuario> Listar()
         {
-            throw new NotImplementedException();
+            return _context.Usuario.ToList();
         }
 
         public List<Usuario> ListarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Usuario
+                           .Where(u => u.IdUsuario == id)
+                           .ToList();
         }
 
         public Usuario Login(string email, string senha)
         {
-            throw new NotImplementedException();
+            return _context.Usuario
+                           .FirstOrDefault(u => u.Email == email && u.Senha == senha);
         }
     }
 }

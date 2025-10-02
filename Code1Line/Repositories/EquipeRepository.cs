@@ -6,36 +6,56 @@ using Microsoft.EntityFrameworkCore;
 namespace Code1Line.Repositories
 {
     public class EquipeRepository : IEquipeRepository
-    {        
+    {
+        private readonly Code1Line_Context _context;
+
+        public EquipeRepository(Code1Line_Context context)
+        {
+            _context = context;
+        }
 
         public void Atualizar(Guid id, Equipe equipe)
         {
-            throw new NotImplementedException();
+            var equipeExistente = _context.Equipe.Find(id);
+            if (equipeExistente != null)
+            {
+                equipeExistente.Nome = equipe.Nome;
+                equipeExistente.Descricao = equipe.Descricao;
+                _context.SaveChanges();
+            }
         }
 
         public Equipe BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Equipe.FirstOrDefault(e => e.IdEquipe == id);
         }
 
         public void Cadastrar(Equipe novaEquipe)
         {
-            throw new NotImplementedException();
+            _context.Equipe.Add(novaEquipe);
+            _context.SaveChanges();
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var equipe = _context.Equipe.Find(id);
+            if (equipe != null)
+            {
+                _context.Equipe.Remove(equipe);
+                _context.SaveChanges();
+            }
         }
 
         public List<Equipe> Listar()
         {
-            throw new NotImplementedException();
+            return _context.Equipe.ToList();
         }
 
         public List<Equipe> ListarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Equipe
+                           .Where(e => e.IdEquipe == id)
+                           .ToList();
         }
     }
 }

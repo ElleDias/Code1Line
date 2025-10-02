@@ -9,17 +9,17 @@ namespace Code1Line.Domains
         [Key]
         public Guid IdMonitoramento { get; set; }
 
-        // FK
+        [Required]
         public Guid IdUsuario { get; set; }
 
-        // Propriedade de navegação
         [ForeignKey("IdUsuario")]
         public Usuario Usuario { get; set; }
 
-        public string TempoAtivo { get; set; }
+        // Representando duração real
+        [Required]
+        public TimeSpan TempoAtivo { get; set; }
 
-        public string TempoInativo { get; set; }
-
-        
+        [Required]
+        public TimeSpan TempoInativo { get; set; }
     }
 }

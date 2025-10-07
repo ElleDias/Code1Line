@@ -1,8 +1,7 @@
 ﻿using Code1Line.Domains;
 using Code1Line.Interfaces;
-using Code1Line.Context; // aqui está o seu DbContext
+using Code1Line.Context;
 using Microsoft.EntityFrameworkCore;
-using Code1Line.Interfaces;
 
 namespace Code1Line.Repositories
 {
@@ -15,34 +14,62 @@ namespace Code1Line.Repositories
             _context = context;
         }
 
-        public void Atualizar(Guid id, Acessos acesso)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Acessos BuscarPorId(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
+        // Cadastrar novo acesso
         public void Cadastrar(Acessos novoAcesso)
         {
-            throw new NotImplementedException();
+            novoAcesso.IdAcessos = Guid.NewGuid(); // garante que o ID seja único
+            _context.Acessos.Add(novoAcesso);
+            _context.SaveChanges();
         }
 
-        public void Deletar(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
+        // Listar todos os acessos
         public List<Acessos> Listar()
         {
-            throw new NotImplementedException();
+            return _context.Acessos
+                .Include(a => a.Usuario) // inclui dados do usuário relacionado
+                .ToList();
         }
 
-        public List<Acessos> ListarPorId(Guid id)
+        // Buscar acesso por ID
+        public Acessos BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Acessos
+                .Include(a => a.Usuario)
+                .FirstOrDefault(a => a.IdAcessos == id);
+        }
+
+        // Listar acessos por ID de usuário
+        public List<Acessos> ListarPorId(Guid idUsuario)
+        {
+            return _context.Acessos
+                .Include(a => a.Usuario)
+                .Where(a => a.IdUsuario == idUsuario)
+                .ToList();
+        }
+
+        // Atualizar acesso
+        public void Atualizar(Guid id, Acessos acessoAtualizado)
+        {
+            var acessoExistente = _context.Acessos.Find(id);
+            if (acessoExistente != null)
+            {
+                acessoExistente.IdUsuario = acessoAtualizado.IdUsuario;
+                acessoExistente.UltimoAcesso = acessoAtualizado.UltimoAcesso;
+
+                _context.Acessos.Update(acessoExistente);
+                _context.SaveChanges();
+            }
+        }
+
+        // Deletar acesso
+        public void Deletar(Guid id)
+        {
+            var acesso = _context.Acessos.Find(id);
+            if (acesso != null)
+            {
+                _context.Acessos.Remove(acesso);
+                _context.SaveChanges();
+            }
         }
     }
 }

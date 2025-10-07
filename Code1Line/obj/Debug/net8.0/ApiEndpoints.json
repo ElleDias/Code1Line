@@ -1,5 +1,100 @@
 [
   {
+    "ContainingType": "Code1Line.Controllers.AcessosController",
+    "Method": "Listar",
+    "RelativePath": "api/Acessos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Code1Line.Controllers.AcessosController",
+    "Method": "Cadastrar",
+    "RelativePath": "api/Acessos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "novoAcesso",
+        "Type": "Code1Line.Domains.Acessos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Code1Line.Controllers.AcessosController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/Acessos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Code1Line.Controllers.AcessosController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Acessos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "acessoAtualizado",
+        "Type": "Code1Line.Domains.Acessos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Code1Line.Controllers.AcessosController",
+    "Method": "Deletar",
+    "RelativePath": "api/Acessos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Code1Line.Controllers.AcessosController",
+    "Method": "ListarPorUsuario",
+    "RelativePath": "api/Acessos/usuario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Code1Line.Controllers.AtividadeController",
     "Method": "Listar",
     "RelativePath": "api/Atividade",

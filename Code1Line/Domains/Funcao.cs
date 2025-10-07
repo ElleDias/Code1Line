@@ -7,9 +7,13 @@ namespace Code1Line.Domains
     public class Funcao
     {
         [Key]
+        [Column("id_funcao")]
         public Guid IdFuncao { get; set; }
-       
+
+        [Column("nome")]
         public string Nome { get; set; }
+
+        [Column("descricao")]
         public string Descricao { get; set; }
     }
 }

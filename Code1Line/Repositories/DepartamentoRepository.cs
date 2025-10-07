@@ -27,7 +27,7 @@ namespace Code1Line.Repositories
 
         public Departamento BuscarPorId(Guid id)
         {
-            return _context.Departamento.FirstOrDefault(d => d.Id == id);
+            return _context.Departamento.FirstOrDefault(d => d.IdDepartamento == id);
         }
 
         public void Cadastrar(Departamento novoDepartamento)
@@ -54,7 +54,7 @@ namespace Code1Line.Repositories
         public List<Departamento> ListarPorId(Guid id)
         {
             return _context.Departamento
-                           .Where(d => d.Id == id)
+                           .Where(d => d.IdDepartamento == id)
                            .ToList();
         }
     }

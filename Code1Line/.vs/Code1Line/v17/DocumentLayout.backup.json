@@ -3,8 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\repositories\\funcaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:repositories\\funcaorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:controllers\\departamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\controllers\\metricacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:controllers\\metricacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:controllers\\acessocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\code1line\\repositories\\metricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{124C0DB8-0BAD-415A-93B8-01EA09A44262}|Code1Line.csproj|solutionrelative:repositories\\metricarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +30,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "departamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Controllers\\departamentoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\departamentoController.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Controllers\\departamentoController.cs",
+              "RelativeToolTip": "Controllers\\departamentoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:53:03.418Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MetricaController.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Controllers\\MetricaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MetricaController.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Controllers\\MetricaController.cs",
+              "RelativeToolTip": "Controllers\\MetricaController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAADwvxEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:48:40.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MetricaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\MetricaRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\MetricaRepository.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\MetricaRepository.cs",
+              "RelativeToolTip": "Repositories\\MetricaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:47:51.973Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FuncaoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\FuncaoRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\FuncaoRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Repositories\\FuncaoRepository.cs*",
-              "RelativeToolTip": "Repositories\\FuncaoRepository.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAqAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwCUAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T19:45:32.923Z",
+              "WhenOpened": "2025-10-07T13:45:10.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AcessoController.cs",
+              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Controllers\\AcessoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AcessoController.cs",
+              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Code1Line\\Controllers\\AcessoController.cs",
+              "RelativeToolTip": "Controllers\\AcessoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T13:34:07.846Z",
               "EditorCaption": ""
             }
           ]

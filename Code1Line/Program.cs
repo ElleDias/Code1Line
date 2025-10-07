@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Code1Line.Interfaces;
+using Code1Line.Repositories;
+using Code1Line.Domains;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,6 +28,17 @@ builder.Services
 // =====================
 builder.Services.AddDbContext<Code1Line_Context>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// =====================
+// Repositórios
+// =====================
+builder.Services.AddScoped<IAcessoRepository, AcessosRepository>();
+builder.Services.AddScoped<IAtividadeRepository, AtividadeRepository>();
+builder.Services.AddScoped<IDepartamentoRepository, DepartamentoRepository>();
+builder.Services.AddScoped<IEquipeRepository, EquipeRepository>();
+builder.Services.AddScoped<IMonitoramentoRepository, MonitoramentoRepository>();
+builder.Services.AddScoped<IMetricaRepository, MetricaRepository>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 
 // =====================
 // JWT Authentication

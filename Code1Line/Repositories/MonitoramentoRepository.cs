@@ -14,34 +14,56 @@ namespace Code1Line.Repositories
             _context = context;
         }
 
-        public void Atualizar(Guid id, Monitoramento monitoramento)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Monitoramento BuscarPorId(Guid id)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Cadastrar(Monitoramento novoMonitoramento)
         {
-            throw new NotImplementedException();
+            _context.Monitoramento.Add(novoMonitoramento);
+            _context.SaveChanges();
+        }
+
+        public void Atualizar(Guid id, Monitoramento monitoramento)
+        {
+            var monitoramentoExistente = _context.Monitoramento.Find(id);
+            if (monitoramentoExistente != null)
+            {
+                monitoramentoExistente.IdUsuario = monitoramento.IdUsuario;
+                monitoramentoExistente.TempoAtivo = monitoramento.TempoAtivo;
+                monitoramentoExistente.TempoInativo = monitoramento.TempoInativo;
+
+                _context.Monitoramento.Update(monitoramentoExistente);
+                _context.SaveChanges();
+            }
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            var monitoramento = _context.Monitoramento.Find(id);
+            if (monitoramento != null)
+            {
+                _context.Monitoramento.Remove(monitoramento);
+                _context.SaveChanges();
+            }
+        }
+
+        public Monitoramento BuscarPorId(Guid id)
+        {
+            return _context.Monitoramento
+                .Include(m => m.Usuario)
+                .FirstOrDefault(m => m.IdMonitoramento == id);
         }
 
         public List<Monitoramento> Listar()
         {
-            throw new NotImplementedException();
+            return _context.Monitoramento
+                .Include(m => m.Usuario)
+                .ToList();
         }
 
         public List<Monitoramento> ListarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Monitoramento
+                .Where(m => m.IdUsuario == id)
+                .Include(m => m.Usuario)
+                .ToList();
         }
     }
 }

@@ -8,11 +8,22 @@ namespace Code1Line.Domains
     {
 
         [Key]
+        [Column("id_usuario")]
         public Guid IdUsuario { get; set; }
+
+        [Column("nome")]
         public string Nome { get; set; }
+
+        [Column("email")]
         public string Email { get; set; }
+
+        [Column("senha")]
         public string Senha { get; set; }
+
+        [Column("cargo")]
         public string Cargo { get; set; }
+
+        [Column("status")]
         public bool Status { get; set; }
     }
 }

@@ -1,70 +1,62 @@
-﻿using Code1Line.Domains;
+﻿using Code1Line.Context;
+using Code1Line.Domains;
 using Code1Line.Interfaces;
-using Code1Line.Context;
-using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Code1Line.Repositories
 {
-    public class AtividadesRepository : IAtividadeRepository
+    public class AtividadeRepository : IAtividadeRepository
     {
         private readonly Code1Line_Context _context;
 
-        public AtividadesRepository(Code1Line_Context context)
+        public AtividadeRepository(Code1Line_Context context)
         {
             _context = context;
         }
 
-        public void Atualizar(Guid id, Atividades atividade)
+        public void Cadastrar(Atividade novaAtividade)
         {
-            var atividadeExistente = _context.Atividades.Find(id);
-            if (atividadeExistente != null)
+            novaAtividade.IdAtividade = Guid.NewGuid();
+            _context.Atividade.Add(novaAtividade);
+            _context.SaveChanges();
+        }
+
+        public List<Atividade> Listar()
+        {
+            return _context.Atividade.ToList();
+        }
+
+        public Atividade BuscarPorId(Guid id)
+        {
+            return _context.Atividade.FirstOrDefault(a => a.IdAtividade == id);
+        }
+
+        public void Atualizar(Guid id, Atividade atividadeAtualizada)
+        {
+            var atividade = BuscarPorId(id);
+            if (atividade != null)
             {
-                atividadeExistente.IdUsuario = atividade.IdUsuario;
-                atividadeExistente.fim = atividade.fim;
-                atividadeExistente.categoria = atividade.categoria;
-                atividadeExistente.Descricao = atividade.Descricao;
+                atividade.Descricao = atividadeAtualizada.Descricao;
+                atividade.Categoria = atividadeAtualizada.Categoria;
+                atividade.Fim = atividadeAtualizada.Fim;
+                atividade.Inicio = atividadeAtualizada.Inicio;
+                atividade.Status = atividadeAtualizada.Status;
+
+                _context.Atividade.Update(atividade);
                 _context.SaveChanges();
             }
-        }
-
-        public Atividades BuscarPorId(Guid id)
-        {
-            return _context.Atividades
-                           .Include(a => a.Usuario)
-                           .FirstOrDefault(a => a.IdAtividades == id);
-        }
-
-        public void Cadastrar(Atividades novaAtividade)
-        {
-            _context.Atividades.Add(novaAtividade);
-            _context.SaveChanges();
         }
 
         public void Deletar(Guid id)
         {
-            var atividade = _context.Atividades.Find(id);
+            var atividade = BuscarPorId(id);
             if (atividade != null)
             {
-                _context.Atividades.Remove(atividade);
+                _context.Atividade.Remove(atividade);
                 _context.SaveChanges();
             }
-        }
-
-        public List<Atividades> Listar()
-        {
-            return _context.Atividades
-                           .Include(a => a.Usuario)
-                           .ToList();
-        }
-
-        public List<Atividades> ListarPorId(Guid id)
-        {
-            return _context.Atividades
-                           .Include(a => a.Usuario)
-                           .Where(a => a.IdAtividades == id)
-                           .ToList();
         }
     }
 }

@@ -1,14 +1,15 @@
 ﻿using Code1Line.Domains;
+using System;
+using System.Collections.Generic;
 
 namespace Code1Line.Interfaces
 {
     public interface IAtividadeRepository
     {
-        void Cadastrar(Atividades novaAtividade);
-        List<Atividades> Listar();
+        void Cadastrar(Atividade novaAtividade);
+        List<Atividade> Listar();
         void Deletar(Guid id);
-        void Atualizar(Guid id, Atividades atividade);
-        List<Atividades> ListarPorId(Guid id);
-        Atividades BuscarPorId(Guid id);
+        void Atualizar(Guid id, Atividade atividade);
+        Atividade BuscarPorId(Guid id);
     }
 }

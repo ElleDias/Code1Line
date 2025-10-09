@@ -1,14 +1,14 @@
-.botao{
-   width: 200px;
-   height: 30px;
+.botao {
+    width: 200px;
+    height: 40px;
     border: none;
     cursor: pointer;
     background-color: #001919;
     color: white;
-    border-radius: 6px;
-    /* negrito */
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
     font-weight: bolder;
     align-items: center;
 
 }
-

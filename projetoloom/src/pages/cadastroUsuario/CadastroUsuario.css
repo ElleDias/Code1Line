@@ -1,140 +1,132 @@
 .main_cadastro {
-    display: flex;
-    height: 100vh;
-    font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
 .fundo_loom {
-    flex: 1;
-    background-image: url("../../assets/img/fundoLoom.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.fundo_loom h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.fundo_loom p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    line-height: 1.5;
+  flex: 1;
+  background-image: url("../../assets/images/fundoLoom.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 .section_cadastro {
-    flex: 1;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+  flex: 1;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.logo_superior {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .form_cadastro {
-    width: 80%;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
+  width: 80%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
 }
 
 .form_cadastro h1 {
-    font-size: 2rem;
-    margin-bottom: 5px;
+  font-size: 2.2rem;
+  margin-bottom: 5px;
 }
 
 .form_cadastro h2 {
-    font-size: 0.9rem;
-    font-weight: normal;
-    margin-bottom: 20px;
-    color: #aaa;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-bottom: 25px;
+  color: #aaa;
 }
 
 /* Inputs */
 .campo_input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .campo_input label {
-    margin-bottom: 5px;
-    font-size: 0.9rem;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
 }
 
 .campo_input input {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #444;
-    background: transparent;
-    color: #fff;
-    font-size: 1rem;
-    outline: none;
-    transition: 0.3s;
-      align-items: center;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #444;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
 }
 
 .campo_input input:focus {
-    border-bottom: 1px solid #00c896;
+  border-bottom: 1px solid #00c896;
+}
+
+/* Campo senha com ícone */
+.input_senha {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input_senha input {
+  flex: 1;
+  padding-right: 35px; /* espaço pro ícone */
+}
+
+.icone_senha {
+  position: absolute;
+  right: 10px;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.2s;
+}
+
+.icone_senha:hover {
+  color: #001919;
 }
 
 /* Botão */
 .btn_cadastrar {
-    margin-top: 20px;
-    padding: 12px;
-    background: #043d35;
-    border: none;
-    border-radius: 8px;
-    color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s;
-    align-items: center;
+  margin-top: 20px;
+  padding: 12px;
+  background: #043d35;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
 }
 
 .btn_cadastrar:hover {
-    background: #06614e;
-
+  background: #06614e;
 }
 
-/* Link abaixo do botão */
-.login_link {
-    margin-top: 15px;
-    font-size: 0.9rem;
-    color: #ccc;
-    text-align: center;
-    cursor: pointer;
-}
-
-.login_link:hover {
-    color: #fff;
-}
-
-.nomeDoBotao{
-  margin-top: 15px;
-}
-
-.logo_superior {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-.nomeDoBotao{
-    align-items: center;
-}
-
-.form_cadastro {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* centraliza horizontalmente */
+.login_link{
+    color: #ffffff;
 }

@@ -1,8 +1,12 @@
-import logo from "../../assets/img/logo.svg";
 import "./Login.css";
+import { useState } from "react";
+import logo from "../../assets/img/Logo.svg";
 import Botao from "../../components/Botao/Botao";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
+    const [mostrarSenha, setMostrarSenha] = useState(false);
+
     return (
         <main className="main_login">
             <div className="fundo_loom"></div>
@@ -16,28 +20,47 @@ const Login = () => {
                     <div className="campos_login">
                         <div className="campo_input">
                             <label className="email" htmlFor="Email">E-mail</label>
-                            <input type="Email" name="Email" placeholder="Entre com seu e-mail" />
+                            <input
+                                type="email"
+                                name="Email"
+                                placeholder="Entre com seu e-mail"
+                            />
                         </div>
+
                         <div className="campo_input">
                             <label className="senha" htmlFor="senha">Senha</label>
-                            <input type="password" id="senha" placeholder="•••••••••" />
+                            <div className="input_senha">
+                                <input
+                                    type={mostrarSenha ? "text" : "password"}
+                                    id="senha"
+                                    placeholder="•••••••••"
+                                />
+                                <span
+                                    className="icone_olho"
+                                    onClick={() => setMostrarSenha(!mostrarSenha)}
+                                >
+                                    {mostrarSenha ? <FaEyeSlash /> : <FaEye />}
+                                </span>
+                            </div>
                         </div>
+
                         <div className="options">
                             <label>
                                 <input type="checkbox" /> Lembre-se de mim
                             </label>
-                            <a href="#">Esqueceu a senha?</a>
+                            <a className="link_esqueceuasenha" href="#">Esqueceu a senha?</a>
                         </div>
                     </div>
+
                     <Botao nomeDoBotao="Log In" />
+
                     <p className="nao_tem_uma_conta">
-                        Não tem uma conta? <a href="#">Registre-se aqui</a>
+                        Não tem uma conta? <a className="link_registre" href="#">Registre-se aqui</a>
                     </p>
                 </form>
-
             </section>
         </main>
-    )
-}
+    );
+};
 
 export default Login;

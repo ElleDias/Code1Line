@@ -1,6 +1,3 @@
-/* Fonte padrão */
-@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 .main_login {
     display: flex;
     height: 100vh;
@@ -85,7 +82,7 @@ h2 {
     font-weight: normal;
     margin-bottom: 20px;
     display: block;
-    margin-block-start: 0.67em;
+    /* margin-block-start: 0.67em; */
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -180,7 +177,7 @@ h2 {
 }
 
 /* Link Esqueceu a senha */
-.options a {
+.link_esqueceuasenha {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
@@ -197,13 +194,44 @@ h2 {
     text-align: center;
 }
 
-.nao_tem_uma_conta{
-    color: #ffffff; 
+.nao_tem_uma_conta {
+    color: #ffffff;
     text-decoration: none;
 }
 
-.registre{
-    color: #ffffff; 
+a {
+    color: white;
     text-decoration: none;
 }
 
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500
+}
+
+.input_senha {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input_senha input {
+    width: 100%;
+    padding-right: 35px;
+    /* espaço pro olhinho */
+}
+
+.icone_olho {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+.icone_olho:hover {
+    color: #001919;
+}

@@ -1,0 +1,219 @@
+/* Fonte padrão */
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main_login {
+    display: flex;
+    height: 100vh;
+    font-family: "Gantari", sans-serif;
+}
+
+.fundo_loom {
+    flex: 1;
+    background-image: url("../../assets/img/fundoLoom.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.fundo_loom h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.fundo_loom p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.section_login {
+    flex: 1;
+    font-family: 'Gantari', sans-serif;
+    background-color: #0B0D0E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.email {
+    font-family: 'Gantari', sans-serif;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.senha {
+    font-family: 'Gantari', sans-serif;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* Bem Vindo */
+.form_login h1 {
+    text-align: center;
+    width: 100%;
+}
+
+/* Bem Vindo */
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+}
+
+/* Por favor, preencha os campos. */
+.form_login h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 80px;
+    text-align: center;
+    color: #aaa;
+}
+
+/* Por favor, preencha os campos. */
+h2 {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    color: #aaa;
+}
+
+/* Inputs */
+.campo_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campo_input label {
+    font-family: 'Gantari', sans-serif;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.campo_input input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #444;
+    background: transparent;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo_input input:focus {
+    border-bottom: 1px solid #00c896;
+}
+
+.logo_superior {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Botão */
+.btn_login {
+    margin-top: 20px;
+    padding: 12px;
+    background: #043d35;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_login:hover {
+    background: #06614e;
+}
+
+/* Link abaixo do botão */
+.cadastro_link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cadastro_link:hover {
+    color: #fff;
+}
+
+.nomeDoBotao {
+    width: 40px;
+}
+
+/* Caixa do "Lembre de mim" e "Esqueceu sua senha" */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 20px 0;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+/* Link Esqueceu a senha */
+.options a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.cadastro_link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+}
+
+.nao_tem_uma_conta{
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.registre{
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+a {
+  color: white; /* muda o roxo para branco */
+  text-decoration: none; /* tira o sublinhado se quiser */
+}
+
+a:hover {
+  color: #f0f0f0; /* muda a cor quando passa o mouse */
+  text-decoration: underline; /* opcional */
+}
+

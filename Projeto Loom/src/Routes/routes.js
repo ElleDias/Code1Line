@@ -8,7 +8,8 @@ import Dominios from "../pages/dominios/Dominios";
 import CadastroUsuario from "../pages/cadastroUsuario/CadastroUsuario";
 import TarefasPendentes from "../pages/tarefasPendentes/TarefasPendentes";
 import CadastroDeTarefas from "../pages/cadastroDeTarefas/CadastroDeTarefas";
-
+import Mensagens from "../pages/mensagens/Mensagens"
+import MensagensGestor from "../pages/mensagensGestor/MensagensGestor" 
 
 const Rotas = () => {
     return (
@@ -32,6 +33,10 @@ const Rotas = () => {
                 <Route path="/TarefasPendentes" element={<TarefasPendentes />} exact />
                 {/* http://localhost:3000/ => CadastroDeTarefas */}
                 <Route path="/CadastroDeTarefas" element={<CadastroDeTarefas />} exact />
+                {/* http://localhost:3000/ => Mensagens */}
+                <Route path="/Mensagens" element={<Mensagens />} />
+                {/* http://localhost:3000/ => MensagensGestor */}
+                <Route path="/MensagensGestor" element={<MensagensGestor />} />
 
             </Routes>
         </BrowserRouter>

@@ -1,4 +1,3 @@
-import React from "react";
 import "./Grafico.css";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { MenuLateral } from "../../components/Sidebar/Sidebar";

@@ -1,7 +1,7 @@
 .monitoramento-container {
-  background-color: #001a16;
+  background-color: #e2e2e2;
   min-height: 100vh;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,12 +13,13 @@
   font-size: 4.4rem;
   font-weight: 700;
   margin-bottom: 4px;
+  color: black;
 
 }
 
 .subtitulo {
   font-size: 3rem;
-  color: #c4c4c4;
+  color: #000000;
   margin-bottom: 86px;
 }
 
@@ -27,7 +28,8 @@
   flex-direction: column;
   gap: 12px;
   width: 80%;
-  max-width: 600px;
+  max-width: 900px;
+  justify-content: center;
 }
 
 .cabecalho,
@@ -55,20 +57,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  gap: 12px; /* <-- adiciona espaço entre os quadros */
+  gap: 12px;
+  /* <-- adiciona espaço entre os quadros */
 }
 
-.tabela {
-  display: flex;
-  flex-direction: column;
-  gap: 16px; /* mais espaço entre as linhas */
-  width: 80%;
-  max-width: 600px;
+.tabela .cabecalho {
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
 }
 
-.titulo .subtitulo{
-    justify-content: center;
-    max-width: 200px;
+.titulo .subtitulo {
+  justify-content: center;
+  max-width: 200px;
 }
-
-

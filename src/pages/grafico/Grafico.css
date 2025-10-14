@@ -12,11 +12,8 @@
   --cor-pendentes: #2E6962;
   --cor-emandamento: #58A69A;
 }
-
-/*
-  1. CONTAINER PRINCIPAL (Fundo da Tela)
-*/
-.monitoramento-container {
+    
+/* .monitoramento-container {
   background-color: var(--cor-fundo-tela);
   color: var(--cor-texto-principal);
   min-height: 100vh;
@@ -25,7 +22,7 @@
   justify-content: center;
   align-items: center;
   font-family: 'Arial', sans-serif;
-}
+} */
 
 /*
   2. CARD PRINCIPAL (Painel Escuro)

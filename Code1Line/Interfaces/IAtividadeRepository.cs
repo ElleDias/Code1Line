@@ -10,6 +10,8 @@ namespace Code1Line.Interfaces
         List<Atividade> Listar();
         void Deletar(Guid id);
         void Atualizar(Guid id, Atividade atividade);
+        List<Atividade> ListarPorId(Guid id);
         Atividade BuscarPorId(Guid id);
     }
 }
+

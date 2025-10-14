@@ -2,10 +2,13 @@
 
 public interface IFuncaoRepository
 {
-    void Cadastrar(Funcao funcao);
-    List<Funcao> Listar();
-    void Deletar(Guid id);
-    void Atualizar(Guid id, Funcao funcao);
-    Funcao ListarPorId(Guid id);
-    Funcao BuscarPorId(Guid id);
+    public interface IFuncaoRepository
+    {
+        void Cadastrar(Funcao novaFuncao);
+        List<Funcao> Listar();
+        void Deletar(Guid id);
+        void Atualizar(Guid id, Funcao funcao);
+        List<Funcao> ListarPorId(Guid id);
+        Funcao BuscarPorId(Guid id);
+    }
 }

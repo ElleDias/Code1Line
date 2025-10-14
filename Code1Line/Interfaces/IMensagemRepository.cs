@@ -4,12 +4,12 @@ namespace Code1Line.Interfaces
 {
     public interface IMensagemRepository
     {
-        void Cadastrar(Mensagens novaMensagem);
-        List<Mensagens> Listar();
+        void Cadastrar(Mensagem novaMensagem);
+        List<Mensagem> Listar();
         void Deletar(Guid id);
-        void Atualizar(Guid id, Mensagens mensagem);
-        List<Mensagens> ListarPorId(Guid id);
-        Mensagens BuscarPorId(Guid id);
+        void Atualizar(Guid id, Mensagem mensagem);
+        List<Mensagem> ListarPorId(Guid id);
+        Mensagem BuscarPorId(Guid id);
 
     }
 }

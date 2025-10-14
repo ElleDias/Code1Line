@@ -4,11 +4,13 @@ namespace Code1Line.Interfaces
 {
     public interface IAcessoRepository
     {
-        void Cadastrar(Acessos novoAcesso);
-        List<Acessos> Listar();
-        void Deletar(Guid id);
-        void Atualizar(Guid id, Acessos acesso);
-        List<Acessos> ListarPorId(Guid id);
-        Acessos BuscarPorId(Guid id);
+            void Cadastrar(Acesso novoAcesso);
+            List<Acesso> Listar();
+            void Deletar(Guid id);
+            void Atualizar(Guid id, Acesso acesso);
+            List<Evento> ListarPorId(Guid id);
+            Evento BuscarPorId(Guid id);
+        }
     }
-}
+
+

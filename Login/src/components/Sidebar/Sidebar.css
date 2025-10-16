@@ -1,0 +1,170 @@
+/* container */
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #070c0b;
+  color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  border-right: 1px solid #070c0b;
+}
+
+/* modos */
+.menu-lateral.mini { width: 80px; }
+
+/* topo com os dois botões (mini + fechar total) */
+.topo-acoes {
+  position: absolute;
+  top: 12px;
+  right: -20px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* botão que alterna open/mini */
+.botao-mini {
+  background: white;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 4px;
+}
+
+.icone-voltar {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  filter: invert(1);
+  transition: transform 0.25s ease;
+}
+
+.icone-voltar {
+  transform: rotate(180deg);
+}
+.icone-voltar.rotacionado {
+  transform: rotate(360deg);
+}
+
+/* lista */
+.menu-lateral nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 56px;
+}
+
+.menu-lateral nav li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #ffffff1d;
+  font-family: "Montserrat", sans-serif;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.menu-lateral nav li:hover { background: #162a63; }
+
+.menu-lateral nav li.ativo {
+  background: white;
+  color: black;
+  border-color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.icone-menu {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.sair {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #426e62;
+  font-family: "Montserrat", sans-serif;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+  background: #fff;
+  color: #000;
+  font-weight: 700;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sair:hover {
+  background: #061914;
+  color: #fff;
+}
+
+.menu-lateral.mini .sair {
+  justify-content: center;
+  padding: 10px;
+  gap: 0;
+  background: white;
+  width: 100%;
+}
+
+.menu-lateral.mini .sair span {
+  display: none;
+}
+
+.menu-lateral.mini .sair {
+  justify-content: center;
+  padding: 10px;
+  gap: 0;
+  background: white;
+}
+
+.menu-lateral.mini .sair span {
+  display: none;
+}
+
+.logo-sidebar {
+  width: 100px;
+  height: auto;
+  opacity: 0.95;
+  transition: width 0.3s ease;
+}
+
+.menu-lateral.mini nav li {
+  justify-content: center;
+  padding: 10px;
+}
+
+.menu-lateral.mini .icone-menu {
+  margin: 0;
+}
+
+.menu-lateral.mini .logo-sidebar {
+  width: 50px; /* logo menor */
+}

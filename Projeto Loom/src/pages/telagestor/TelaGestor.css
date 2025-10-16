@@ -10,7 +10,7 @@
   transition: margin-left 0.4s ease;
 }
 .monitoramento-container.sidebar-open {
-  margin-left: 203px;
+  margin-left: 200px;
 }
 
 .monitoramento-container.sidebar-close,

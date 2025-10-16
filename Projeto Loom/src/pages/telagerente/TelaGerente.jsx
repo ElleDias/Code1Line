@@ -48,7 +48,7 @@ const TelaGerente = () => {
     <div className="tela-gerente">
       
       <MenuLateral
-        perfil={true}
+        perfil={{ ativo: true, path: "/perfil", nome: "Geral" }}
         geral={{ ativo: true, path: "/gerente", nome: "Geral" }}
         gestores={{ ativo: true, path: "/gestor", nome: "Gestores" }}
         funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}

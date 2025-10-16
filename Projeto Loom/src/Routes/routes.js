@@ -9,8 +9,10 @@ import CadastroUsuario from "../pages/cadastroUsuario/CadastroUsuario";
 import TarefasPendentes from "../pages/tarefasPendentes/TarefasPendentes";
 import CadastroDeTarefas from "../pages/cadastroDeTarefas/CadastroDeTarefas";
 import Mensagem from "../pages/mensagem/Mensagem"
+import Comparacao from "../pages/comparacao/ComparacaoFunc" 
 import MensagemGestor from "../pages/mensagemGestor/MensagemGestor" 
-
+import TeladePerfil from "../pages/teloDoPerfil/TelaDoPerfil";
+import RedefinirSenha from "../pages/redefinirsenha/Redefinirsenha"
 const Rotas = () => {
     return (
         <BrowserRouter>
@@ -37,6 +39,12 @@ const Rotas = () => {
                 <Route path="/Mensagem" element={<Mensagem />} />
                 {/* http://localhost:3000/ => MensagensGestor */}
                 <Route path="/MensagemGestor" element={<MensagemGestor />} />
+                 {/* http://localhost:3000/ => Comparacao */}
+                <Route path="/Comparacao" element={<Comparacao />} />
+                 {/* http://localhost:3000/ => Perfil */}
+                <Route path="/Perfil" element={<TeladePerfil />} />
+                 {/* http://localhost:3000/ => Redefinir Senha */}
+                <Route path="/Senha" element={<RedefinirSenha />} />
 
             </Routes>
         </BrowserRouter>

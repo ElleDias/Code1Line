@@ -61,7 +61,7 @@ export const MenuLateral = ({
       <nav>
         <ul>
           {perfil && (
-            <li onClick={() => navigate("/")}>
+            <li onClick={() => navigate(perfil.path)} style={{ cursor: "pointer" }}>
               <img src={User} className="icone-menu" alt="Perfil" />
               {isOpen && <span>Perfil</span>}
             </li>

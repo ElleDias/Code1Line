@@ -49,7 +49,7 @@ const Login = () => {
                             <label>
                                 <input type="checkbox" /> Lembre-se de mim
                             </label>
-                            <a className="link_esqueceuasenha" href="#">Esqueceu a senha?</a>
+                            <a className="link_esqueceuasenha" href="/Senha">Esqueceu a senha?</a>
                         </div>
                     </div>
 

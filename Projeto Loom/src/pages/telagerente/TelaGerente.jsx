@@ -1,5 +1,3 @@
-
-
 import "./TelaGerente.css";
 import { useState } from "react";
 import { MenuLateral } from "../../components/Sidebar/Sidebar";
@@ -32,7 +30,6 @@ const TelaGerente = () => {
   const [dadosAtuais, setDadosAtuais] = useState(dadosPendentes);
   const [tituloGrafico, setTituloGrafico] = useState("Tarefas Pendentes");
 
-
   const mostrarPendentes = () => {
     setDadosAtuais(dadosPendentes);
     setTituloGrafico("Tarefas Pendentes");
@@ -42,11 +39,11 @@ const TelaGerente = () => {
     setDadosAtuais(dadosConcluidas);
     setTituloGrafico("Tarefas Concluídas");
   };
- const navigate = useNavigate(); // 👈 precisa declarar aqui
-  return (
 
+  const navigate = useNavigate();
+
+  return (
     <div className="tela-gerente">
-      
       <MenuLateral
         perfil={true}
         geral="Geral"
@@ -59,7 +56,6 @@ const TelaGerente = () => {
 
       <div className={`visao_gerente-container sidebar-${modoSidebar}`}>
         <div className="geral-retangulo painel moderno">
-          <div className="decor-stars"></div>
           <div className="geral-header">
             <h2>GERAL</h2>
             <h3 className="sub-header-elegante">Olá, gerente! Seja bem-vindo.</h3>
@@ -69,7 +65,7 @@ const TelaGerente = () => {
             Acompanhe o <strong>desempenho</strong> dos{" "}
             <a href="#">gestores</a> e <a href="#">funcionários</a>!<br />
             Visualize <strong>tarefas pendentes</strong> e{" "}
-            <strong>concluídas</strong> e tenha acesso a relatórios estratégicos
+            <strong>tarefas concluídas</strong> e tenha acesso a relatórios estratégicos
             que facilitam a tomada de decisão.
           </p>
         </div>
@@ -82,11 +78,11 @@ const TelaGerente = () => {
             Tarefas Concluídas
           </button>
           <button
-      className="botao_graficos dourado"
-      onClick={() => navigate("/Graficos")}
-    >
-      Gráficos Detalhados
-    </button>
+            className="botao_graficos dourado"
+            onClick={() => navigate("/Graficos")}
+          >
+            Gráficos Detalhados
+          </button>
         </div>
 
         <GraficoDesempenho titulo={tituloGrafico} data={dadosAtuais} />

@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "../pages/login/Login";
-import Gerente from "../pages/telagerente/TelaGerente";
+import Gerente from "../pages/telaGerente/TelaGerente";
 import TelaGestor from "../pages/telagestor/TelaGestor";
 import Acessos from "../../src/pages/acessos/Acessos"
 import GraficosDetalhados from "../pages/grafico/Grafico";

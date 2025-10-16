@@ -1,12 +1,23 @@
 /* Fundo geral */
 .container_redefinir {
   min-height: 100vh;
-  background: url("https://i.pinimg.com/736x/17/13/53/1713531c404c0fc43b324acca9d7021a.jpg")
-    no-repeat center center/cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Gantari", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Canvas para partículas */
+.canvas-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #000000 0%, #060b08 50%, #033528 100%);
+  z-index: -1;
 }
 
 /* Card central */
@@ -19,6 +30,13 @@
   color: #fff;
   width: 360px;
   text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.card_redefinir:hover {
+  transform: translateY(-5px);
 }
 
 .card_redefinir h2 {
@@ -55,10 +73,12 @@ label {
   color: #fff;
   outline: none;
   font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
 .input_senha input:focus {
-  border-color: #0af;
+  border-color: rgb(6, 50, 22);
+  box-shadow: 0 0 0 2px rgba(0, 170, 255, 0.2);
 }
 
 .icone_olho {
@@ -68,6 +88,11 @@ label {
   transform: translateY(-50%);
   cursor: pointer;
   color: #aaa;
+  transition: color 0.3s ease;
+}
+
+.icone_olho:hover {
+  color: rgb(13, 162, 53);
 }
 
 /* Requisitos */
@@ -82,26 +107,74 @@ label {
 
 .requisitos li {
   margin-bottom: 4px;
+  transition: color 0.3s ease;
 }
 
 .requisitos .valido {
-  color: #006a6a;
+  color: #086a2c;
 }
 
 /* Botão */
 .btn_salvar {
   width: 100%;
-  background-color: #000;
+  background: linear-gradient(135deg, #000 0%, #333 100%);
   color: #fff;
   font-weight: 600;
   border: none;
   padding: 12px 0;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn_salvar:hover {
-  background-color: #111;
-  transform: scale(1.02);
+  background: linear-gradient(135deg, #111 0%, #444 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn_salvar:active {
+  transform: translateY(0);
+}
+
+/* Efeito de brilho no botão */
+.btn_salvar::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.018);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.btn_salvar:hover::after {
+  opacity: 1;
+  transform: rotate(45deg) translate(10%, 10%);
+}
+
+/* Efeito de foco nos inputs */
+.input_senha input:focus + .icone_olho {
+  color: rgb(11, 99, 30);
+}
+
+/* Animação de entrada do card */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card_redefinir {
+  animation: fadeInUp 0.5s ease-out;
 }

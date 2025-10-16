@@ -2,10 +2,11 @@ import "./Grafico.css";
 import { useState } from "react";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { MenuLateral } from "../../components/Sidebar/Sidebar";
+import { useNavigate } from "react-router-dom";
 
 const Graficos = () => {
     const [modoSidebar, setModoSidebar] = useState("close");
-
+    const navigate = useNavigate();
     const dataPie = [
         { name: "Concluídas", value: 50 },
         { name: "Pendentes", value: 20 },
@@ -136,7 +137,9 @@ const Graficos = () => {
                     </div>
                 </div>
 
-                <button className="botao-gerais">Gráficos Gerais</button>
+                <button className="botao-gerais"
+                    onClick={() => navigate("/Gerente")}>Gráficos Gerais
+                </button>
             </div>
         </div>
     );

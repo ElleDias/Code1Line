@@ -8,8 +8,8 @@ import Dominios from "../pages/dominios/Dominios";
 import CadastroUsuario from "../pages/cadastroUsuario/CadastroUsuario";
 import TarefasPendentes from "../pages/tarefasPendentes/TarefasPendentes";
 import CadastroDeTarefas from "../pages/cadastroDeTarefas/CadastroDeTarefas";
-import Mensagem from "../pages/mensagens/Mensagens"
-import MensagemGestor from "../pages/mensagensGestor/MensagensGestor" 
+import Mensagem from "../pages/mensagem/Mensagem"
+import MensagemGestor from "../pages/mensagemGestor/MensagemGestor" 
 
 const Rotas = () => {
     return (

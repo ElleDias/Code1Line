@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./CadastroDeTarefas.css";
 import { MenuLateral } from "../../components/Sidebar/Sidebar";
 
 export default function App() {
-    
+  const [modoSidebar, setModoSidebar] = useState("close");
   const [taskName, setTaskName] = useState("");
   const [description, setDescription] = useState("");
   const [employee, setEmployee] = useState("");
@@ -27,14 +27,16 @@ export default function App() {
   };
 
   return (
-    <div className="app-container">
-        <MenuLateral
-                        perfil={true}
-                        geral="Geral"
-                        gestores={true}
-                        funcionarios={true}
-                        mensagens={true}
-                    />
+    <div className={` app-container sidebar-${modoSidebar}`}>
+      <MenuLateral
+        perfil={true}
+        geral="Geral"
+        gestores={true}
+        funcionarios={true}
+        mensagens={true}
+        modo={modoSidebar}
+        setModo={setModoSidebar}
+      />
       <div className="form-card">
         <h2>Cadastro de Tarefas</h2>
         <form onSubmit={handleSubmit} className="task-form">
@@ -63,7 +65,7 @@ export default function App() {
             <option value="Caio">Caio</option>
             <option value="Yasmim">Yasmin</option>
             <option value="Danielle">Danielle</option>
-             <option value="Laura">Laura</option>
+            <option value="Laura">Laura</option>
             <option value="Lucas">Lucas</option>
           </select>
 

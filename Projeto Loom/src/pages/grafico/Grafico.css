@@ -22,8 +22,17 @@
   justify-content: center;
   align-items: center;
   font-family: 'Arial', sans-serif;
+  transition: margin-left 0.4s ease;
 } */
 
+.monitoramento-container.sidebar-open {
+  margin-left: 230px;
+}
+
+.monitoramento-container.sidebar-close,
+.monitoramento-container.sidebar-mini {
+  margin-left: 80px;
+}
 /*
   2. CARD PRINCIPAL (Painel Escuro)
 */

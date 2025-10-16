@@ -4,7 +4,7 @@ import { MenuLateral } from "../../components/Sidebar/Sidebar";
 import { GraficoDesempenho } from "../../components/GraficoDesempenho/GraficoDesempenho";
 
 const TelaGerente = () => {
-  const [modoSidebar, setModoSidebar] = useState("open");
+  const [modoSidebar, setModoSidebar] = useState("close");
 
   const dadosPendentes = [
     { nome: "Seg", valor: 50 },

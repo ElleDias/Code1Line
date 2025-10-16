@@ -1,8 +1,11 @@
 import "./Grafico.css";
+import { useState } from "react";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { MenuLateral } from "../../components/Sidebar/Sidebar";
 
 const Graficos = () => {
+    const [modoSidebar, setModoSidebar] = useState("close");
+
     const dataPie = [
         { name: "Concluídas", value: 50 },
         { name: "Pendentes", value: 20 },
@@ -22,13 +25,15 @@ const Graficos = () => {
     ];
 
     return (
-        <div className="monitoramento-container">
+        <div className={` monitoramento-container sidebar-${modoSidebar}`}>
             <MenuLateral
                 perfil={true}
                 geral="Geral"
                 gestores={true}
                 funcionarios={true}
                 mensagens={true}
+                modo={modoSidebar}
+                setModo={setModoSidebar}
             />
 
             <div className="painel">

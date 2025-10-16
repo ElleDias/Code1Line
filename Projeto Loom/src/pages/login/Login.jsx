@@ -6,6 +6,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
     const [mostrarSenha, setMostrarSenha] = useState(false);
+    
 
     return (
         <main className="main_login">
@@ -55,7 +56,7 @@ const Login = () => {
                     <Botao nomeDoBotao="Log In" />
 
                     <p className="nao_tem_uma_conta">
-                        Não tem uma conta? <a className="link_registre" href="#">Registre-se aqui</a>
+                        Não tem uma conta? <a className="link_registre" href="/Cadastro">Registre-se aqui</a>
                     </p>
                 </form>
             </section>

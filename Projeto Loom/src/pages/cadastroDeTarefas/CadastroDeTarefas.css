@@ -10,6 +10,16 @@ body {
   align-items: center;
   padding: 40px;
   min-height: 100vh;
+  transition: margin-left 0.4s ease;
+}
+
+.app-container.sidebar-open {
+  margin-left: 230px;
+}
+
+.app-container.sidebar-close,
+.app-container.sidebar-mini {
+  margin-left: 80px;
 }
 
 .form-card {
@@ -69,7 +79,7 @@ body {
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
-  transition:  0.2s;
+  transition: 0.2s;
 }
 
 .save-btn:hover {

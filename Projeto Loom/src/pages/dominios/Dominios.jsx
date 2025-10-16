@@ -5,7 +5,7 @@ import { MenuLateral } from "../../components/Sidebar/Sidebar";
 export default function Dominios() {
   // Estado para armazenar o filtro selecionado
   const [filtro, setFiltro] = useState("Todos");
-
+  const [modoSidebar, setModoSidebar] = useState("close");
   // Dados dos domínios
   const dominios = [
     {
@@ -32,7 +32,7 @@ export default function Dominios() {
       : dominios.filter((item) => item.categoria === filtro);
 
   return (
-    <div className="dominios-page">
+    <div className={`dominios-page  sidebar-${modoSidebar}`}>
       {/* Sidebar igual às outras telas */}
       <MenuLateral
         perfil={true}
@@ -40,6 +40,8 @@ export default function Dominios() {
         gestores={false}
         funcionarios={false}
         mensagens={true}
+        modo={modoSidebar}
+        setModo={setModoSidebar}
       />
 
       {/* Conteúdo da página */}

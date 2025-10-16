@@ -1,9 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import "./TelaGestor.css";
 import {MenuLateral} from "../../components/Sidebar/Sidebar";
 
 
 const TelaGestor = () => {
+    const [modoSidebar, setModoSidebar] = useState("close");
   const funcionarios = [
     { nome: "Fulano", tempoInativo: "40 minutos", tempoAtivo: "6 horas e 40 minutos" },
     { nome: "Fulano", tempoInativo: "40 minutos", tempoAtivo: "6 horas e 40 minutos" },
@@ -14,13 +15,15 @@ const TelaGestor = () => {
   ];
 
   return (
-    <div className="monitoramento-container">
+    <div className={`monitoramento-container sidebar-${modoSidebar}`}>
       <MenuLateral
         perfil={true}
         geral="Acessos"
         gestores={false}
         funcionarios={false}
         mensagens={true}
+        modo={modoSidebar}
+        setModo={setModoSidebar}
       />
       <h1 className="titulo">Monitoramento</h1>
       <p className="subtitulo">Equipe de desenvolvimento</p>

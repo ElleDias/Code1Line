@@ -7,7 +7,7 @@ body, html, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #071b15;
+ 
 }
 
 /* ----- MODAL OVERLAY ----- */
@@ -19,6 +19,23 @@ body, html, #root {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  transition: margin-left 0.4s ease;
+}
+
+.tela-pendentes {
+  display: flex;
+  background: #f7f7f5;
+  min-height: 100vh;
+  transition: all 0.4s ease;
+  transition: margin-left 0.4s ease;
+}
+.tela-pendentes.sidebar-open {
+  margin-left: 230px;
+}
+
+.tela-pendentes.sidebar-close,
+.tela-pendentes.sidebar-mini {
+  margin-left: 80px;
 }
 
 /* ----- MODAL CONTENT ----- */
@@ -30,6 +47,17 @@ body, html, #root {
   padding: 40px;
   position: relative;
   animation: slideIn 0.3s ease-out;
+}
+
+/* quando sidebar aberta */
+.modal-overlay.sidebar-open {
+  margin-left: 230px;
+}
+
+/* quando sidebar fechada (mini) */
+.modal-overlay.sidebar-close,
+.modal-overlay.sidebar-mini {
+  margin-left: 80px;
 }
 
 @keyframes slideIn {

@@ -1,7 +1,9 @@
-import React from 'react';
-import './Mensagens.css';
+import './Mensagem.css';
 import { FaUserCircle, FaEnvelope } from 'react-icons/fa';
+import { useState } from "react";
 import { BsChat, BsChatText } from 'react-icons/bs';
+import { MenuLateral } from "../../components/Sidebar/Sidebar";
+
 
 const listaMensagens = [
   { id: 1, icon: <BsChatText /> },
@@ -12,9 +14,20 @@ const listaMensagens = [
 ];
 
 function Mensagens() {
+  const [modoSidebar, setModoSidebar] = useState("close");
   return (
+
     // Nova div para agrupar o título e o container
-    <div className="pagina-mensagens"> 
+    <div className={`pagina-mensagens sidebar-${modoSidebar}`} >
+      <MenuLateral
+        perfil={true}
+        geral="Geral"
+        gestores={true}
+        funcionarios={true}
+        mensagens={true}
+        modo={modoSidebar}
+        setModo={setModoSidebar}
+      />
       {/* Título agora está FORA do container branco */}
       <h1 className="titulo-externo">MENSAGENS</h1>
 

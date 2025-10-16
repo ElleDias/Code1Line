@@ -8,11 +8,12 @@ import Botao from "../../components/Botao/Botao";
 const CadastroUsuario = () => {
     const [mostrarSenha, setMostrarSenha] = useState(false);
     const [mostrarConfSenha, setMostrarConfSenha] = useState(false);
+   // const [modoSidebar, setModoSidebar] = useState("open");
 
     return (
 
         <main className="main_cadastro">
-        
+
             <div className="fundo_loom"></div>
 
             <section className="section_cadastro">
@@ -67,7 +68,7 @@ const CadastroUsuario = () => {
                     </div>
 
                     <Botao nomeDoBotao="Cadastrar" />
-                   
+
 
                     <div className="login_link">
                         <a className="login_link" href="#">Já possuo cadastro</a>

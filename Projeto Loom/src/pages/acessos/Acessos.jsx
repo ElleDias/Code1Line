@@ -1,8 +1,9 @@
-import React from "react";
+import { useState } from "react";
 import "./Acessos.css";
 import {MenuLateral} from "../../components/Sidebar/Sidebar";
 
 const Acesso = () => {
+  const [modoSidebar, setModoSidebar] = useState("close");
   const acessoGestor = [
     { nome: "Fulano", AcessoAtual: "Youtube.com", tempoAtivo: "6 horas e 40 minutos" },
     { nome: "Fulano", AcessoAtual: "Spotify.com", tempoAtivo: "6 horas e 40 minutos" },
@@ -13,13 +14,15 @@ const Acesso = () => {
   ];
 
   return (
-    <div className="monitoramento-container">
+    <div className={` monitoramento-container sidebar-${modoSidebar}`}>
       <MenuLateral
               perfil={true}
               geral="Monitoramento"
               gestores={false}
               funcionarios={false}
               mensagens={true}
+               modo={modoSidebar}
+               setModo={setModoSidebar}
             />
       <h1 className="titulo">Acessos</h1>
       <p className="subtitulo">Equipe de desenvolvimento</p>

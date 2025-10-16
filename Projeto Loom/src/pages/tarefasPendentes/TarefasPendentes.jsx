@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import "./TarefasPendentes.css";
-import Botao from "../../components/Botao/Botao";
- import { MenuLateral } from "../../components/Sidebar/Sidebar";
-function App() {
+import { MenuLateral } from "../../components/Sidebar/Sidebar";
+
+function TarefasPendentes() {
   const [filtro, setFiltro] = useState("");
+  const [modoSidebar, setModoSidebar] = useState("close"); 
 
   const tarefas = [
     { nome: "Tarefa 1", funcionario: "Brenda", status: "Em andamento", data: "10/07/2026" },
@@ -28,62 +29,67 @@ function App() {
     }
   };
 
-  // Filtra as tarefas pelo nome do funcionário digitado
   const tarefasFiltradas = tarefas.filter((t) =>
     t.funcionario.toLowerCase().includes(filtro.toLowerCase())
   );
 
   return (
-    <div className="modal-overlay">
+    <div className={` tela-pendentes sidebar-${modoSidebar}`}>
       <MenuLateral
-                perfil={true}
-                geral="Geral"
-                gestores={true}
-                funcionarios={true}
-                mensagens={true}
+        perfil={true}
+        geral="Geral"
+        gestores={true}
+        funcionarios={true}
+        mensagens={true}
+        modo={modoSidebar}
+        setModo={setModoSidebar}
+      />
+
+
+      {/* ⬇ aplica classe de sidebar dinamicamente */}
+      <div className={`modal-overlay sidebar-${modoSidebar}`}>
+        <div className="modal">
+          <h1 className="title">TAREFAS DA EQUIPE</h1>
+
+          <form className="form">
+            <label htmlFor="funcionario">Informe o nome do funcionário:</label>
+            <input
+              id="funcionario"
+              type="text"
+              placeholder="Ex: Funcionário 3"
+              value={filtro}
+              onChange={(e) => setFiltro(e.target.value)}
             />
-      <div className="modal">
-        <h1 className="title">TAREFAS DA EQUIPE</h1>
+          </form>
 
-        <form className="form">
-          <label htmlFor="funcionario">Informe o nome do funcionário:</label>
-          <input
-            id="funcionario"
-            type="text"
-            placeholder="Ex: Funcionário 3"
-            value={filtro}
-            onChange={(e) => setFiltro(e.target.value)}
-          />
-          {/* <Botao nomeDoBotao="Voltar"/> */}
-        </form>
+          <div className="table">
+            <div className="table-header">
+              <div>Nome da Tarefa</div>
+              <div>Funcionário</div>
+              <div>Status</div>
+              <div>Data</div>
+            </div>
 
-        <div className="table">
-          <div className="table-header">
-            <div>Nome da Tarefa</div>
-            <div>Funcionário</div>
-            <div>Status</div>
-            <div>Data</div>
-          </div>
-
-          {tarefasFiltradas.length > 0 ? (
-            tarefasFiltradas.map((t, i) => (
-              <div key={i} className="table-row">
-                <div className="task-name">{t.nome}</div>
-                <div className="employee">
-                  <div className="avatar">👤</div>
-                  <span>{t.funcionario}</span>
+            {tarefasFiltradas.length > 0 ? (
+              tarefasFiltradas.map((t, i) => (
+                <div key={i} className="table-row">
+                  <div className="task-name">{t.nome}</div>
+                  <div className="employee">
+                    <div className="avatar">👤</div>
+                    <span>{t.funcionario}</span>
+                  </div>
+                  <div className={getStatusClass(t.status)}>{t.status}</div>
+                  <div className="date">{t.data}</div>
                 </div>
-                <div className={getStatusClass(t.status)}>{t.status}</div>
-                <div className="date">{t.data}</div>
-              </div>
-            ))
-          ) : (
-            <p className="no-results">Nenhum funcionário encontrado.</p>
-          )}
+              ))
+            ) : (
+              <p className="no-results">Nenhum funcionário encontrado.</p>
+            )}
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default App;
+export default TarefasPendentes;

@@ -1,18 +1,29 @@
 .dominios-page {
-    display: flex;
-    background-color: #e2e2e2;
-    color: white;
-    min-height: 100vh;
+  display: flex;
+  background-color: #e2e2e2;
+  color: white;
+  min-height: 100vh;
+    transition: margin-left 0.4s ease;
 }
 
 .dominios-container {
-    flex: 1;
-    padding: 2rem;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    color: #000;
+  flex: 1;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  color: #000;
 
-} 
+
+}
+
+.dominios-page.sidebar-open {
+  margin-left: 230px;
+}
+
+.dominios-page.sidebar-close,
+.dominios-page.sidebar-mini {
+  margin-left: 80px;
+}
 /* 
 .titulo-dominio {
   font-size: 1.8rem;
@@ -21,32 +32,32 @@
 } */
 
 .subtitulo-dominio {
-    font-size: 2rem;
-    color: #000000;
-    margin-bottom: 3rem;
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 3rem;
 }
 
 .tabela-dominio {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-    background-color: #ffffff;
-    border-radius: 80px;
-    padding: 45px;
-    width: 100%;    
-    max-width: 900px;
-    grid-template-columns: 1fr 2fr 1fr;
-} 
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  background-color: #ffffff;
+  border-radius: 80px;
+  padding: 45px;
+  width: 100%;
+  max-width: 900px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
 
 .tabela-header-dominio {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    background-color: #e2e2e2;
-    padding: 0.8rem;
-    border-radius: 10px;
-    font-weight: 600;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #e2e2e2;
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .linha-dominio {
@@ -60,13 +71,15 @@
 
 /* Mantém a cor ao passar o mouse */
 .linha-dominio:hover {
-  background-color: #d3d3d3; /* ou #e2e2e2 se não quiser mudar nada */
+  background-color: #d3d3d3;
+  /* ou #e2e2e2 se não quiser mudar nada */
 }
 
 /* Impede que fique branco ao clicar */
 .linha-dominio:active,
 .linha-dominio:focus {
-  background-color: #d3d3d3 !important; /* mantém a mesma cor do hover */
+  background-color: #d3d3d3 !important;
+  /* mantém a mesma cor do hover */
   color: #000 !important;
   outline: none;
 }
@@ -75,25 +88,25 @@
 
 
 .categoria-dominio {
-    padding: 0.3rem 0.6rem;
-    border-radius: 6px;
-    font-weight: 600;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
 .produtivo-dominio {
-    background-color: #173C4C;
-    color: white;
+  background-color: #173C4C;
+  color: white;
 }
 
 .nao-produtivo-dominio {
-    background-color: #326D6B;
-    color: white;
+  background-color: #326D6B;
+  color: white;
 }
 
 .analise-dominio {
-    background-color: #568F7C;
-    color: white;
-} 
+  background-color: #568F7C;
+  color: white;
+}
 
 /* --- ESTILO DOS BOTÕES DE FILTRO --- */
 .filtro-dominio {

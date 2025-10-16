@@ -1,0 +1,107 @@
+/* Fundo geral */
+.container_redefinir {
+  min-height: 100vh;
+  background: url("https://i.pinimg.com/736x/17/13/53/1713531c404c0fc43b324acca9d7021a.jpg")
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+}
+
+/* Card central */
+.card_redefinir {
+  background: rgba(25, 25, 25, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 360px;
+  text-align: center;
+}
+
+.card_redefinir h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card_redefinir p {
+  font-size: 0.9rem;
+  color: #bdbdbd;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+label {
+  display: block;
+  text-align: left;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.input_senha {
+  position: relative;
+}
+
+.input_senha input {
+  width: 100%;
+  padding: 10px 38px 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: #fff;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+.input_senha input:focus {
+  border-color: #0af;
+}
+
+.icone_olho {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+}
+
+/* Requisitos */
+.requisitos {
+  text-align: left;
+  list-style: none;
+  margin: 10px 0 20px;
+  padding: 0;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.requisitos li {
+  margin-bottom: 4px;
+}
+
+.requisitos .valido {
+  color: #006a6a;
+}
+
+/* Botão */
+.btn_salvar {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn_salvar:hover {
+  background-color: #111;
+  transform: scale(1.02);
+}

@@ -8,8 +8,9 @@ import Dominios from "../pages/dominios/Dominios";
 import CadastroUsuario from "../pages/cadastroUsuario/CadastroUsuario";
 import TarefasPendentes from "../pages/tarefasPendentes/TarefasPendentes";
 import CadastroDeTarefas from "../pages/cadastroDeTarefas/CadastroDeTarefas";
-import Mensagem from "../pages/mensagem/Mensagem"
-import MensagemGestor from "../pages/mensagemGestor/MensagemGestor" 
+import Mensagem from "../pages/mensagem/Mensagem";
+import MensagemGestor from "../pages/mensagemGestor/MensagemGestor";
+import RedefinirSenha from "../pages/redefinirSenha/RedefinirSenha";
 
 const Rotas = () => {
     return (
@@ -17,8 +18,10 @@ const Rotas = () => {
             <Routes>
                 {/* http://localhost:3000/ => Login */}
                 <Route path="/" element={<Login />} exact />
-                {/* http://localhost:3000/ => Gerente */}
-                <Route path="/Gerente" element={<Gerente />} exact />
+                {/* http://localhost:3000/ => Gestor */}
+                <Route path="Gerente" element={<Gerente />} exact />
+                {/* http://localhost:3000/ => Redefinir Senha */}
+                <Route path="/RedefinirSenha" element={<RedefinirSenha />} exact />
                 {/* http://localhost:3000/ => Gerente */}
                 <Route path="/Gestor" element={<TelaGestor />} />
                 {/* http://localhost:3000/ => Acessos */}

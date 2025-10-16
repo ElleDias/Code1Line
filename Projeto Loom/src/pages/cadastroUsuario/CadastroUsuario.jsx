@@ -71,7 +71,7 @@ const CadastroUsuario = () => {
 
 
                     <div className="login_link">
-                        <a className="login_link" href="#">Já possuo cadastro</a>
+                        <a className="login_link" href="/">Já possuo cadastro</a>
                     </div>
                 </form>
             </section>

@@ -87,7 +87,7 @@ export const MenuLateral = ({
 
       <div className="rodape">
         <div className="sair">
-          <img src={iconeSair} className="icone-menu" alt="Sair" />
+          <img src={iconeSair} className="icone-menu" alt="Sair" href="/" />
           {isOpen && <span>Sign Out</span>}
         </div>
 

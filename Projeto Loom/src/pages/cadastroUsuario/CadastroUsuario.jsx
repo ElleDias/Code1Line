@@ -8,7 +8,7 @@ import Botao from "../../components/Botao/Botao";
 const CadastroUsuario = () => {
     const [mostrarSenha, setMostrarSenha] = useState(false);
     const [mostrarConfSenha, setMostrarConfSenha] = useState(false);
-   // const [modoSidebar, setModoSidebar] = useState("open");
+   
 
     return (
 

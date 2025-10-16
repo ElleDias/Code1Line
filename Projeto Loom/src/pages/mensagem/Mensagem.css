@@ -7,13 +7,13 @@
   justify-content: center; 
   height: 100vh;
   background-color: #001410;
-  transition: margin-left 0.4s ease;
+  transition: margin-left 0s ease, transform 0s ease;
   font-family: 'Poppins', sans-serif;
 }
 
 /* Ajuste para quando a sidebar estiver aberta ou fechada */
 .pagina-mensagens.sidebar-open {
-  margin-left: 203px;
+  margin-left: 190px;
 }
 
 .pagina-mensagens.sidebar-close,

@@ -36,10 +36,11 @@ export default function Dominios() {
       {/* Sidebar igual às outras telas */}
       <MenuLateral
         perfil={true}
-        geral="Monitoramento"
-        gestores={false}
-        funcionarios={false}
-        mensagens={true}
+        geral={{ ativo: true, path: "/gestor", nome: "Monitoramento" }}      
+        gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
+        funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
+        mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
+        voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}
       />

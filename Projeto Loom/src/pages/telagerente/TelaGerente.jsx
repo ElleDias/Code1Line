@@ -49,10 +49,11 @@ const TelaGerente = () => {
       
       <MenuLateral
         perfil={true}
-        geral="Geral"
-        gestores={true}
-        funcionarios={true}
-        mensagens={true}
+        geral={{ ativo: true, path: "/gerente", nome: "Geral" }}
+        gestores={{ ativo: true, path: "/gestor", nome: "Gestores" }}
+        funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
+        mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
+        voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}
       />

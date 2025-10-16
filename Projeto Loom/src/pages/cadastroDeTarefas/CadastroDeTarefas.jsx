@@ -30,10 +30,11 @@ export default function App() {
     <div className={` app-container sidebar-${modoSidebar}`}>
       <MenuLateral
         perfil={true}
-        geral="Geral"
-        gestores={true}
-        funcionarios={true}
-        mensagens={true}
+        geral={{ ativo: true, path: "/gerente", nome: "Acessos" }}
+        gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
+        funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
+        mensagens={{ ativo: false, path: "/mensagem", nome: "Mensagens" }}
+        voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}
       />

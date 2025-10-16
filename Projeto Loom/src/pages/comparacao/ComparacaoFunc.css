@@ -1,0 +1,98 @@
+.comparador-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+    transition: margin-left 0s ease;
+}
+/* .comparador-container.sidebar-open {
+  margin-left: 170px;
+} */
+
+/* .comparador-container.sidebar-close,
+.comparador-container.sidebar-mini {
+  margin-left: 80px;
+} */
+
+.comparador-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 45px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.select-filtro,
+.input-filtro {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.tabela-container {
+  overflow-x: auto;
+}
+
+.tabela-funcionarios {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-funcionarios th,
+.tabela-funcionarios td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.tabela-funcionarios th {
+  background-color: #eaeaea;
+  font-weight: 600;
+}
+
+.barra-container {
+  position: relative;
+  background: #eee;
+  border-radius: 8px;
+  height: 18px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.barra-desempenho {
+  background-color: #326D6B; 
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
+
+.porcentagem {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* .nenhum-resultado {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
+} */

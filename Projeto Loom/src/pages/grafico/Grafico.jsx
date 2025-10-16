@@ -136,7 +136,7 @@ const Graficos = () => {
                     </div>
                 </div>
 
-                <button className="botao-gerais">Gráficos Gerais</button>
+                <button className="botao-gerais">Gráficos Detalhados</button>
             </div>
         </div>
     );

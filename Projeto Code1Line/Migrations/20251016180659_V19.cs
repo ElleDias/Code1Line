@@ -5,7 +5,7 @@
 namespace Projeto_Code1Line.Migrations
 {
     /// <inheritdoc />
-    public partial class Code1Line : Migration
+    public partial class V19 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

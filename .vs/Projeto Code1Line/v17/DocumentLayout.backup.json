@@ -1,14 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\56184436864\\Desktop\\Code1Line\\",
+  "WorkspaceRootPath": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\projeto code1line\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251021133644_V16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projeto Code1Line\\Migrations\\20251021133644_V16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\migrations\\20251016175456_v17.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\migrations\\20251016175456_v17.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251016173908_V16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projeto Code1Line\\Migrations\\20251016173908_V16.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\dtos\\mensagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\dtos\\mensagemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\controllers\\mensagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\controllers\\mensagemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\controllers\\atividadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\controllers\\atividadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\56184436864\\desktop\\code1line\\projeto code1line\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\controllers\\funcionariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Interfaces\\DashBoardService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Projeto Code1Line\\Interfaces\\DashBoardService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|c:\\users\\55747955829\\desktop\\tcc1-vortex\\code1line\\projeto code1line\\migrations\\20251016180659_v19.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D39FD68C-E1D6-4EE6-90C2-DA90163493CD}|Projeto Code1Line\\Projeto Code1Line.csproj|solutionrelative:projeto code1line\\migrations\\20251016180659_v19.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,25 +75,172 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Projeto Code1Line\\Repositories\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "Projeto Code1Line\\Repositories\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Projeto Code1Line\\Repositories\\UsuarioRepository.cs",
-              "RelativeToolTip": "Projeto Code1Line\\Repositories\\UsuarioRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAyAAAAAAAAAA==",
+              "Title": "20251021133644_V16.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251021133644_V16.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Migrations\\20251021133644_V16.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251021133644_V16.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Migrations\\20251021133644_V16.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T14:00:09.996Z",
+              "WhenOpened": "2025-10-21T13:36:44.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20251016180659_V19.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251016180659_V19.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Migrations\\20251016180659_V19.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251016180659_V19.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Migrations\\20251016180659_V19.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T18:06:59.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20251016175456_V17.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251016175456_V17.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Migrations\\20251016175456_V17.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251016175456_V17.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Migrations\\20251016175456_V17.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T17:54:56.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Program.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Program.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Program.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T17:41:30.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DashBoardService.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Interfaces\\DashBoardService.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Interfaces\\DashBoardService.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Interfaces\\DashBoardService.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Interfaces\\DashBoardService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T12:27:18.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MensagemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\DTOs\\MensagemDTO.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\DTOs\\MensagemDTO.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\DTOs\\MensagemDTO.cs",
+              "RelativeToolTip": "Projeto Code1Line\\DTOs\\MensagemDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T12:26:29.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AtividadeController.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Controllers\\AtividadeController.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Controllers\\AtividadeController.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Controllers\\AtividadeController.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Controllers\\AtividadeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T12:10:34.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\appsettings.json",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\appsettings.json",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\appsettings.json",
+              "RelativeToolTip": "Projeto Code1Line\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-16T12:04:33.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAqwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T12:04:41.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20251016173908_V16.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251016173908_V16.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Migrations\\20251016173908_V16.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Migrations\\20251016173908_V16.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Migrations\\20251016173908_V16.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T17:39:08.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MensagemController.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Controllers\\MensagemController.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Controllers\\MensagemController.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Controllers\\MensagemController.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Controllers\\MensagemController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T12:10:07.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T12:09:37.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Projeto Code1Line\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Projeto Code1Line\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T14:00:09.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FuncionarioController.cs",
-              "DocumentMoniker": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Projeto Code1Line\\Controllers\\FuncionarioController.cs",
+              "DocumentMoniker": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Controllers\\FuncionarioController.cs",
               "RelativeDocumentMoniker": "Projeto Code1Line\\Controllers\\FuncionarioController.cs",
-              "ToolTip": "C:\\Users\\56184436864\\Desktop\\Code1Line\\Projeto Code1Line\\Controllers\\FuncionarioController.cs",
+              "ToolTip": "C:\\Users\\55747955829\\Desktop\\TCC1-Vortex\\Code1Line\\Projeto Code1Line\\Controllers\\FuncionarioController.cs",
               "RelativeToolTip": "Projeto Code1Line\\Controllers\\FuncionarioController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA7wBQAAABPAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAuwDMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T13:49:06.455Z"
             }

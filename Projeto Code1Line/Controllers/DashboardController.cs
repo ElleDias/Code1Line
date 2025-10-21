@@ -16,7 +16,7 @@ public class DashboardController : ControllerBase
     }
 
     [HttpGet("resumo")]
-    [Authorize(Roles = "Admin,Gestor")]
+    [Authorize(Roles = "Gerente,Gestor")]
     public async Task<IActionResult> GetResumo()
     {
         var r = await _service.GetResumoAsync();

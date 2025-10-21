@@ -9,7 +9,9 @@ import CadastroUsuario from "../pages/cadastroUsuario/CadastroUsuario";
 import TarefasPendentes from "../pages/tarefasPendentes/TarefasPendentes";
 import CadastroDeTarefas from "../pages/cadastroDeTarefas/CadastroDeTarefas";
 import Mensagem from "../pages/mensagem/Mensagem"
-import MensagemGestor from "../pages/mensagemGestor/MensagemGestor" 
+import MensagemGestor from "../pages/mensagemGestor/MensagemGestor"
+import TeladoPerfil from "../pages/telaDePerfil/telaDePerfil";
+import ComparacaoFunc from "../../src/pages/comparacao/ComparacaoFunc"
 
 const Rotas = () => {
     return (
@@ -37,6 +39,12 @@ const Rotas = () => {
                 <Route path="/Mensagem" element={<Mensagem />} />
                 {/* http://localhost:3000/ => MensagensGestor */}
                 <Route path="/MensagemGestor" element={<MensagemGestor />} />
+                {/* http://localhost:3000/ => TelaPerfil */}
+                <Route path="/TeladoPerfil" element={<TeladoPerfil />} />
+                {/* http://localhost:3000/ => Comparação de Funcionários */}
+                <Route path="/Comparação" element={<ComparacaoFunc />} />
+
+
 
             </Routes>
         </BrowserRouter>

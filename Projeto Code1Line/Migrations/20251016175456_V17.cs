@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Projeto_Code1Line.Migrations
 {
     /// <inheritdoc />
-    public partial class V1 : Migration
+    public partial class V17 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -45,9 +45,9 @@ namespace Projeto_Code1Line.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    email = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Nome = table.Column<string>(type: "nome", nullable: false),
+                    Email = table.Column<string>(type: "email", nullable: false),
+                    Senha = table.Column<string>(type: "senha", nullable: false),
                     cargo = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -137,9 +137,9 @@ namespace Projeto_Code1Line.Migrations
                 column: "FuncionarioId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Usuario_email",
+                name: "IX_Usuario_Email",
                 table: "Usuario",
-                column: "email",
+                column: "Email",
                 unique: true);
         }
 

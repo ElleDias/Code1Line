@@ -33,7 +33,7 @@ public class MensagemController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Gerente")]
     public async Task<IActionResult> Delete(int id)
     {
         await _repo.DeleteAsync(id);

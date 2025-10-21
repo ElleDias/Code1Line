@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Projeto_Code1Line.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251009133652_V2")]
-    partial class V2
+    [Migration("20251021133644_V16")]
+    partial class V16
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -168,18 +168,15 @@ namespace Projeto_Code1Line.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)")
-                        .HasColumnName("email");
+                        .HasColumnType("email");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("nome");
+                        .HasColumnType("nome");
 
                     b.Property<string>("Senha")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("senha");
+                        .HasColumnType("senha");
 
                     b.HasKey("Id");
 

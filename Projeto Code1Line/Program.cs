@@ -11,22 +11,33 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // ================================
-// ???  Banco de Dados
+// ?? Banco de Dados (com retry resiliente)
 // ================================
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        sqlOptions =>
+        {
+            sqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 5, // tenta até 5 vezes antes de falhar
+                maxRetryDelay: TimeSpan.FromSeconds(10), // tempo máximo entre tentativas
+                errorNumbersToAdd: null // pode deixar null
+            );
+            sqlOptions.CommandTimeout(60); // (opcional) aumenta o tempo máximo de execução de comandos
+        }
+    )
+);
 
 builder.Services.AddScoped<IAtividadeRepository, AtividadeRepository>();
 
-
 // ================================
-// ??  Injeção de Dependência
+// ?? Injeção de Dependência
 // ================================
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
 // ================================
-// ??  Autenticação JWT
+// ?? Autenticação JWT
 // ================================
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]!);
@@ -51,12 +62,11 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(key),
         ClockSkew = TimeSpan.Zero, // sem atraso de expiração
         RoleClaimType = ClaimTypes.Role
-
     };
 });
 
 // ================================
-// ??  CORS
+// ?? CORS
 // ================================
 builder.Services.AddCors(options =>
 {
@@ -68,7 +78,7 @@ builder.Services.AddCors(options =>
 });
 
 // ================================
-// ??  Controllers e Swagger
+// ?? Controllers e Swagger
 // ================================
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -107,7 +117,7 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 // ================================
-// ??  Middleware
+// ?? Middleware
 // ================================
 if (app.Environment.IsDevelopment())
 {

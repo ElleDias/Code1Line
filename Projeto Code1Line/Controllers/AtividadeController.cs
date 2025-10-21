@@ -30,7 +30,7 @@ public class AtividadeController : ControllerBase
     }
 
     [HttpPost]
-    [Authorize(Roles = "Admin,Gestor,Funcionario")]
+    [Authorize(Roles = "Gerente,Gestor")]
     public async Task<IActionResult> Create([FromBody] Atividade atividade)
     {
         await _repo.AddAsync(atividade);
@@ -38,7 +38,7 @@ public class AtividadeController : ControllerBase
     }
 
     [HttpPut("{id}")]
-    [Authorize(Roles = "Admin,Gestor")]
+    [Authorize(Roles = "Gerente,Gestor")]
     public async Task<IActionResult> Update(int id, [FromBody] Atividade atividade)
     {
         if (id != atividade.Id) return BadRequest();
@@ -47,7 +47,7 @@ public class AtividadeController : ControllerBase
     }
 
     [HttpDelete("{id}")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Gerente")]
     public async Task<IActionResult> Delete(int id)
     {
         await _repo.DeleteAsync(id);

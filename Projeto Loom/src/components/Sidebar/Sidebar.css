@@ -31,7 +31,7 @@
 
 /* botão que alterna open/mini */
 .botao-mini {
-  background: white;
+  background: rgb(255, 255, 255);
   border: none;
   width: 36px;
   height: 36px;
@@ -76,16 +76,15 @@
   cursor: pointer;
   border: 1px solid #ffffff1d;
   font-family: "Montserrat", sans-serif;
-  transition: background 0.2s ease;
   white-space: nowrap;
 }
 
 .menu-lateral nav li:hover { background: #162a63; }
 
 .menu-lateral nav li.ativo {
-  background: white;
-  color: black;
-  border-color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-color:#ffffff1d;
   font-weight: 700;
 }
 
@@ -106,7 +105,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 12px;
+  padding: 10px 30px;
   margin-bottom: 10px;
   border-radius: 10px;
   cursor: pointer;
@@ -114,7 +113,7 @@
   font-family: "Montserrat", sans-serif;
   transition: background 0.2s ease;
   white-space: nowrap;
-  background: #fff;
+  background: #ffffff;
   color: #000;
   font-weight: 700;
   width: 100%;
@@ -122,8 +121,8 @@
 }
 
 .sair:hover {
-  background: #061914;
-  color: #fff;
+  background: #ffffff;
+  color: #000000;
 }
 
 .menu-lateral.mini .sair {

@@ -1,12 +1,14 @@
 import "./Sidebar.css";
+import { Link } from "react-router-dom";
 
 import iconeSair from "../../assets/img/Logout.svg";
 import Logo from "../../assets/img/Logo.svg";
 import User from "../../assets/img/User.svg";
 import Geral from "../../assets/img/Clipboard.svg";
 import Func from "../../assets/img/Management.svg";
-import Chat from "../../assets/img/SMS.svg";
+import Chat from "../../assets/img/Chat Bubble.svg";
 import Voltar from "../../assets/img/Voltar.svg";
+import TelaGerente from "../../pages/telagerente/TelaGerente";
 
 export const MenuLateral = ({
   perfil = false,
@@ -50,23 +52,29 @@ export const MenuLateral = ({
       <nav>
         <ul>
           {perfil && (
+            <Link to="/TeladoPerfil" className="link-menu">
             <li>
               <img src={User} className="icone-menu" alt="Perfil" />
               {isOpen && <span>Perfil</span>}
             </li>
+            </Link>
           )}
 
           {geral && (
+            <Link to="/Gerente" className="link-menu">
             <li>
               <img src={Geral} className="icone-menu" alt={geral} />
               {isOpen && <span>{geral}</span>}
             </li>
+            </Link>
           )}
           {gestores && (
+            <Link to="/Comparação" className="link-menu">
             <li>
               <img src={User} className="icone-menu" alt="Gestores" />
               {isOpen && <span>Gestores</span>}
             </li>
+            </Link>
           )}
 
           {funcionarios && (

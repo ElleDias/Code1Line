@@ -1,7 +1,10 @@
-import axios from "react";
+import axios from "axios";
 
-const apiPorta = ""
+const apiPorta = '7283'
 
-const apiLocal = ``;
+const apiLocal = `https://localhost:${apiPorta}/api`
 
-const api = axios
+const api = axios.create({
+  baseURL: apiLocal,
+});
+export default api;

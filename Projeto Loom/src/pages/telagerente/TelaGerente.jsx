@@ -2,6 +2,7 @@ import "./TelaGerente.css";
 import { useState } from "react";
 import { MenuLateral } from "../../components/Sidebar/Sidebar";
 import { GraficoDesempenho } from "../../components/GraficoDesempenho/GraficoDesempenho";
+import { useNavigate } from 'react-router-dom';
 
 const TelaGerente = () => {
   const [modoSidebar, setModoSidebar] = useState("close");
@@ -39,6 +40,8 @@ const TelaGerente = () => {
     setTituloGrafico("Tarefas Concluídas");
   };
 
+   
+
   return (
     <div className="tela-gerente">
       <MenuLateral
@@ -69,10 +72,11 @@ const TelaGerente = () => {
         </div>
 
         <div className="tarefas-container moderno">
-          <button className="botao_tarefa azul" onClick={mostrarPendentes}>
+          {/* onClick={irParaOutraPagina} */}
+          <button className="botao_tarefa azul"onClick={mostrarPendentes}  >
             Tarefas Pendentes
           </button>
-          <button className="botao_tarefa roxo" onClick={mostrarConcluidas}>
+          <button  className="botao_tarefa roxo" onClick={mostrarConcluidas}>
             Tarefas Concluídas
           </button>
           <button className="botao_graficos dourado">Gráficos Detalhados</button>

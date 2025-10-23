@@ -81,3 +81,134 @@
   justify-content: center;
   max-width: 200px;
 }
+
+.monitoramento-container {
+  background-color: #e2e2e2;
+  min-height: 100vh;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gantari", sans-serif;
+  transition: margin-left 0s ease;
+  padding: 20px;
+}
+
+.monitoramento-container.sidebar-open {
+  margin-left: 170px;
+}
+
+.monitoramento-container.sidebar-close,
+.monitoramento-container.sidebar-mini {
+  margin-left: 80px;
+}
+
+.titulo {
+  font-size: 4.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: black;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 86px;
+  text-align: center;
+}
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 80%;
+  max-width: 900px;
+  justify-content: center;
+}
+
+.cabecalho,
+.linha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 12px;
+}
+
+.cabecalho {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.linha .coluna {
+  background-color: #d9d9d9;
+  color: black;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .monitoramento-container.sidebar-open {
+    margin-left: 120px;
+  }
+
+  .monitoramento-container.sidebar-close,
+  .monitoramento-container.sidebar-mini {
+    margin-left: 60px;
+  }
+
+  .titulo {
+    font-size: 3rem;
+  }
+
+  .subtitulo {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+
+  .tabela {
+    width: 90%;
+  }
+
+  .cabecalho,
+  .linha {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Celulares (até 767px) */
+@media (max-width: 767px) {
+  .monitoramento-container.sidebar-open,
+  .monitoramento-container.sidebar-close,
+  .monitoramento-container.sidebar-mini {
+    margin-left: 0;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .tabela {
+    width: 100%;
+  }
+
+  .cabecalho,
+  .linha {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .linha .coluna {
+    padding: 12px 0;
+  }
+}

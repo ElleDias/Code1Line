@@ -235,3 +235,112 @@ a:hover {
 .icone_olho:hover {
     color: #001919;
 }
+
+/* ===== RESPONSIVO LOGIN ===== */
+@media (max-width: 1024px) {
+    .main_login {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .fundo_loom, .section_login {
+        flex: none;
+        width: 100%;
+        min-height: 300px;
+        padding: 30px 20px;
+    }
+
+    .fundo_loom h1 {
+        font-size: 3rem;
+    }
+
+    .fundo_loom p {
+        font-size: 1rem;
+    }
+
+    .form_login h1 {
+        font-size: 2rem;
+    }
+
+    .form_login h2 {
+        margin-bottom: 40px;
+        font-size: 0.85rem;
+    }
+
+    .campo_input input {
+        font-size: 0.95rem;
+        padding: 8px;
+    }
+
+    .btn_login {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 767px) {
+ 
+    .main_login {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .fundo_loom {
+        min-height: 200px;
+        padding: 20px;
+    }
+
+    .fundo_loom h1 {
+        font-size: 2.2rem;
+    }
+
+    .fundo_loom p {
+        font-size: 0.9rem;
+    }
+
+    .section_login {
+        padding: 20px;
+    }
+
+    .form_login {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .form_login h1 {
+        font-size: 1.8rem;
+    }
+
+    .form_login h2 {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+
+    .campo_input input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .btn_login {
+        width: 100%;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .options {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+
+    .cadastro_link {
+        font-size: 0.85rem;
+    }
+}

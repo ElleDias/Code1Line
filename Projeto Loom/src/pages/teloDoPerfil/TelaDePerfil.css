@@ -277,3 +277,33 @@
         max-width: 100%;
     }
 }
+/* Ajuste para imagem do perfil em mobile */
+.profile-img {
+    width: 130px;
+    height: 130px;
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 1.4em;
+        margin-top: 60px;
+    }
+
+    .profile-role {
+        font-size: 0.9em;
+    }
+
+    .profile-content {
+        padding: 15px;
+    }
+
+    .profile-card {
+        border-radius: 8px;
+        margin: 5px 0;
+    }
+}

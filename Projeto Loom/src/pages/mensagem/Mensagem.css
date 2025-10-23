@@ -75,3 +75,72 @@
   border-radius: 50%;
   border: 1px solid #fff;
 }
+
+/* ===== RESPONSIVO MENSAGENS ===== */
+@media (max-width: 1024px) {
+  .mensagens-container {
+    padding: 20px 25px;
+  }
+
+  .titulo-externo {
+    font-size: 1.5em;
+  }
+
+  .item-mensagem {
+    padding: 15px 5px;
+  }
+
+  .icone-acao {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagina-mensagens {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .mensagens-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .titulo-externo {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .item-mensagem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px 0;
+  }
+
+  .icone-acao {
+    align-self: flex-end;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mensagens-container {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .titulo-externo {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+
+  .item-mensagem {
+    padding: 10px 0;
+  }
+
+  .icone-acao {
+    font-size: 20px;
+  }
+}

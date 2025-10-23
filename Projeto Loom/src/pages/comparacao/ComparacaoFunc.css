@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .comparador-container {
   max-width: 900px;
   margin: 40px auto;
@@ -14,13 +15,59 @@
 } */
 
 .comparador-card {
+=======
+/* AJUSTE PARA O LAYOUT DA PÁGINA COM A SIDEBAR */
+.componente-comparador {
+  /* Ocupa a altura total da tela */
+  min-height: 100vh;
+  /* Utiliza Flexbox para organizar a sidebar e o conteúdo principal */
+  display: flex;
+}
+
+/* Centraliza o conteúdo do comparador na área disponível ao lado da sidebar */
+.comparador-container {
+  /* Remove a margem fixa que impedia a centralização */
+  margin: 0 auto;
+  /* Garante que o contêiner do comparador ocupe o espaço restante */
+  flex-grow: 1;
+  /* Utiliza Flexbox para centralizar o card do comparador */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Mantém o padding e a transição */
+  padding: 20px;
+  transition: margin-left 0s ease;
+}
+
+/* O restante das classes foram mantidas, com o ajuste no margin da sidebar */
+.comparador-container.sidebar-open {
+  margin-left: 170px;
+}
+
+.comparador-container.sidebar-close,
+.comparador-container.sidebar-mini {
+  margin-left: 80px;
+}
+
+.comparador-card {
+  max-width: 900px;
+  width: 100%;
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 45px;
+<<<<<<< HEAD
 }
 
 .titulo {
+=======
+  /* `justify-content: center;` removido, pois o pai agora faz o controle */
+}
+
+.comparador-card .titulo {
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
@@ -28,43 +75,73 @@
   margin-bottom: 24px;
 }
 
+<<<<<<< HEAD
 .filtros {
+=======
+.comparador-card .filtros {
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   display: flex;
   justify-content: center;
   gap: 16px;
   margin-bottom: 24px;
 }
 
+<<<<<<< HEAD
 .select-filtro,
 .input-filtro {
+=======
+.comparador-card .select-filtro,
+.comparador-card .input-filtro {
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 0.95rem;
 }
 
+<<<<<<< HEAD
 .tabela-container {
   overflow-x: auto;
 }
 
 .tabela-funcionarios {
+=======
+.comparador-card .tabela-container {
+  overflow-x: auto;
+}
+
+.comparador-card .tabela-funcionarios {
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   width: 100%;
   border-collapse: collapse;
 }
 
+<<<<<<< HEAD
 .tabela-funcionarios th,
 .tabela-funcionarios td {
+=======
+.comparador-card .tabela-funcionarios th,
+.comparador-card .tabela-funcionarios td {
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   border-bottom: 1px solid #ddd;
   padding: 12px;
   text-align: center;
 }
 
+<<<<<<< HEAD
 .tabela-funcionarios th {
+=======
+.comparador-card .tabela-funcionarios th {
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   background-color: #eaeaea;
   font-weight: 600;
 }
 
+<<<<<<< HEAD
 .barra-container {
+=======
+.comparador-card .barra-container {
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   position: relative;
   background: #eee;
   border-radius: 8px;
@@ -73,14 +150,23 @@
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .barra-desempenho {
   background-color: #326D6B; 
+=======
+.comparador-card .barra-desempenho {
+  background-color: #326D6B;
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   height: 100%;
   border-radius: 8px;
   transition: width 0.4s ease;
 }
 
+<<<<<<< HEAD
 .porcentagem {
+=======
+.comparador-card .porcentagem {
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568
   position: absolute;
   top: 0;
   left: 50%;
@@ -89,6 +175,7 @@
   color: #fff;
   font-weight: 500;
 }
+<<<<<<< HEAD
 
 /* .nenhum-resultado {
   text-align: center;
@@ -256,3 +343,5 @@
     font-size: 0.7rem;
   }
 }
+=======
+>>>>>>> 9efc142e2ee231df4dc0055d46ba811f3086b568

@@ -19,16 +19,18 @@
 }
 
 .titulo {
-  font-size: rem;
+  font-size: 3.8rem; 
   font-weight: 700;
-  margin-bottom: 4px;
-  color: #c4c4c4;
+  margin-bottom: 8px; 
+  color: #333; 
+  text-align: center;
 }
 
 .subtitulo {
-  font-size: 2rem;
-  color: #c4c4c4;
+  font-size: 1.5rem; 
+  color: #333;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 /* .tabela {
@@ -79,3 +81,121 @@
 }
 
 
+.monitoramento-container {
+  background-color: #e2e2e2;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gantari", sans-serif;
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+}
+
+.monitoramento-container.sidebar-open {
+  margin-left: 170px;
+}
+
+.monitoramento-container.sidebar-close,
+.monitoramento-container.sidebar-mini {
+  margin-left: 80px;
+}
+
+.titulo {
+  font-size: 2rem; /* Corrigido, antes estava vazio */
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #c4c4c4;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 1.5rem; /* Ajuste melhor para responsividade */
+  color: #c4c4c4;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.cabecalho,
+.linha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  gap: 10px; /* Pequeno espaçamento entre colunas */
+}
+
+.cabecalho {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.linha .coluna {
+  background-color: #d9d9d9;
+  color: black;
+  padding: 10px 0;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  background-color: #ffffff;
+  border-radius: 80px;
+  padding: 30px 20px; /* reduzido para telas menores */
+  width: 100%;
+  max-width: 900px; /* limite de largura para não esticar demais */
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+/* Para tablets e telas médias */
+@media (max-width: 900px) {
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+  }
+
+  .cabecalho,
+  .linha {
+    grid-template-columns: 1fr 1fr; /* reduz colunas */
+  }
+}
+
+/* Para celulares */
+@media (max-width: 600px) {
+  .monitoramento-container {
+    padding: 10px;
+    margin-left: 0 !important; /* remove deslocamento lateral */
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .subtitulo {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .cabecalho,
+  .linha {
+    grid-template-columns: 1fr; /* cada coluna em uma linha */
+  }
+
+  .linha .coluna {
+    padding: 8px 0;
+  }
+
+  .tabela {
+    padding: 20px 10px;
+    border-radius: 40px;
+  }
+}

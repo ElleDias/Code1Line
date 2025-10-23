@@ -1,10 +1,13 @@
+//acesso que tem como base o local da nossa api
+
 import axios from "axios";
+const apiPorta = "7283"
 
-const apiPorta = '7283'
-
-const apiLocal = `https://localhost:${apiPorta}/api`
+//apiLocal ela recebe o endereco da api
+const apilocal = `http://localhost:${apiPorta}/api/`;
 
 const api = axios.create({
-  baseURL: apiLocal,
+  baseURL: apilocal  
 });
+
 export default api;

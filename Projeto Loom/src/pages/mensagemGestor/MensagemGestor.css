@@ -84,3 +84,23 @@
   border-radius: 50%;
   border: 1px solid #fff;
 }
+@media (max-width: 480px) {
+  .mensagens-container {
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .titulo-externo {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+
+  .item-mensagem {
+    padding: 10px 0;
+  }
+
+  .icone-acao {
+    font-size: 20px;
+  }
+}

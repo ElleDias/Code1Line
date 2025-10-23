@@ -1,8 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Páginas principais
 import Login from "../pages/login/Login";
 import Gerente from "../pages/telagerente/TelaGerente";
 import TelaGestor from "../pages/telagestor/TelaGestor";
-import Acessos from "../../src/pages/acessos/Acessos"
+import Acessos from "../pages/acessos/Acessos";
 import GraficosDetalhados from "../pages/grafico/Grafico";
 import Dominios from "../pages/dominios/Dominios";
 import CadastroUsuario from "../pages/cadastroUsuario/CadastroUsuario";
@@ -50,10 +52,11 @@ const Rotas = () => {
                 <Route path="/Perfil" element={<TeladePerfil />} />
                 {/* http://localhost:3000/ => Redefinir Senha */}
                 <Route path="/Senha" element={<RedefinirSenha />} />
-                <Route path="/Chat" element={<Chat/>} />
 
-            </Routes>
-        </BrowserRouter>
-    )
+                <Route path="/Chat" element={<Chat/>} />
+                </Routes>
+            </BrowserRouter>
+            
+    );
 }
 export default Rotas;

@@ -178,3 +178,107 @@ label {
 .card_redefinir {
   animation: fadeInUp 0.5s ease-out;
 }
+
+/* ===== RESPONSIVO REDEFINIR SENHA ===== */
+@media (max-width: 1024px) {
+  .card_redefinir {
+    width: 320px;
+    padding: 35px 40px;
+  }
+
+  .card_redefinir h2 {
+    font-size: 1.3rem;
+  }
+
+  .card_redefinir p {
+    font-size: 0.85rem;
+  }
+
+  .input_senha input {
+    font-size: 0.85rem;
+  }
+
+  .requisitos {
+    font-size: 0.75rem;
+  }
+
+  .btn_salvar {
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container_redefinir {
+    padding: 20px;
+  }
+
+  .card_redefinir {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  .card_redefinir h2 {
+    font-size: 1.2rem;
+  }
+
+  .card_redefinir p {
+    font-size: 0.8rem;
+  }
+
+  .input_senha input {
+    font-size: 0.8rem;
+    padding: 8px 35px 8px 10px;
+  }
+
+  .icone_olho {
+    font-size: 16px;
+  }
+
+  .requisitos {
+    font-size: 0.7rem;
+  }
+
+  .btn_salvar {
+    font-size: 0.85rem;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container_redefinir {
+    padding: 10px;
+  }
+
+  .card_redefinir {
+    width: 95%;
+    padding: 25px 20px;
+    border-radius: 10px;
+  }
+
+  .card_redefinir h2 {
+    font-size: 1.1rem;
+  }
+
+  .card_redefinir p {
+    font-size: 0.75rem;
+  }
+
+  .input_senha input {
+    font-size: 0.75rem;
+    padding: 8px 30px 8px 10px;
+  }
+
+  .icone_olho {
+    font-size: 14px;
+  }
+
+  .requisitos {
+    font-size: 0.65rem;
+  }
+
+  .btn_salvar {
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+}

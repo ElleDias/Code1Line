@@ -1,4 +1,4 @@
-  import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./RedefinirSenha.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import Swal from "sweetalert2";
@@ -13,12 +13,13 @@ const RedefinirSenha = () => {
     const mouseRef = useRef({ x: 0, y: 0 });
 
     const requisitos = {
+        preenchido: senha.length > 0, // novo requisito
         especial: /[!@#$%^&*(),.?":{}|<>]/.test(senha),
         maiuscula: /[A-Z]/.test(senha),
         tamanho: senha.length >= 8,
     };
 
-    // Para quando as senhas são diferentes.
+    // Alertas
     const SenhaIncorreta = () => {
         Swal.fire({
             icon: "error",
@@ -27,7 +28,6 @@ const RedefinirSenha = () => {
         });
     };
 
-    // Para quando a senha não atingir as exigências de criação.
     const SenhaFraca = () => {
         Swal.fire({
             icon: "warning",
@@ -36,7 +36,6 @@ const RedefinirSenha = () => {
         });
     };
 
-    // Para quando a senha atingir todas as exigências.
     const SenhaSucesso = () => {
         Swal.fire({
             icon: "success",
@@ -45,9 +44,31 @@ const RedefinirSenha = () => {
         });
     };
 
+    const DigiteASenha = () => {
+        Swal.fire({
+            icon: "warning",
+            title: "Digite a senha!",
+            text: "Por favor digite uma senha para prosseguir",
+        });
+    };
+
     // Validação e envio do formulário
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        if (!senha) {
+            DigiteASenha();
+            return;
+        }
+
+        if (!confirmarSenha) {
+            Swal.fire({
+                icon: "warning",
+                title: "Confirme a senha!",
+                text: "Por favor digite a confirmação da senha.",
+            });
+            return;
+        }
 
         if (!requisitos.especial || !requisitos.maiuscula || !requisitos.tamanho) {
             SenhaFraca();
@@ -65,18 +86,16 @@ const RedefinirSenha = () => {
     // Sistema de partículas interativas
     useEffect(() => {
         const canvas = canvasRef.current;
-        const ctx = canvas.getContext('2d');
+        const ctx = canvas.getContext("2d");
 
-        // Ajustar tamanho do canvas
         const resizeCanvas = () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         };
 
         resizeCanvas();
-        window.addEventListener('resize', resizeCanvas);
+        window.addEventListener("resize", resizeCanvas);
 
-        // Classe para partículas
         class Particle {
             constructor() {
                 this.x = Math.random() * canvas.width;
@@ -91,11 +110,9 @@ const RedefinirSenha = () => {
                 this.x += this.speedX;
                 this.y += this.speedY;
 
-                // Rebater nas bordas
                 if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
                 if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
 
-                // Interação com o mouse
                 const dx = mouseRef.current.x - this.x;
                 const dy = mouseRef.current.y - this.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
@@ -104,8 +121,7 @@ const RedefinirSenha = () => {
                     this.speedX += dx * 0.001;
                     this.speedY += dy * 0.001;
 
-                    // Limitar velocidade máxima
-                    const speed = Math.sqrt(this.speedX * this.speedX + this.speedY * this.speedY);
+                    const speed = Math.sqrt(this.speedX ** 2 + this.speedY ** 2);
                     if (speed > 2) {
                         this.speedX = (this.speedX / speed) * 2;
                         this.speedY = (this.speedY / speed) * 2;
@@ -121,7 +137,6 @@ const RedefinirSenha = () => {
             }
         }
 
-        // Criar partículas
         const createParticles = () => {
             particlesRef.current = [];
             for (let i = 0; i < 80; i++) {
@@ -129,11 +144,9 @@ const RedefinirSenha = () => {
             }
         };
 
-        // Animação
         const animate = () => {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Desenhar conexões entre partículas próximas
             for (let i = 0; i < particlesRef.current.length; i++) {
                 for (let j = i + 1; j < particlesRef.current.length; j++) {
                     const dx = particlesRef.current[i].x - particlesRef.current[j].x;
@@ -151,8 +164,7 @@ const RedefinirSenha = () => {
                 }
             }
 
-            // Atualizar e desenhar partículas
-            particlesRef.current.forEach(particle => {
+            particlesRef.current.forEach((particle) => {
                 particle.update();
                 particle.draw();
             });
@@ -160,32 +172,25 @@ const RedefinirSenha = () => {
             requestAnimationFrame(animate);
         };
 
-        // Event listeners para interação com mouse
         const handleMouseMove = (e) => {
             mouseRef.current.x = e.clientX;
             mouseRef.current.y = e.clientY;
         };
 
-        canvas.addEventListener('mousemove', handleMouseMove);
+        canvas.addEventListener("mousemove", handleMouseMove);
 
-        // Inicializar
         createParticles();
         animate();
 
-        // Cleanup
         return () => {
-            window.removeEventListener('resize', resizeCanvas);
-            canvas.removeEventListener('mousemove', handleMouseMove);
+            window.removeEventListener("resize", resizeCanvas);
+            canvas.removeEventListener("mousemove", handleMouseMove);
         };
     }, []);
 
     return (
         <main className="container_redefinir">
-            {/* Canvas para partículas interativas */}
-            <canvas
-                ref={canvasRef}
-                className="canvas-background"
-            />
+            <canvas ref={canvasRef} className="canvas-background" />
 
             <div className="card_redefinir">
                 <h2>Redefinição de senha</h2>
@@ -200,7 +205,6 @@ const RedefinirSenha = () => {
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                             placeholder="Digite sua nova senha"
-                            required
                         />
                         <span
                             onClick={() => setMostrarSenha(!mostrarSenha)}
@@ -212,6 +216,9 @@ const RedefinirSenha = () => {
 
                     {/* REQUISITOS */}
                     <ul className="requisitos">
+                        <li className={requisitos.preenchido ? "valido" : ""}>
+                            Digite a senha!
+                        </li>
                         <li className={requisitos.especial ? "valido" : ""}>
                             Pelo menos 1 caractere especial (!,@,#,$,%).
                         </li>
@@ -231,7 +238,6 @@ const RedefinirSenha = () => {
                             value={confirmarSenha}
                             onChange={(e) => setConfirmarSenha(e.target.value)}
                             placeholder="Confirme sua nova senha"
-                            required
                         />
                         <span
                             onClick={() => setMostrarConfirmar(!mostrarConfirmar)}

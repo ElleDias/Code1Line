@@ -1,5 +1,4 @@
 import "./Sidebar.css";
-
 import iconeSair from "../../assets/img/Logout.svg";
 import Logo from "../../assets/img/Logo.svg";
 import User from "../../assets/img/User.svg";

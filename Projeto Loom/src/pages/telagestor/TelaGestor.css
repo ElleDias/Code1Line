@@ -7,10 +7,10 @@
   align-items: center;
   justify-content: center;
   font-family: "Gantari", sans-serif;
-  transition: margin-left 0.4s ease;
+  transition: margin-left 0s ease;
 }
 .monitoramento-container.sidebar-open {
-  margin-left: 203px;
+  margin-left: 170px;
 }
 
 .monitoramento-container.sidebar-close,
@@ -19,16 +19,18 @@
 }
 
 .titulo {
-  font-size: rem;
+  font-size: 3.8rem; 
   font-weight: 700;
-  margin-bottom: 4px;
-  color: #c4c4c4;
+  margin-bottom: 8px; 
+  color: #333; 
+  text-align: center;
 }
 
 .subtitulo {
-  font-size: 2rem;
-  color: #c4c4c4;
+  font-size: 1.5rem; 
+  color: #333;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 /* .tabela {
@@ -77,5 +79,3 @@
     width: 100%;    
     grid-template-columns: 1fr 2fr 1fr;
 }
-
-

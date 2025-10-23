@@ -2,9 +2,13 @@ import "./Grafico.css";
 import { useState } from "react";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 import { MenuLateral } from "../../components/Sidebar/Sidebar";
+import { useNavigate } from "react-router-dom";
 
 const Graficos = () => {
     const [modoSidebar, setModoSidebar] = useState("close");
+    const [departamento, setDepartamento] = useState("todos"); // 🔹 Filtro
+
+    const navigate = useNavigate();
 
     const dataPie = [
         { name: "Concluídas", value: 50 },
@@ -12,20 +16,25 @@ const Graficos = () => {
         { name: "Em andamento", value: 30 },
     ];
 
-    // Cores originais da imagem (Verde Escuro, Verde Médio, Verde Claro)
     const COLORS = ["#0A423D", "#2E6962", "#58A69A"];
 
+    // 🔹 Exemplo com departamentos
     const dataBar = [
-        { name: "Brenda", concluidas: 5, pendentes: 2, andamento: 2 },
-        { name: "Caio", concluidas: 6, pendentes: 2, andamento: 1 },
-        { name: "Lucas", concluidas: 5, pendentes: 3, andamento: 1 },
-        { name: "Laura", concluidas: 7, pendentes: 1, andamento: 1 },
-        { name: "Yasmin", concluidas: 4, pendentes: 3, andamento: 2 },
-        { name: "Danielle", concluidas: 5, pendentes: 2, andamento: 2 },
+        { name: "Brenda", concluidas: 5, pendentes: 2, andamento: 2, departamento: "Dev" },
+        { name: "Caio", concluidas: 6, pendentes: 2, andamento: 1, departamento: "Multimídia" },
+        { name: "Lucas", concluidas: 5, pendentes: 3, andamento: 1, departamento: "Jogos" },
+        { name: "Laura", concluidas: 7, pendentes: 1, andamento: 1, departamento: "Dev" },
+        { name: "Yasmin", concluidas: 4, pendentes: 3, andamento: 2, departamento: "Multimídia" },
+        { name: "Danielle", concluidas: 5, pendentes: 2, andamento: 2, departamento: "Jogos" },
     ];
 
+    // 🔹 Filtro por departamento
+    const dataFiltrada = departamento === "todos"
+        ? dataBar
+        : dataBar.filter(item => item.departamento === departamento);
+
     return (
-        <div className={` monitoramento-container sidebar-${modoSidebar}`}>
+        <div className={`monitoramento-container sidebar-${modoSidebar}`}>
             <MenuLateral
                 perfil={true}
                 geral="Geral"
@@ -59,7 +68,6 @@ const Graficos = () => {
                                         const radius = innerRadius + (outerRadius - innerRadius) / 2;
                                         const x = cx + radius * Math.cos(-midAngle * RADIAN);
                                         const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
                                         return (
                                             <text
                                                 x={x}
@@ -85,35 +93,45 @@ const Graficos = () => {
                         {/* LEGENDA */}
                         <div className="legenda">
                             <div className="item-legenda">
-                                <span className="quadrado cor-concluidas"></span>
-                                Concluídas
+                                <span className="quadrado cor-concluidas"></span> Concluídas
                             </div>
                             <div className="item-legenda">
-                                <span className="quadrado cor-pendentes"></span>
-                                Pendentes
+                                <span className="quadrado cor-pendentes"></span> Pendentes
                             </div>
                             <div className="item-legenda">
-                                <span className="quadrado cor-emandamento"></span>
-                                Em andamento
+                                <span className="quadrado cor-emandamento"></span> Em andamento
                             </div>
                         </div>
                     </div>
 
                     {/* === GRÁFICO DE BARRAS === */}
                     <div className="grafico-barras">
-                        <h2 className="titulo-grafico">
-                            ÍNDICE DOS FUNCIONÁRIOS
-                        </h2>
+                        <h2 className="titulo-grafico">ÍNDICE DOS FUNCIONÁRIOS</h2>
+
+                        {/* 🔹 FILTRO POR DEPARTAMENTO */}
+                        <div className="filtro-departamento">
+                            <label htmlFor="departamento">Departamento:</label>
+                            <select
+                                id="departamento"
+                                value={departamento}
+                                onChange={(e) => setDepartamento(e.target.value)}
+                            >
+                                <option value="todos">Todos</option>
+                                <option value="Dev">Dev</option>
+                                <option value="Multimídia">Multimídia</option>
+                                <option value="Jogos">Jogos</option>
+                            </select>
+                        </div>
 
                         <ResponsiveContainer width="100%" height={300}>
                             <BarChart
                                 layout="vertical"
-                                data={dataBar}
+                                data={dataFiltrada}
                                 margin={{ top: 0, right: 30, left: 30, bottom: 0 }}
                             >
                                 <XAxis
                                     type="number"
-                                    tick={{ fill: "#000000", fontSize: 12 }}
+                                    tick={{ fill: "#000", fontSize: 12 }}
                                     axisLine={false}
                                     tickLine={false}
                                     domain={[0, 9]}
@@ -121,13 +139,12 @@ const Graficos = () => {
                                 <YAxis
                                     dataKey="name"
                                     type="category"
-                                    tick={{ fill: "#000000", fontWeight: 'bold', fontSize: 14 }}
+                                    tick={{ fill: "#000", fontWeight: "bold", fontSize: 14 }}
                                     axisLine={false}
                                     tickLine={false}
                                     width={80}
                                 />
                                 <Tooltip />
-
                                 <Bar dataKey="concluidas" stackId="a" fill={COLORS[0]} />
                                 <Bar dataKey="pendentes" stackId="a" fill={COLORS[2]} />
                                 <Bar dataKey="andamento" stackId="a" fill={COLORS[1]} />
@@ -136,7 +153,9 @@ const Graficos = () => {
                     </div>
                 </div>
 
-                <button className="botao-gerais">Gráficos Detalhados</button>
+                <button className="botao-gerais" onClick={() => navigate("/Gerente")}>
+                    Gráficos Gerais
+                </button>
             </div>
         </div>
     );

@@ -1,26 +1,48 @@
-.comparador-container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-    transition: margin-left 0s ease;
+/* AJUSTE PARA O LAYOUT DA PÁGINA COM A SIDEBAR */
+.componente-comparador {
+  /* Ocupa a altura total da tela */
+  min-height: 100vh;
+  /* Utiliza Flexbox para organizar a sidebar e o conteúdo principal */
+  display: flex;
 }
-/* .comparador-container.sidebar-open {
-  margin-left: 170px;
-} */
 
-/* .comparador-container.sidebar-close,
+/* Centraliza o conteúdo do comparador na área disponível ao lado da sidebar */
+.comparador-container {
+  /* Remove a margem fixa que impedia a centralização */
+  margin: 0 auto;
+  /* Garante que o contêiner do comparador ocupe o espaço restante */
+  flex-grow: 1;
+  /* Utiliza Flexbox para centralizar o card do comparador */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Mantém o padding e a transição */
+  padding: 20px;
+  transition: margin-left 0s ease;
+}
+
+/* O restante das classes foram mantidas, com o ajuste no margin da sidebar */
+.comparador-container.sidebar-open {
+  margin-left: 170px;
+}
+
+.comparador-container.sidebar-close,
 .comparador-container.sidebar-mini {
   margin-left: 80px;
-} */
+}
 
 .comparador-card {
+  max-width: 900px;
+  width: 100%;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   padding: 45px;
+  /* `justify-content: center;` removido, pois o pai agora faz o controle */
 }
 
-.titulo {
+.comparador-card .titulo {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
@@ -28,43 +50,43 @@
   margin-bottom: 24px;
 }
 
-.filtros {
+.comparador-card .filtros {
   display: flex;
   justify-content: center;
   gap: 16px;
   margin-bottom: 24px;
 }
 
-.select-filtro,
-.input-filtro {
+.comparador-card .select-filtro,
+.comparador-card .input-filtro {
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 0.95rem;
 }
 
-.tabela-container {
+.comparador-card .tabela-container {
   overflow-x: auto;
 }
 
-.tabela-funcionarios {
+.comparador-card .tabela-funcionarios {
   width: 100%;
   border-collapse: collapse;
 }
 
-.tabela-funcionarios th,
-.tabela-funcionarios td {
+.comparador-card .tabela-funcionarios th,
+.comparador-card .tabela-funcionarios td {
   border-bottom: 1px solid #ddd;
   padding: 12px;
   text-align: center;
 }
 
-.tabela-funcionarios th {
+.comparador-card .tabela-funcionarios th {
   background-color: #eaeaea;
   font-weight: 600;
 }
 
-.barra-container {
+.comparador-card .barra-container {
   position: relative;
   background: #eee;
   border-radius: 8px;
@@ -73,14 +95,14 @@
   overflow: hidden;
 }
 
-.barra-desempenho {
-  background-color: #326D6B; 
+.comparador-card .barra-desempenho {
+  background-color: #326D6B;
   height: 100%;
   border-radius: 8px;
   transition: width 0.4s ease;
 }
 
-.porcentagem {
+.comparador-card .porcentagem {
   position: absolute;
   top: 0;
   left: 50%;
@@ -89,10 +111,3 @@
   color: #fff;
   font-weight: 500;
 }
-
-/* .nenhum-resultado {
-  text-align: center;
-  color: #888;
-  font-style: italic;
-  margin-top: 20px;
-} */

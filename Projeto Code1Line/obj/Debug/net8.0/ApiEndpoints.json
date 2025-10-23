@@ -390,6 +390,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Code1Line.Controllers.MonitoramentoController",
+    "Method": "ReceberLog",
+    "RelativePath": "api/Monitoramento/firewall-log",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dados",
+        "Type": "System.Object",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Code1Line.Controllers.UsuarioController",
     "Method": "GetAll",
     "RelativePath": "api/Usuario",

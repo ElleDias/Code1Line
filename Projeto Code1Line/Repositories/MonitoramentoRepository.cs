@@ -41,4 +41,14 @@ public class MonitoramentoRepository : IMonitoramentoRepository
             await _context.SaveChangesAsync();
         }
     }
+
+    public Task<IEnumerable<Monitoramento>> GetAllAsync(int? funcionarioId = null, DateTime? from = null, DateTime? to = null)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<Monitoramento?> GetAtivoAsync(int funcionarioId, string aplicativo)
+    {
+        throw new NotImplementedException();
+    }
 }

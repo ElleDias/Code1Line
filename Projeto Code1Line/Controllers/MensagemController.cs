@@ -25,7 +25,7 @@ public class MensagemController : ControllerBase
     }
 
     [HttpPost]
-    [Authorize]
+    [Authorize(Roles = "Gerente,Gestor")]
     public async Task<IActionResult> Send([FromBody] Mensagem mensagem)
     {
         await _repo.AddAsync(mensagem);

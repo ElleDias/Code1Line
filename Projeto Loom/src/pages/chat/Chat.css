@@ -1,0 +1,128 @@
+/* Fundo geral da página */
+.chat-page {
+  height: 100vh;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal (tipo WhatsApp Web) */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 70vw;
+  max-width: 1100px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #e5ddd5;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Cabeçalho */
+.chat-header {
+  background-color: #075e54;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  gap: 15px;
+}
+
+.user-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.user-name {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.user-status {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #b2d8d8;
+}
+
+/* Corpo do chat */
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: linear-gradient(180deg, #d9fdd3 0%, #ece5dd 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Balões de mensagem */
+.chat-message {
+  max-width: 60%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  position: relative;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+}
+
+.sent {
+  align-self: flex-end;
+  background-color: #075e54;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.received {
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-bottom-left-radius: 0;
+}
+
+.message-time {
+  align-self: flex-end;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* Área de input */
+.chat-input-area {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 12px 15px;
+}
+
+.chat-input-area input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  background-color: white;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.chat-input-area button {
+  background-color: #128c7e;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.chat-input-area button:hover {
+  background-color: #075e54;
+}

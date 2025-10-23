@@ -625,6 +625,31 @@
         }
       }
     },
+    "/api/Monitoramento/firewall-log": {
+      "post": {
+        "tags": [
+          "Monitoramento"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": { }
+            },
+            "text/json": {
+              "schema": { }
+            },
+            "application/*+json": {
+              "schema": { }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Usuario": {
       "get": {
         "tags": [
@@ -887,9 +912,14 @@
           "funcionario": {
             "$ref": "#/components/schemas/Funcionario"
           },
-          "dataRegistro": {
+          "dataInicio": {
             "type": "string",
             "format": "date-time"
+          },
+          "dataFim": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           },
           "aplicativo": {
             "type": "string",

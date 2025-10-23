@@ -6,9 +6,24 @@ import Botao from "../../components/Botao/Botao";
 // import { MenuLateral } from "../../components/Sidebar/Sidebar";
 
 const CadastroUsuario = () => {
+
+    // const [email,setEmail] = useState("");
+    // const [senha,setSenha] = useState("");
     const [mostrarSenha, setMostrarSenha] = useState(false);
     const [mostrarConfSenha, setMostrarConfSenha] = useState(false);
-   
+    // const [criarUsuario, setCriarUsuario] = useState("");
+
+
+
+
+    
+
+
+
+
+
+
+
 
     return (
 

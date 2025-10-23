@@ -13,17 +13,18 @@ const listaMensagens = [
 ];
 
 function Mensagens() {
-   const [modoSidebar, setModoSidebar] = useState("close");
+  const [modoSidebar, setModoSidebar] = useState("close");
   return (
     // Nova div para agrupar o título e o container
     <div className={`pagina-mensagens sidebar-${modoSidebar}`}
->
+    >
       <MenuLateral
         perfil={true}
-        geral="Geral"
-        gestores={true}
-        funcionarios={true}
-        mensagens={true}
+        geral={{ ativo: true, nome: "Geral" }}
+        gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
+        funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
+        mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
+        voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}
       />

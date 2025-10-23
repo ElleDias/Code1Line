@@ -26,7 +26,7 @@
 } */
 
 .monitoramento-container.sidebar-open {
-   margin-left: 203px;
+   margin-left: 170px;
 }
 
 .monitoramento-container.sidebar-close,
@@ -164,6 +164,26 @@
   font-weight: bold;
   fill: #000000;
   font-size: 14px;
+}
+.filtro-departamento {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filtro-departamento label {
+  font-weight: bold;
+  color: #0a423d;
+}
+
+.filtro-departamento select {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #2e6962;
+  outline: none;
+  cursor: pointer;
+  background-color: #f7f7f7;
 }
 
 

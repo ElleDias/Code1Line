@@ -1,74 +1,98 @@
-/* .comparacao-container {
-  padding: 2rem;
-  background-color: #f4f4f4;
-  min-height: 100vh;
-  font-family: "Inter", sans-serif;
+.comparador-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+/* .comparador-container.sidebar-open {
+  margin-left: 170px;
+} */
+
+/* .comparador-container.sidebar-close,
+.comparador-container.sidebar-mini {
+  margin-left: 80px;
+} */
+
+.comparador-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 45px;
 }
 
-.titulo-comparacao {
+.titulo {
   text-align: center;
-  margin-bottom: 2rem;
   font-size: 1.8rem;
-  font-weight: bold;
-  color: #222;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 24px;
 }
 
-.filtro-comparacao {
-  margin-bottom: 1.5rem;
+.filtros {
   display: flex;
-  align-items: center;
-  gap: 0.8rem;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
 }
 
-.tabela-comparacao {
+.select-filtro,
+.input-filtro {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.tabela-container {
+  overflow-x: auto;
+}
+
+.tabela-funcionarios {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 2rem;
 }
 
-.tabela-comparacao th,
-.tabela-comparacao td {
-  border: 1px solid #ccc;
-  padding: 0.75rem;
+.tabela-funcionarios th,
+.tabela-funcionarios td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
   text-align: center;
 }
 
-.tabela-comparacao th {
-  background-color: #222;
-  color: white;
+.tabela-funcionarios th {
+  background-color: #eaeaea;
+  font-weight: 600;
 }
 
-.grafico-comparacao {
-  margin-top: 2rem;
-}
-
-.linha-grafico {
-  margin-bottom: 1rem;
-}
-
-.nome-funcionario {
-  display: inline-block;
-  width: 150px;
-}
-
-.barra-externa {
-  background-color: #ddd;
-  border-radius: 10px;
+.barra-container {
+  position: relative;
+  background: #eee;
+  border-radius: 8px;
+  height: 18px;
+  width: 100%;
   overflow: hidden;
-  display: inline-block;
-  width: 60%;
-  height: 25px;
-  vertical-align: middle;
 }
 
-.barra-interna {
-  background-color: #007bff;
+.barra-desempenho {
+  background-color: #326D6B; 
   height: 100%;
-  color: white;
-  text-align: right;
-  padding-right: 5px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 8px;
+  transition: width 0.4s ease;
+}
+
+.porcentagem {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* .nenhum-resultado {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+  margin-top: 20px;
 } */

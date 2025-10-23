@@ -1,14 +1,14 @@
 import "./Sidebar.css";
-import { Link } from "react-router-dom";
-
 import iconeSair from "../../assets/img/Logout.svg";
 import Logo from "../../assets/img/Logo.svg";
 import User from "../../assets/img/User.svg";
-import Geral from "../../assets/img/Clipboard.svg";
+import Gestor from "../../assets/img/Gestor.png";
+// import Geral from "../../assets/img/Clipboard.svg";
 import Func from "../../assets/img/Management.svg";
 import Chat from "../../assets/img/Chat Bubble.svg";
 import Voltar from "../../assets/img/Voltar.svg";
-import TelaGerente from "../../pages/telagerente/TelaGerente";
+import { useNavigate,  } from "react-router-dom";
+import VoltarTela from "../../assets/img/Undo.svg"
 
 export const MenuLateral = ({
   perfil = false,
@@ -16,9 +16,14 @@ export const MenuLateral = ({
   gestores = false,
   funcionarios = false,
   mensagens = false,
+  voltarATela = true,
   modo,
   setModo
 }) => {
+
+  const navigate = useNavigate();
+  // const location = useLocation();
+
   const isOpen = modo === "open";
   const isHidden = modo === "hidden";
 
@@ -26,7 +31,6 @@ export const MenuLateral = ({
     setModo((m) => (m === "open" ? "mini" : "open"));
   };
 
-  // const fecharTotal = () => setModo("hidden");
   const abrirTotal = () => setModo("open");
 
   if (isHidden) {
@@ -37,68 +41,78 @@ export const MenuLateral = ({
     );
   }
 
+  const handleClick = () => {
+    navigate(-1); // sempre volta para a página anterior
+  };
+
   return (
     <aside className={`menu-lateral ${isOpen ? "aberta" : "mini"}`}>
-      {/* topo: botões de ação (mini/open e fechar total) */}
+      {/* topo: botões de ação */}
       <div className="topo-acoes">
-        <button className="botao-mini" onClick={toggleMini} aria-label={isOpen ? "Recolher" : "Expandir"}>
+        <button
+          className="botao-mini"
+          onClick={toggleMini}
+          aria-label={isOpen ? "Recolher" : "Expandir"}
+        >
           <img src={Voltar} alt="Toggle" className={`icone-voltar ${isOpen ? "" : "rotacionado"}`} />
         </button>
-
-
       </div>
 
       {/* navegação */}
       <nav>
         <ul>
           {perfil && (
-            <Link to="/TeladoPerfil" className="link-menu">
-            <li>
+            <li onClick={() => navigate(perfil.path)} style={{ cursor: "pointer" }}>
               <img src={User} className="icone-menu" alt="Perfil" />
               {isOpen && <span>Perfil</span>}
             </li>
-            </Link>
+            
           )}
 
-          {geral && (
-            <Link to="/Gerente" className="link-menu">
-            <li>
-              <img src={Geral} className="icone-menu" alt={geral} />
-              {isOpen && <span>{geral}</span>}
+          {geral.ativo && (
+            <li onClick={() => navigate(geral.path)} style={{ cursor: "pointer" }}>
+              <img src={User} className="icone-menu" alt={geral.nome} />
+              {isOpen && <span>{geral.nome}</span>}
             </li>
-            </Link>
+            
           )}
-          {gestores && (
-            <Link to="/Comparação" className="link-menu">
-            <li>
-              <img src={User} className="icone-menu" alt="Gestores" />
+
+          {gestores.ativo && (
+            <li onClick={() => navigate(gestores.path)}>
+              <img src={Gestor} className="icone-menu" alt="Gestores" />
               {isOpen && <span>Gestores</span>}
             </li>
-            </Link>
+            
           )}
 
-          {funcionarios && (
-            <li>
+          {funcionarios.ativo && (
+            <li onClick={() => navigate(funcionarios.path)}>
               <img src={Func} className="icone-menu" alt="Funcionários" />
               {isOpen && <span>Funcionários</span>}
             </li>
           )}
-
-          {mensagens && (
-            <li className="ativo">
+          {mensagens.ativo && (
+            <li className="ativo" onClick={() => navigate(mensagens.path)}>
               <img src={Chat} className="icone-menu" alt="Mensagens" />
               {isOpen && <span>Mensagens</span>}
             </li>
           )}
+
+          {/* BOTÃO RETORNAR NO LUGAR DAS MENSAGENS */}
+          <li className="" onClick={handleClick}>
+            <img src={VoltarTela} className="icone-menu" alt="Retornar" />
+            {isOpen && <span>Retornar</span>}
+          </li>
         </ul>
       </nav>
 
+
+      {/* rodapé */}
       <div className="rodape">
-        <div className="sair">
-          <img src={iconeSair} className="icone-menu" alt="Sair" href="/" />
+        <div className="sair" onClick={() => navigate("/")}>
+          <img src={iconeSair} className="icone-menu" alt="Sair" />
           {isOpen && <span>Sign Out</span>}
         </div>
-
 
         <img className="logo-sidebar" src={Logo} alt="Logo" />
       </div>

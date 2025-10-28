@@ -68,8 +68,8 @@ label {
   width: 100%;
   padding: 10px 38px 10px 12px;
   border-radius: 8px;
-  border: 1px solid #444;
-  background-color: #222;
+  border: 1px solid #0b0d0e;
+  background-color: #0b0d0e;
   color: #fff;
   outline: none;
   font-size: 0.9rem;
@@ -77,8 +77,8 @@ label {
 }
 
 .input_senha input:focus {
-  border-color: rgb(6, 50, 22);
-  box-shadow: 0 0 0 2px rgba(0, 170, 255, 0.2);
+  border-color: rgb(34, 34, 34);
+  box-shadow: 0 0 0 2px rgba(33, 33, 33, 0.2);
 }
 
 .icone_olho {
@@ -92,7 +92,7 @@ label {
 }
 
 .icone_olho:hover {
-  color: rgb(13, 162, 53);
+  color: rgb(74, 74, 74);
 }
 
 /* Requisitos */
@@ -111,7 +111,7 @@ label {
 }
 
 .requisitos .valido {
-  color: #086a2c;
+  color: #7e7e7e;
 }
 
 /* Botão */
@@ -160,7 +160,7 @@ label {
 
 /* Efeito de foco nos inputs */
 .input_senha input:focus + .icone_olho {
-  color: rgb(11, 99, 30);
+  color: rgb(255, 255, 255);
 }
 
 /* Animação de entrada do card */
@@ -178,7 +178,6 @@ label {
 .card_redefinir {
   animation: fadeInUp 0.5s ease-out;
 }
-
 /* ===== RESPONSIVO REDEFINIR SENHA ===== */
 @media (max-width: 1024px) {
   .card_redefinir {

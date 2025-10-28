@@ -20,7 +20,7 @@
 
 .section_cadastro {
   flex: 1;
-  background-color: #000;
+  background-color: #0B0D0E;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +81,7 @@
 }
 
 .campo_input input:focus {
-  border-bottom: 1px solid #00c896;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* Campo senha com ícone */
@@ -106,7 +106,7 @@
 }
 
 .icone_senha:hover {
-  color: #001919;
+  color: #ffffff;
 }
 
 /* Botão */
@@ -155,7 +155,7 @@
 /* Lado do formulário */
 .section_cadastro {
   flex: 1;
-  background-color: #000;
+  background-color: #0B0D0E;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -179,12 +179,12 @@
 }
 
 .form_cadastro h1 {
-  font-size: 2.2rem;
+  font-size: 2.9rem;
   margin-bottom: 5px;
 }
 
 .form_cadastro h2 {
-  font-size: 0.9rem;
+  font-size: 20px;
   font-weight: normal;
   margin-bottom: 25px;
   color: #aaa;
@@ -216,7 +216,7 @@
 }
 
 .campo_input input:focus {
-  border-bottom: 1px solid #00c896;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* Campo senha com ícone */
@@ -241,7 +241,7 @@
 }
 
 .icone_senha:hover {
-  color: #001919;
+  color: #ffffff;
 }
 
 /* Botão */
@@ -266,61 +266,24 @@
     color: #ffffff;
 }
 
-/* ===== MEDIA QUERIES ===== */
 
-/* Tablets (até 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 750px) {
   .main_cadastro {
     flex-direction: column;
   }
 
-  .fundo_loom,
+  .fundo_loom {
+    display: none;
+  }
+
   .section_cadastro {
-    flex: none;
+    flex: 1;
     width: 100%;
-    height: 50vh;
   }
 
   .form_cadastro {
-    max-width: 300px;
-  }
-}
-
-/* Celulares (até 767px) */
-@media (max-width: 767px) {
-  .main_cadastro {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .fundo_loom,
-  .section_cadastro {
-    width: 100%;
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .form_cadastro {
-    width: 100%;
-    max-width: none;
-  }
-
-  .form_cadastro h1 {
-    font-size: 1.8rem;
-  }
-
-  .form_cadastro h2 {
-    font-size: 0.8rem;
-    margin-bottom: 20px;
-  }
-
-  .campo_input input {
-    font-size: 0.95rem;
-    padding: 8px;
-  }
-
-  .btn_cadastrar {
-    font-size: 0.95rem;
-    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
   }
 }

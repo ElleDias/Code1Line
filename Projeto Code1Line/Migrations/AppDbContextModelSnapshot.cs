@@ -135,7 +135,10 @@ namespace Projeto_Code1Line.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DataRegistro")
+                    b.Property<DateTime?>("DataFim")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("DataInicio")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("FuncionarioId")
@@ -165,15 +168,15 @@ namespace Projeto_Code1Line.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("email");
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
-                        .HasColumnType("nome");
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("Senha")
                         .IsRequired()
-                        .HasColumnType("senha");
+                        .HasColumnType("nvarchar(255)");
 
                     b.HasKey("Id");
 

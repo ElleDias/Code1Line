@@ -71,7 +71,7 @@ h1 {
     font-size: 20px;
     font-weight: normal;
     margin-top: 5px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     text-align: center;
     color: #aaa;
 }
@@ -235,19 +235,29 @@ a:hover {
 .icone_olho:hover {
     color: #001919;
 }
-
 /* ===== RESPONSIVO LOGIN ===== */
 @media (max-width: 1024px) {
     .main_login {
         flex-direction: column;
-        height: auto;
+        /* 🔑 REFORÇO: O min-height do base já está valendo, mas garanto o espaçamento vertical */
+        min-height: 100vh;
+        overflow-y: auto;
     }
 
-    .fundo_loom, .section_login {
+    /* 🔑 CORREÇÃO: Esconde o fundo da esquerda para dar espaço ao formulário */
+    .fundo_loom {
+        display: none; 
+    }
+    
+    .section_login {
         flex: none;
         width: 100%;
-        min-height: 300px;
-        padding: 30px 20px;
+        /* 🔑 REFORÇO: Faz a seção de login ocupar a altura total da viewport */
+        min-height: 100vh; 
+        padding: 40px 20px;
+        /* Altera o alinhamento para o topo para formulários muito longos */
+        justify-content: center; 
+        align-items: center;
     }
 
     .fundo_loom h1 {
@@ -285,31 +295,16 @@ a:hover {
 }
 
 @media (max-width: 767px) {
- 
-    .main_login {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .fundo_loom {
-        min-height: 200px;
-        padding: 20px;
-    }
-
-    .fundo_loom h1 {
-        font-size: 2.2rem;
-    }
-
-    .fundo_loom p {
-        font-size: 0.9rem;
-    }
-
+    
     .section_login {
+        /* Mantém as regras do 1024px para ocupar a tela e centralizar */
+        min-height: 100vh;
+        justify-content: center;
         padding: 20px;
     }
 
     .form_login {
-        width: 90%;
+        width: 100%; 
         max-width: 350px;
         margin: 0 auto;
     }
@@ -340,7 +335,4 @@ a:hover {
         gap: 6px;
     }
 
-    .cadastro_link {
-        font-size: 0.85rem;
-    }
 }

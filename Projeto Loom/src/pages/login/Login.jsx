@@ -50,10 +50,10 @@ const Login = () => {
       secureLocalStorage.setItem("tokenLogin", JSON.stringify(tokenDecodificado));
 
       if (tokenDecodificado.cargo === "Gerente") {
-        navigate("/");
+        navigate("/telaDoGerente");
          
       }else{
-        navigate("/TelaDoGerente");
+        navigate("/TelaDoGestor");
       }
     } catch (error) {
       console.error("Erro na autenticação:", error);

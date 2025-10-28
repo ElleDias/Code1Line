@@ -11,15 +11,20 @@ public class Usuario
     public Guid Id { get; set; }
 
     [Required(ErrorMessage = "O nome é obrigatorio")]
-    [Column (TypeName = "nome")]
+
+    [Column(TypeName = "nvarchar(255)")]
     public string Nome { get; set; } = string.Empty;
+
     [Required(ErrorMessage = "O campo do email é obrigatorio")]
-    [Column(TypeName = "email")]    
+
+    [Column(TypeName = "nvarchar(255)")]
     public string Email { get; set; } = string.Empty;
-    [Required(ErrorMessage = "O  campo da senha é obrigatorio")]
-    [Column(TypeName = "senha")]
+
+    [Required(ErrorMessage = "O campo da senha é obrigatorio")]
+
+    [Column(TypeName = "nvarchar(255)")]
     public string Senha { get; set; } = string.Empty;
 
     [Column("cargo")]
-    public string Cargo { get; set; } = string.Empty; // e.g., "Gestor", "Funcionario", "Gerente"
+    public string Cargo { get; set; } = string.Empty;
 }

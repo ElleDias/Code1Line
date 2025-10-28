@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Projeto_Code1Line.Migrations
 {
     /// <inheritdoc />
-    public partial class V17 : Migration
+    public partial class Code1Line : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -45,9 +45,9 @@ namespace Projeto_Code1Line.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Nome = table.Column<string>(type: "nome", nullable: false),
-                    Email = table.Column<string>(type: "email", nullable: false),
-                    Senha = table.Column<string>(type: "senha", nullable: false),
+                    Nome = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(255)", nullable: false),
+                    Senha = table.Column<string>(type: "nvarchar(255)", nullable: false),
                     cargo = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
@@ -106,7 +106,8 @@ namespace Projeto_Code1Line.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FuncionarioId = table.Column<int>(type: "int", nullable: false),
-                    DataRegistro = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DataFim = table.Column<DateTime>(type: "datetime2", nullable: true),
                     Aplicativo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     TempoEmUsoMinutos = table.Column<int>(type: "int", nullable: false)
                 },

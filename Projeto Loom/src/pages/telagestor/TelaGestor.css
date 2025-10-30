@@ -1,97 +1,15 @@
 .monitoramento-container {
   background-color: #e2e2e2;
   min-height: 100vh;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Gantari", sans-serif;
-  transition: margin-left 0s ease;
-}
-.monitoramento-container.sidebar-open {
-  margin-left: 170px;
-}
-
-.monitoramento-container.sidebar-close,
-.monitoramento-container.sidebar-mini {
-  margin-left: 80px;
-}
-
-.titulo {
-  font-size: 3.8rem; 
-  font-weight: 700;
-  margin-bottom: 8px; 
-  color: #333; 
-  text-align: center;
-}
-
-.subtitulo {
-  font-size: 1.5rem; 
   color: #333;
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-/* .tabela {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 80%;
-  max-width: 600px;
-} */
-
-.cabecalho,
-.linha {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-}
-
-.cabecalho {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.linha .coluna {
-  background-color: #d9d9d9;
-  color: black;
-  padding: 10px 0;
-  border-radius: 8px;
-  font-weight: 500;
-  justify-self: unset;
-}
-
-.linha {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  /* gap: 12px; <-- adiciona espaço entre os quadros */
-}
-
-.tabela {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-    background-color: #ffffff;
-    border-radius: 80px;
-    padding: 50px;
-    width: 100%;    
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-
-.monitoramento-container {
-  background-color: #e2e2e2;
-  min-height: 100vh;
-  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Gantari", sans-serif;
-  transition: margin-left 0.3s ease;
-  padding: 20px;
+  transition: margin-left 0.3s ease, padding 0.3s ease;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
 .monitoramento-container.sidebar-open {
@@ -104,18 +22,33 @@
 }
 
 .titulo {
-  font-size: 2rem; /* Corrigido, antes estava vazio */
+  font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 4px;
-  color: #c4c4c4;
+  margin-bottom: 10px;
+  color: #222;
   text-align: center;
 }
 
 .subtitulo {
-  font-size: 1.5rem; /* Ajuste melhor para responsividade */
-  color: #c4c4c4;
+  font-size: 1.4rem;
+  color: #555;
   margin-bottom: 40px;
   text-align: center;
+  max-width: 700px;
+}
+
+
+.tabela {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
 }
 
 .cabecalho,
@@ -123,79 +56,107 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
-  gap: 10px; /* Pequeno espaçamento entre colunas */
+  gap: 12px;
+  align-items: center;
 }
 
 .cabecalho {
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-weight: 700;
+  color: #222;
 }
 
 .linha .coluna {
   background-color: #d9d9d9;
-  color: black;
-  padding: 10px 0;
-  border-radius: 8px;
+  color: #000;
+  padding: 12px 8px;
+  border-radius: 10px;
   font-weight: 500;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.tabela {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-  background-color: #ffffff;
-  border-radius: 80px;
-  padding: 30px 20px; /* reduzido para telas menores */
-  width: 100%;
-  max-width: 900px; /* limite de largura para não esticar demais */
+.linha .coluna:hover {
+  background-color: #cfcfcf;
+  transform: scale(1.02);
 }
 
-/* ==================== MEDIA QUERIES ==================== */
 
-/* Para tablets e telas médias */
-@media (max-width: 900px) {
+
+
+@media (max-width: 1024px) {
+  .monitoramento-container {
+    margin-left: 0 !important;
+    padding: 30px 20px;
+  }
+
   .titulo {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 
   .subtitulo {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 30px;
+  }
+
+  .tabela {
+    padding: 30px 20px;
+    border-radius: 30px;
   }
 
   .cabecalho,
   .linha {
-    grid-template-columns: 1fr 1fr; /* reduz colunas */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Para celulares */
-@media (max-width: 600px) {
+/* Celulares (pequenos) */
+@media (max-width: 700px) {
   .monitoramento-container {
-    padding: 10px;
-    margin-left: 0 !important; /* remove deslocamento lateral */
+    margin-left: 0 !important;
+    padding: 20px 10px;
   }
 
   .titulo {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .subtitulo {
     font-size: 1.1rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+  }
+
+  .tabela {
+    padding: 20px 15px;
+    border-radius: 20px;
+    gap: 1rem;
   }
 
   .cabecalho,
   .linha {
-    grid-template-columns: 1fr; /* cada coluna em uma linha */
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .linha .coluna {
-    padding: 8px 0;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Telas muito pequenas (ex: iPhone SE) */
+@media (max-width: 400px) {
+  .titulo {
+    font-size: 1.6rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .linha .coluna {
+    font-size: 0.9rem;
   }
 
   .tabela {
-    padding: 20px 10px;
-    border-radius: 40px;
+    padding: 15px 10px;
   }
 }

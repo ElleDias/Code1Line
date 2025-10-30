@@ -1,68 +1,68 @@
+import React, { useState } from "react";
 import './Mensagem.css';
-import { FaUserCircle, FaEnvelope } from 'react-icons/fa';
-import { useState } from "react";
-import { BsChat, BsChatText } from 'react-icons/bs';
+import { FaUserCircle } from 'react-icons/fa';
+import { BsChatText } from 'react-icons/bs';
 import { MenuLateral } from "../../components/Sidebar/Sidebar";
 import { useNavigate } from "react-router-dom";
-import { Pointer } from 'lucide-react';
-import { hover } from '@testing-library/user-event/dist/hover';
-
-
-
-
-
 
 function Mensagens() {
+  const navigate = useNavigate();
 
-const listaMensagens = [
-  { id: 1, icon: <FaEnvelope onClick={() => navigate("/Chat")} cursor={hover}/> },
-  { id: 2, icon: <BsChatText /> },
-  { id: 3, icon: <BsChat /> },
-  { id: 4, icon: <BsChat/> },
-  { id: 5, icon: <BsChat /> },
-];
-
-
-
-const navigate = useNavigate();
+  // Lista de mensagens simulada
+  const listaMensagens = [
+    { id: 1, nome: 'Fulano da Silva', ultimaMsg: 'Oi, tudo bem? Já estou online.', time: '14:30', unread: true },
+    { id: 2, nome: 'Gestor Carlos', ultimaMsg: 'A reunião foi cancelada.', time: 'Ontem', unread: false },
+    { id: 3, nome: 'Equipe de TI', ultimaMsg: 'Reinicie seu computador.', time: '15/10', unread: true },
+    { id: 4, nome: 'Gerente RH', ultimaMsg: 'Confirmado para amanhã.', time: '09:00', unread: false },
+  ];
 
   const [modoSidebar, setModoSidebar] = useState("close");
-  return (
 
-    // Nova div para agrupar o título e o container
-    <div className={`pagina-mensagens sidebar-${modoSidebar}`} >
+  const handleOpenChat = (id) => {
+    navigate(`/chat/${id}`);
+  };
+
+  return (
+    <div className={`pagina-mensagens sidebar-${modoSidebar}`}>
       <MenuLateral
         perfil={true}
         geral={{ ativo: true, nome: "Geral" }}
-        gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
-        funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
         mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
-        voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}
       />
-      {/* <div className={`body sidebar-${modoSidebar}`}> */}
 
-        {/* Título agora está FORA do container branco */}
-        <h1 className="titulo-externo">MENSAGENS</h1>
+      <div className="mensagens-container">
+        <h1 className="titulo-lista">Mensagens</h1>
 
-        <div className="mensagens-container">
-          {/* O título foi removido daqui de dentro */}
-          <div className="lista-mensagens">
-            {listaMensagens.map((mensagem) => (
-              <div key={mensagem.id} className="item-mensagem">
-                <div className="avatar">
-                  <FaUserCircle size={36} color="#555" />
-                </div>
-                <div className="icone-acao">
-                  {mensagem.icon}
+        <div className="lista-mensagens">
+          {listaMensagens.map((mensagem) => (
+            <div
+              key={mensagem.id}
+              className="item-mensagem"
+              onClick={() => handleOpenChat(mensagem.id)}
+            >
+              <div className="avatar-e-info">
+                <FaUserCircle size={40} color="#001608" />
+                <div className="info-mensagem">
+                  <p className="nome-contato">{mensagem.nome}</p>
+                  <p className="ultima-mensagem">{mensagem.ultimaMsg}</p>
                 </div>
               </div>
-            ))}
-          </div>
+
+              <div className="status-mensagem">
+                <span className="hora-mensagem">{mensagem.time}</span>
+                {mensagem.unread && (
+                  <div className="bola-nao-lida">
+                    <BsChatText size={18} color="#001608" />
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    // </div>
+    </div>
   );
 }
 

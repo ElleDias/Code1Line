@@ -1,120 +1,91 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Chat.css";
-import { MenuLateral } from "../../components/Sidebar/Sidebar";
+import './Chat.css'; // Importa o CSS da tela de chat
+import { FaChevronLeft, FaInfoCircle } from "react-icons/fa"; 
+import { useNavigate } from "react-router-dom"; 
 
-export const Chat = () => {
-  const [modoSidebar, setModoSidebar] = useState("close");
-  const [messages, setMessages] = useState([]);
-  const [newMessage, setNewMessage] = useState("");
+function Chat() { 
+    const navigate = useNavigate();
+    const [messages, setMessages] = useState([]);
+    const [newMessage, setNewMessage] = useState("");
 
-  // 🧍 IDs temporários (para teste)
-  const userAId = 1; // Gerente
-  const userBId = 2; // Gestor
-  const API_URL = "https://localhost:7283/api/mensagem"; // ajuste conforme a sua API
+    // IDs (adaptar conforme a lógica real de login/contato)
+    const userAId = 1; // ID do usuário logado (enviando - bolhas azuis)
+    const userBId = 2; // ID do contato (recebendo - bolhas cinzas)
+    const API_URL = "https://localhost:7283/api/mensagem";
 
-  // 🔹 Carregar mensagens da conversa
-  const fetchMessages = async () => {
-    try {
-      const response = await axios.get(
-        `${API_URL}/Mensagem/${userAId}/${userBId}`
-      );
+    useEffect(() => {
+        // Mock de mensagens, remova ao usar a API real
+        setMessages([
+            { id: 1, remetenteId: userBId, conteudo: "Olá, ficamos feliz com a sua entrada no time!", enviadaEm: new Date(Date.now() - 300000).toISOString() },
+            { id: 2, remetenteId: userAId, conteudo: "Obrigado! Darei meu máximo aqui.", enviadaEm: new Date(Date.now() - 120000).toISOString() },
+            { id: 3, remetenteId: userBId, conteudo: "Perfeito!", enviadaEm: new Date().toISOString() },
+        ]);
+    }, []);
 
-      const data = response.data;
-      const ordered = data.sort(
-        (a, b) => new Date(a.enviadaEm) - new Date(b.enviadaEm)
-      );
-
-      setMessages(ordered);
-    } catch (error) {
-      console.error("Erro ao carregar mensagens:", error);
-    }
-  };
-
-  // 🔹 Enviar nova mensagem
-  const handleSend = async () => {
-    if (newMessage.trim() === "") return;
-
-    const msgToSend = {
-      remetenteId: userAId,
-      destinatarioId: userBId,
-      conteudo: newMessage,
+    const handleSend = () => {
+        if (newMessage.trim() === "") return;
+        const newMsg = {
+            id: Date.now(),
+            remetenteId: userAId,
+            conteudo: newMessage,
+            enviadaEm: new Date().toISOString(),
+        };
+        setMessages((prev) => [...prev, newMsg]);
+        setNewMessage("");
     };
 
-    try {
-      const response = await axios.post(API_URL, msgToSend, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+    return (
+        <div className="chat-page">
+            <div className="chat-container">
+                
+                {/* CABEÇALHO IMESSAGE */}
+                <header className="chat-header">
+                    <FaChevronLeft 
+                        size={20} 
+                        color="#000000ff" 
+                        onClick={() => navigate(-1)} 
+                        style={{ cursor: 'pointer' }} 
+                    />
 
-      const savedMsg = response.data;
-      setMessages((prev) => [...prev, savedMsg]);
-      setNewMessage("");
-    } catch (error) {
-      console.error("Erro ao enviar mensagem:", error);
-    }
-  };
-
-  // 🔹 Efeito para carregar e atualizar mensagens
-  useEffect(() => {
-    fetchMessages();
-    const interval = setInterval(fetchMessages, 5000); // atualiza a cada 5s
-    return () => clearInterval(interval);
-  }, []);
-
-  return (
-    <div className="chat-page">
-      <MenuLateral
-        perfil={true}
-        geral={{ ativo: true, path: "/Dominio", nome: "Dominios" }}
-        gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
-        funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
-        mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
-        voltarATela={{ ativo: true, nome: "Retornar" }}
-        modo={modoSidebar}
-        setModo={setModoSidebar}
-      />
-
-      <div className="chat-container">
-        <div className="chat-header">
-          <img src="/assets/user.jpg" alt="User" className="user-avatar" />
-          <div>
-            <h3 className="user-name">Fulano da Silva</h3>
-            <p className="user-status">online</p>
-          </div>
-        </div>
-
-        <div className="chat-body">
-          {messages.map((msg) => (
-            <div
-              key={msg.id}
-              className={`chat-message ${
-                msg.remetenteId === userAId ? "sent" : "received"
-              }`}
-            >
-              <p className="message-text">{msg.conteudo}</p>
-              <span className="message-time">
-                {new Date(msg.enviadaEm).toLocaleTimeString([], {
-                  hour: "2-digit",
-                  minute: "2-digit",
-                })}
-              </span>
+                    <div className="user-info">
+                        <p className="imessage-label">LOOM</p>
+                        <h3 className="user-name">Fulano da Silva</h3>
+                    </div>
+                    
+                    <FaInfoCircle size={20} color="#000000ff" style={{ cursor: 'pointer' }} />
+                </header>
+                
+                {/* CORPO DO CHAT */}
+                <div className="chat-body">
+                    {messages.map((msg) => (
+                        <div
+                            key={msg.id}
+                            className={`chat-message ${msg.remetenteId === userAId ? "sent" : "received"}`}
+                        >
+                            <p className="message-text">{msg.conteudo}</p>
+                            <span className="message-time">
+                                {new Date(msg.enviadaEm).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
+                            </span>
+                        </div>
+                    ))}
+                </div>
+                
+                {/* ÁREA DE INPUT */}
+                <div className="chat-input-area">
+                    <input 
+                        type="text" 
+                        placeholder="LOOM" 
+                        value={newMessage}
+                        onChange={(e) => setNewMessage(e.target.value)}
+                        onKeyDown={(e) => e.key === "Enter" && handleSend()}
+                    />
+                    <button onClick={handleSend} style={{ backgroundColor: '#000000ff' }}>Enviar</button>
+                </div>
+                
             </div>
-          ))}
         </div>
+    );
+}
 
-        <div className="chat-input-area">
-          <input
-            type="text"
-            placeholder="Digite uma mensagem..."
-            value={newMessage}
-            onChange={(e) => setNewMessage(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && handleSend()}
-          />
-          <button onClick={handleSend}>Enviar</button>
-        </div>
-      </div>
-    </div>
-  );
-};
+export default Chat;

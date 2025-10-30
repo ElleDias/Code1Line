@@ -15,7 +15,7 @@ import Comparacao from "../pages/comparacao/ComparacaoFunc"
 import MensagemGestor from "../pages/mensagemGestor/MensagemGestor"
 import TeladePerfil from "../pages/teloDoPerfil/TelaDoPerfil";
 import RedefinirSenha from "../pages/redefinirsenha/Redefinirsenha"
-import  Chat from "../pages/chat/Chat";
+import Chat from "../pages/chat/Chat";
 
 
 const Rotas = () => {
@@ -27,9 +27,9 @@ const Rotas = () => {
                 {/* http://localhost:3000/ => Login */}
                 <Route path="/" element={<Login />} exact />
                 {/* http://localhost:3000/ => Gerente */}
-                <Route path="/TelaDoGerente" element={<Gerente />} exact />
+                <Route path="/Gerente" element={<Gerente />} exact />
                 {/* http://localhost:3000/ => Gerente */}
-                <Route path="/TelaDoGestor" element={<TelaGestor />} />
+                <Route path="/Monitoramento" element={<TelaGestor />} />
                 {/* http://localhost:3000/ => Acessos */}
                 <Route path="/Acesso" element={<Acessos />} />
                 {/* http://localhost:3000/ => GraficosDetalhados */}
@@ -52,6 +52,7 @@ const Rotas = () => {
                 <Route path="/Perfil" element={<TeladePerfil />} />
                 {/* http://localhost:3000/ => Redefinir Senha */}
                 <Route path="/Senha" element={<RedefinirSenha />} />
+
                 <Route path="/Chat/:id" element={<Chat />} /> 
 
                 </Routes>

@@ -37,24 +37,29 @@ const Login = () => {
       console.log("Resposta da API:", resposta.data);
 
       const token = resposta.data.token;
-      if (!token) {
-        alert("Email ou senha inválidos!");
-        setLoading(false);
-        return;
-      }
+if (!token) {
+  alert("Email ou senha inválidos!");
+  setLoading(false);
+  return;
+}
 
-      const tokenDecodificado = userDecodeToken(token);
-      console.log("Token decodificado:", tokenDecodificado);
+const tokenDecodificado = userDecodeToken(token);
+console.log("Token decodificado:", tokenDecodificado);
 
-      setUsuario(tokenDecodificado);
-      secureLocalStorage.setItem("tokenLogin", JSON.stringify(tokenDecodificado));
 
-      if (tokenDecodificado.cargo === "Gerente") {
-        navigate("/telaDoGerente");
-         
-      }else{
-        navigate("/TelaDoGestor");
-      }
+setUsuario(tokenDecodificado);
+secureLocalStorage.setItem("tokenLogin", token); // salva o token JWT puro
+
+const role = tokenDecodificado["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
+
+if (role === "Gerente") {
+  navigate("/Gerente");
+} else if (role === "Gestor") {
+  navigate("/Monitoramento");
+} else {
+  navigate("/");
+}
+
     } catch (error) {
       console.error("Erro na autenticação:", error);
       alert("Email ou senha inválidos! Para dúvidas entre em contato com o suporte.");
@@ -113,7 +118,6 @@ const Login = () => {
             </div>
           </div>
 
-          {/* ✅ Botão desabilitado enquanto a requisição está em andamento */}
           <Button nomeDoBotao={loading ? "Carregando..." : "Log-in"} type="submit" disabled={loading} />
 
           <p className="nao_tem_uma_conta">

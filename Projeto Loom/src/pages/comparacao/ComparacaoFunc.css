@@ -4,14 +4,6 @@
   padding: 20px;
     transition: margin-left 0.3s ease;
 }
-/* .comparador-container.sidebar-open {
-  margin-left: 170px;
-} */
-
-/* .comparador-container.sidebar-close,
-.comparador-container.sidebar-mini {
-  margin-left: 80px;
-} */
 
 .comparador-card {
   background: #fff;
@@ -115,7 +107,7 @@
 
 .titulo {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 24px;
@@ -198,7 +190,7 @@
   }
 
   .titulo {
-    font-size: 1.6rem;
+    font-size: 3.6rem;
   }
 
   .select-filtro,

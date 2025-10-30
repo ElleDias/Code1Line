@@ -1,21 +1,26 @@
-/* src/pages/mensagem/Mensagem.css */
+/*
+ * --------------------------------
+ * CSS OTIMIZADO: MENSAGENS DARK MODE E GLASSMORPHISM
+ * --------------------------------
+ */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap');
 
-/* Fundo geral mais claro e limpo */
+/* Fundo geral: Preto puro e alinhamento */
 .pagina-mensagens {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    justify-content: flex-start;
     min-height: 100vh;
-    padding-top: 20px;
-    background-color: #f0f0f000; /* Fundo cinza suave */
+    padding-top: 50px; /* Mais padding no topo para centralizar melhor visualmente */
+    /* FUNDO PRETO PURO */
+    background-color: #000000; 
     font-family: 'Roboto', sans-serif;
     transition: margin-left 0.3s ease;
 }
 
-/* Ajuste para Sidebar */
+/* Ajuste para Sidebar (Mantido) */
 .pagina-mensagens.sidebar-open {
     margin-left: 190px;
 }
@@ -24,30 +29,37 @@
     margin-left: 80px;
 }
 
-/* Container principal (Caixa que contém a lista) - ESTILO MOBILE (PADRÃO) */
+/* 1. Container principal (GLASSMORPHISM) */
 .mensagens-container {
-    background-color: #ffffff;
+    /* EFEITO GLASSMORPHISM */
+    background: rgba(255, 255, 255, 0.05); /* Fundo muito transparente */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Borda de brilho */
+    backdrop-filter: blur(15px); /* Desfoque intenso */
+    -webkit-backdrop-filter: blur(15px);
+    
     width: 95%;
-    max-width: 450px; /* Largura para mobile/telas pequenas */
-    padding: 15px 0; /* Padding vertical, zero horizontal */
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 450px;
+    padding: 15px 0;
+    border-radius: 20px; /* Cantos um pouco mais arredondados */
+    /* Sombra escura e profunda */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.7); 
     box-sizing: border-box;
 }
 
 .titulo-lista {
-    color: #333;
+    color: #ffffff; /* Título em branco */
     font-size: 1.5em;
     font-weight: 600;
     text-align: center;
     margin: 0 0 15px 0;
 }
 
-/* Lista de Mensagens (e seus filhos) - Mantidos inalterados */
+/* Lista de Mensagens */
 .lista-mensagens {
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #eee;
+    /* Separador sutil */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
 }
 
 .item-mensagem {
@@ -55,15 +67,17 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 15px;
-    border-bottom: 1px solid #eee;
+    /* Separador sutil */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .item-mensagem:hover {
-    background-color: #f7f7f7;
+    background-color: rgba(255, 255, 255, 0.05); /* Sutilmente mais claro no hover */
 }
 
+/* Info dos Contatos */
 .avatar-e-info {
     display: flex;
     align-items: center;
@@ -82,7 +96,7 @@
     margin: 0;
     font-size: 1em;
     font-weight: 500;
-    color: #333;
+    color: #ffffff; /* Nome do contato em branco */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -91,7 +105,7 @@
 .ultima-mensagem {
     margin: 2px 0 0 0;
     font-size: 0.85em;
-    color: #888;
+    color: #888888; /* Mensagem em cinza claro */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -106,35 +120,34 @@
 
 .hora-mensagem {
     font-size: 0.75em;
-    color: #888;
+    color: #555555; /* Hora/Data em cinza escuro */
 }
 
 .bola-nao-lida {
     width: 20px;
     height: 20px;
-    background-color: #dddddd;
+    /* Adaptação para Dark Mode */
+    background-color: #ffffff; 
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.7em;
-    color: white;
+    color: #000000; /* Texto/Ícone na bola em preto */
     font-weight: 600;
 }
 
 /* -------------------------------------------------------------------------- */
-/* ADICIONANDO RESPONSIVIDADE (MEDIA QUERY)                  */
+/* RESPONSIVIDADE (MEDIA QUERY) */
 /* -------------------------------------------------------------------------- */
 
 /* Estilos aplicados APENAS em telas com largura mínima de 768px (Desktop/Tablet) */
 @media (min-width: 768px) {
-    /* Aumenta a largura máxima do container em telas maiores */
     .mensagens-container {
-        max-width: 700px; /* Altere este valor para o tamanho que desejar no desktop */
-        padding: 20px 0; /* Opcional: aumenta o padding vertical */
+        max-width: 700px;
+        padding: 20px 0;
     }
     
-    /* Opcional: Aumentar um pouco o tamanho do texto no desktop para melhor legibilidade */
     .titulo-lista {
         font-size: 1.8em;
     }
@@ -152,9 +165,9 @@
     }
 }
 
-/* Opcional: Estilos para telas muito grandes (ex: 1200px ou mais) */
+/* Estilos para telas muito grandes */
 @media (min-width: 1200px) {
     .mensagens-container {
-        max-width: 850px; /* Mais largo em monitores grandes */
+        max-width: 850px;
     }
 }

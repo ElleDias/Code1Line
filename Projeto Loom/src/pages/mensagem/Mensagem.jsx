@@ -25,9 +25,10 @@ function Mensagens() {
   return (
     <div className={`pagina-mensagens sidebar-${modoSidebar}`}>
       <MenuLateral
-        perfil={true}
-        geral={{ ativo: true, nome: "Geral" }}
-        mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
+        perfil={{ativo: true, path: "/Perfil"}}
+        geral={{ ativo: true, nome: "Geral", path:"/Gerente"}}
+        mensagens={{ ativo: true, path: "/Mensagem", nome: "Mensagens" }}
+        voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}
       />

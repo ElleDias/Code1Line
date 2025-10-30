@@ -17,7 +17,6 @@ public class AtividadeController : ControllerBase
     }
 
     [HttpGet]
-    [Authorize]
     public async Task<IActionResult> GetAll() => Ok(await _repo.GetAllAsync());
 
     [HttpGet("{id}")]

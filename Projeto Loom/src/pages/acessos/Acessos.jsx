@@ -18,9 +18,9 @@ const Acesso = () => {
       <MenuLateral
         perfil={true}
         geral={{ ativo: true, path: "/Dominio", nome: "Dominios" }}      
-        gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
-        funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
-        mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
+        gestores={{ ativo: false, path: "/Monitoramento", nome: "Gestores" }}
+        funcionarios={{ ativo: false, path: "/Funcionarios", nome: "Funcionários" }}
+        mensagens={{ ativo: true, path: "/Mensagem", nome: "Mensagens" }}
         voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}

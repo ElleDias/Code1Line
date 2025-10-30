@@ -38,21 +38,20 @@ const TelaGerente = () => {
     setTituloGrafico("Tarefas Pendentes");
   };
 
-  const mostrarConcluidas = () => {
-    setDadosAtuais(dadosConcluidas);
-    setTituloGrafico("Tarefas Concluídas");
-  };
- const navigate = useNavigate(); // 👈 precisa declarar aqui
+  // const mostrarConcluidas = () => {
+  //   setDadosAtuais(dadosConcluidas);
+  //   setTituloGrafico("Tarefas Concluídas");
+  // };
+ const navigate = useNavigate("/Gestor"); 
   return (
 
     <div className="tela-gerente">
       
       <MenuLateral
-        perfil={{ ativo: true, path: "/perfil", nome: "Geral" }}
-        geral={{ ativo: true, path: "/gerente", nome: "Geral" }}
-        gestores={{ ativo: true, path: "/gestor", nome: "Gestores" }}
-        funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
-        mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
+        perfil={{ ativo: true, path: "/Perfil", nome: "Geral" }}
+        gestores={{ ativo: true, path: "/Monitoramento", nome: "Monitoramento" }}
+        funcionarios={{ ativo: false, path: "/Funcionarios", nome: "Funcionários" }}
+        mensagens={{ ativo: true, path: "/Mensagem", nome: "Mensagens" }}
         voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}
@@ -80,9 +79,9 @@ const TelaGerente = () => {
           <button className="botao_tarefa azul"onClick={() => navigate("/Tarefas")}  >
             Tarefas Pendentes
           </button>
-          <button  className="botao_tarefa roxo" onClick={mostrarConcluidas}>
+          {/* <button  className="botao_tarefa roxo" onClick={mostrarConcluidas}>
             Tarefas Concluídas
-          </button>
+          </button> */}
           <button
       className="botao_graficos dourado"
       onClick={() => navigate("/Graficos")}

@@ -1,214 +1,176 @@
+
+
+/* 1. Fundo do Container Principal: Preto Puro e Alinhamento Superior */
 .monitoramento-container {
-  background-color: #e2e2e2;
-  min-height: 100vh;
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Gantari", sans-serif;
-    transition: margin-left 0s ease;
+    /* Cor de Fundo: Preto Puro */
+    background-color: #000000;
+    min-height: 100vh;
+    color: #ffffff; /* Cor do texto principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* MUDANÇA DE ALINHAMENTO: Alinha o conteúdo ao topo */
+    justify-content: flex-start;
+    /* Adiciona espaço no topo para que o conteúdo não cole na margem */
+    padding-top: 80px; /* Ajuste este valor (ex: 50px, 100px) conforme necessário */
+
+    font-family: "Gantari", sans-serif;
+    transition: margin-left 0s ease; /* Mantido do original */
+    padding-bottom: 40px; /* Garante espaço na parte de baixo */
 }
 
 .monitoramento-container.sidebar-open {
-  margin-left: 170px;
+    margin-left: 170px;
 }
 
 .monitoramento-container.sidebar-close,
 .monitoramento-container.sidebar-mini {
-  margin-left: 80px;
+    margin-left: 80px;
 }
 
+/* Ajuste dos Títulos: Branco e Destaque */
 .titulo {
-  font-size: 4.4rem;
-  font-weight: 700;
-  margin-bottom: 4px;
-  color: black;
-
+    font-size: 4.4rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #ffffff; /* Branco puro */
+    text-align: center;
+    /* Adiciona leve brilho */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .subtitulo {
-  font-size: 3rem;
-  color: #000000;
-  margin-bottom: 86px;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
 }
 
+/* 2. Efeito Glassmorphism (Vidro) para a Tabela */
 .tabela {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 80%;
-  max-width: 900px;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 80%;
+    max-width: 900px;
+    justify-content: center;
+
+    /* PROPRIEDADES GLASSMORHPISM: */
+    /* Fundo mais transparente e com blur intenso */
+    background: rgba(255, 255, 255, 0.05); /* Fundo muito transparente (5%) */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* Borda mais visível (25%) */
+    backdrop-filter: blur(15px); /* Desfoque alto */
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px; /* Canto mais angular */
+    padding: 40px; /* Adicionado padding interno para a tabela glass */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), /* Sombra preta profunda */
+                0 0 15px rgba(255, 255, 255, 0.05) inset; /* Brilho interno sutil */
 }
 
+/* Cabecalho dentro da Tabela (mantido e ajustado para cores claras) */
 .cabecalho,
 .linha {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 12px; /* Espaço entre as colunas */
 }
 
 .cabecalho {
-  font-weight: 600;
-  margin-bottom: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
 }
 
+/* 3. Efeito Glassmorphism para os Itens da Linha */
 .linha .coluna {
-  background-color: #d9d9d9;
-  color: black;
-  padding: 8px 0;
-  border-radius: 8px;
-  font-weight: 500;
-  justify-self: unset;
+    /* Fundo dos campos escuro e semi-transparente */
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    padding: 12px 0; /* Aumentado um pouco o padding para dar mais corpo */
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.05); /* Borda sutil */
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.linha {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  gap: 12px;
-  /* <-- adiciona espaço entre os quadros */
+.linha .coluna:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Fica mais opaco no hover */
+    transform: scale(1.01);
 }
 
+/* Removendo regras redundantes/conflitantes do CSS original */
 .tabela .cabecalho {
-  justify-content: space-between;
-  gap: 20px;
-  width: 100%;
+    justify-content: space-between; /* Este está sendo sobreposto por display: grid */
+    gap: 12px; /* Ajustado para 12px para consistência com o grid */
+    width: 100%;
 }
+/* Removida a regra '.titulo .subtitulo' que não é válida */
 
-.titulo .subtitulo {
-  justify-content: center;
-  max-width: 200px;
-}
-
-.monitoramento-container {
-  background-color: #e2e2e2;
-  min-height: 100vh;
-  color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "Gantari", sans-serif;
-  transition: margin-left 0s ease;
-  padding: 20px;
-}
-
-.monitoramento-container.sidebar-open {
-  margin-left: 170px;
-}
-
-.monitoramento-container.sidebar-close,
-.monitoramento-container.sidebar-mini {
-  margin-left: 80px;
-}
-
-.titulo {
-  font-size: 4.4rem;
-  font-weight: 700;
-  margin-bottom: 4px;
-  color: black;
-  text-align: center;
-}
-
-.subtitulo {
-  font-size: 3rem;
-  color: #000000;
-  margin-bottom: 86px;
-  text-align: center;
-}
-
-.tabela {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 80%;
-  max-width: 900px;
-  justify-content: center;
-}
-
-.cabecalho,
-.linha {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
-  gap: 12px;
-}
-
-.cabecalho {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.linha .coluna {
-  background-color: #d9d9d9;
-  color: black;
-  padding: 8px 0;
-  border-radius: 8px;
-  font-weight: 500;
-}
 
 /* ===== MEDIA QUERIES ===== */
 
 /* Tablets (768px - 1024px) */
 @media (max-width: 1024px) {
-  .monitoramento-container.sidebar-open {
-    margin-left: 120px;
-  }
+    .monitoramento-container.sidebar-open {
+        margin-left: 120px;
+    }
 
-  .monitoramento-container.sidebar-close,
-  .monitoramento-container.sidebar-mini {
-    margin-left: 60px;
-  }
+    .monitoramento-container.sidebar-close,
+    .monitoramento-container.sidebar-mini {
+        margin-left: 60px;
+    }
 
-  .titulo {
-    font-size: 3rem;
-  }
+    .titulo {
+        font-size: 3rem;
+    }
 
-  .subtitulo {
-    font-size: 2rem;
-    margin-bottom: 50px;
-  }
+    .subtitulo {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
 
-  .tabela {
-    width: 90%;
-  }
+    .tabela {
+        width: 90%;
+        padding: 30px; /* Ajuste o padding interno */
+    }
 
-  .cabecalho,
-  .linha {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .cabecalho,
+    .linha {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Celulares (até 767px) */
 @media (max-width: 767px) {
-  .monitoramento-container.sidebar-open,
-  .monitoramento-container.sidebar-close,
-  .monitoramento-container.sidebar-mini {
-    margin-left: 0;
-  }
+    .monitoramento-container.sidebar-open,
+    .monitoramento-container.sidebar-close,
+    .monitoramento-container.sidebar-mini {
+        margin-left: 0;
+    }
 
-  .titulo {
-    font-size: 2rem;
-  }
+    .titulo {
+        font-size: 2rem;
+    }
 
-  .subtitulo {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-  }
+    .subtitulo {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
 
-  .tabela {
-    width: 100%;
-  }
+    .tabela {
+        width: 100%;
+        padding: 20px; /* Ajuste o padding interno */
+        border-radius: 15px;
+    }
 
-  .cabecalho,
-  .linha {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
+    .cabecalho,
+    .linha {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
 
-  .linha .coluna {
-    padding: 12px 0;
-  }
+    .linha .coluna {
+        padding: 12px 0;
+    }
 }

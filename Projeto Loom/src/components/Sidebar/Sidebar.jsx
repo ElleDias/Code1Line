@@ -9,6 +9,7 @@ import Chat from "../../assets/img/SMS.svg";
 import Voltar from "../../assets/img/Voltar.svg";
 import { useNavigate, } from "react-router-dom";
 import VoltarTela from "../../assets/img/Undo.svg"
+import Menu from "../../assets/img/Menu.svg"
 // 💡 NOVO: Importar Hooks
 import { useState, useEffect } from "react"; 
 
@@ -28,30 +29,29 @@ export const MenuLateral = ({
   // 💡 NOVO: Hook para rastrear se a tela é pequena (<= 750px)
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 750);
 
-  useEffect(() => {
-    const handleResize = () => {
-      const newIsMobile = window.innerWidth <= 750;
-      setIsMobile(newIsMobile);
+ useEffect(() => {
+    const handleResize = () => {
+      const newIsMobile = window.innerWidth <= 750;
+      setIsMobile(newIsMobile);
 
-      // Lógica para garantir o estado correto ao redimensionar
-      if (!newIsMobile && modo === "hidden") {
-        // Desktop: 'hidden' deve ser tratado como 'mini'
-        setModo("mini");
-      }
-      if (newIsMobile && modo === "mini") {
-        // Mobile: 'mini' deve ser tratado como 'hidden'
-        setModo("hidden");
-      }
-    };
+      // Lógica de Transição de Estado
+      if (newIsMobile && modo !== "open") {
+        // Se for mobile e não estiver 'open', deve estar 'hidden'
+        setModo("hidden");
+      } else if (!newIsMobile && modo === "hidden") {
+        // Se for desktop e estiver 'hidden' (vindo do mobile), deve ser 'mini'
+        setModo("mini");
+      }
+    };
 
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Executa na montagem
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Executa na montagem e define o estado inicial correto
 
-    return () => window.removeEventListener("resize", handleResize);
-  }, [modo, setModo]); // Adicionar dependências
+    return () => window.removeEventListener("resize", handleResize);
+  }, [modo, setModo]); // Dependências: modo e setModo
 
-  const isOpen = modo === "open";
-  const isHidden = modo === "hidden";
+  const isOpen = modo === "open";
+  const isHidden = modo === "hidden";
 
   // 💡 MODIFICADO: Função para fechar totalmente (usada em mobile e ao clicar nos itens)
   const fecharTotal = () => setModo("hidden");
@@ -71,11 +71,11 @@ export const MenuLateral = ({
 
   if (isHidden) {
     // CLASSE NAO MODIFICADA: botao-abrir-total
-    return (
-      <button className="botao-abrir-total" onClick={abrirTotal} aria-label="Abrir menu">
-        <img src={Voltar} alt="Abrir" className="icone-abrir" />
-      </button>
-    );
+   return (
+      <button className="botao-abrir-total" onClick={abrirTotal} aria-label="Abrir menu">
+        <img src={Voltar} alt="Abrir" className="icone-abrir" />
+      </button>
+    );
   }
 
   const handleClick = () => {
@@ -108,13 +108,14 @@ export const MenuLateral = ({
       {/* navegação */}
       <nav>
         <ul>
-          {/* 💡 MODIFICADO: Adicionado fecharTotal() em todos os cliques no mobile */}
+         
           {perfil && (
              <li onClick={() => { navigate(perfil.path); if (isMobile) fecharTotal(); }} style={{ cursor: "pointer" }}>
               <img src={User} className="icone-menu" alt="Perfil" />
               {isOpen && <span>Perfil</span>}
             </li>
           )}
+          
 
           {geral.ativo && (
              <li onClick={() => { navigate(geral.path); if (isMobile) fecharTotal(); }} style={{ cursor: "pointer" }}>

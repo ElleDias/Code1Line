@@ -13,7 +13,7 @@ import CadastroDeTarefas from "../pages/cadastroDeTarefas/CadastroDeTarefas";
 import Mensagem from "../pages/mensagem/Mensagem"
 import Comparacao from "../pages/comparacao/ComparacaoFunc"
 import MensagemGestor from "../pages/mensagemGestor/MensagemGestor"
-import TeladePerfil from "../pages/teloDoPerfil/TelaDoPerfil";
+import TeladePerfil from "../pages/teloDePerfil/TelaDePerfil";
 import RedefinirSenha from "../pages/redefinirsenha/Redefinirsenha"
 import  Chat from "../pages/chat/Chat";
 

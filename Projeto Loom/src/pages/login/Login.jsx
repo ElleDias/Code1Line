@@ -37,24 +37,32 @@ const Login = () => {
       console.log("Resposta da API:", resposta.data);
 
       const token = resposta.data.token;
-      if (!token) {
-        alert("Email ou senha inválidos!");
-        setLoading(false);
-        return;
-      }
+if (!token) {
+  alert("Email ou senha inválidos!");
+  setLoading(false);
+  return;
+}
 
-      const tokenDecodificado = userDecodeToken(token);
-      console.log("Token decodificado:", tokenDecodificado);
+const tokenDecodificado = userDecodeToken(token);
+console.log("Token decodificado:", tokenDecodificado);
 
-      setUsuario(tokenDecodificado);
-      secureLocalStorage.setItem("tokenLogin", JSON.stringify(tokenDecodificado));
+// salva o token PURO para usar no Authorization
 
-      if (tokenDecodificado.cargo === "Gerente") {
-        navigate("/telaDoGerente");
-         
-      }else{
-        navigate("/TelaDoGestor");
-      }
+
+// salva o decodificado só no contexto, se quiser
+setUsuario(tokenDecodificado);
+secureLocalStorage.setItem("tokenLogin", token); // salva o token JWT puro
+
+const role = tokenDecodificado["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"];
+
+if (role === "Gerente") {
+  navigate("/TelaDoGerente");
+} else if (role === "Gestor") {
+  navigate("/TelaDoGestor");
+} else {
+  navigate("/");
+}
+
     } catch (error) {
       console.error("Erro na autenticação:", error);
       alert("Email ou senha inválidos! Para dúvidas entre em contato com o suporte.");

@@ -7,7 +7,7 @@ import { GraficoDesempenho } from "../../components/GraficoDesempenho/GraficoDes
 import { useNavigate } from "react-router-dom";
 
 const TelaGerente = () => {
-  const [modoSidebar, setModoSidebar] = useState("close");
+  const [modoSidebar, setModoSidebar] = useState("open"); // ou "mini"
 
   const dadosPendentes = [
     { nome: "Seg", valor: 50 },
@@ -42,13 +42,13 @@ const TelaGerente = () => {
     setDadosAtuais(dadosConcluidas);
     setTituloGrafico("Tarefas Concluídas");
   };
- const navigate = useNavigate(); // 👈 precisa declarar aqui
+  const navigate = useNavigate();
   return (
 
     <div className="tela-gerente">
-      
+
       <MenuLateral
-        perfil={{ ativo: true, path: "/perfil", nome: "Geral" }}
+        perfil={{ ativo: true, path: "/perfil", nome: "Perfil" }}
         geral={{ ativo: true, path: "/gerente", nome: "Geral" }}
         gestores={{ ativo: true, path: "/gestor", nome: "Gestores" }}
         funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
@@ -77,18 +77,18 @@ const TelaGerente = () => {
 
         <div className="tarefas-container moderno">
           {/* onClick={irParaOutraPagina} */}
-          <button className="botao_tarefa azul"onClick={() => navigate("/Tarefas")}  >
+          <button className="botao_tarefa azul" onClick={() => navigate("/Tarefas")}  >
             Tarefas Pendentes
           </button>
-          <button  className="botao_tarefa roxo" onClick={mostrarConcluidas}>
+          <button className="botao_tarefa roxo" onClick={mostrarConcluidas}>
             Tarefas Concluídas
           </button>
           <button
-      className="botao_graficos dourado"
-      onClick={() => navigate("/Graficos")}
-    >
-      Gráficos Detalhados
-    </button>
+            className="botao_graficos dourado"
+            onClick={() => navigate("/Graficos")}
+          >
+            Gráficos Detalhados
+          </button>
         </div>
 
         <GraficoDesempenho titulo={tituloGrafico} data={dadosAtuais} />

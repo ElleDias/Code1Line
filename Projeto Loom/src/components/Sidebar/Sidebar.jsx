@@ -20,6 +20,8 @@ export const MenuLateral = ({
   funcionarios = false,
   mensagens = false,
   voltarATela = true,
+  acessos = false,
+  dominios = false,
   modo,
   setModo
 }) => {
@@ -137,12 +139,27 @@ export const MenuLateral = ({
               {isOpen && <span>Funcionários</span>}
             </li>
           )}
+              {acessos.ativo && (
+                 <li onClick={() => { navigate(acessos.path); if (isMobile) fecharTotal(); }}>
+                  <img src={Geral} className="icone-menu" alt="Acessos" />
+                  {isOpen && <span>Acessos</span>}
+                </li>
+              )}
+    
+              {dominios.ativo && (
+                 <li onClick={() => { navigate(dominios.path); if (isMobile) fecharTotal(); }}>
+                  <img src={Geral} className="icone-menu" alt="Dominios" />
+                  {isOpen && <span>Dominios</span>}
+                </li>
+              )}
+              
           {mensagens.ativo && (
              <li className="ativo" onClick={() => { navigate(mensagens.path); if (isMobile) fecharTotal(); }}>
               <img src={Chat} className="icone-menu" alt="Mensagens" />
               {isOpen && <span>Mensagens</span>}
             </li>
           )}
+
 
           {/* BOTÃO RETORNAR */}
           <li className="" onClick={handleClick}>

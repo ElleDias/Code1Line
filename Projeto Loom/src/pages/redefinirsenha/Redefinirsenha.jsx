@@ -53,7 +53,7 @@ const RedefinirSenha = () => {
     };
 
     // Validação e envio do formulário
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (!senha) {
@@ -80,8 +80,32 @@ const RedefinirSenha = () => {
             return;
         }
 
-        SenhaSucesso();
+        try {
+            const response = await fetch("http://localhost:5000/api/usuario/redefinir-senha", {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: localStorage.getItem("emailRecuperacao"),
+                    novaSenha: senha,
+                }),
+            });
+
+            if (!response.ok) {
+                throw new Error("Erro ao redefinir senha");
+            }
+
+            SenhaSucesso();
+        } catch (error) {
+            Swal.fire({
+                icon: "error",
+                title: "Erro!",
+                text: "Não foi possível redefinir a senha. Tente novamente.",
+            });
+        }
     };
+
 
     // Sistema de partículas interativas
     useEffect(() => {

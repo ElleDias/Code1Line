@@ -91,11 +91,13 @@ export default function Dominios() {
   return (
     <div className={`dominios-page sidebar-${modoSidebar}`}>
       <MenuLateral
-        perfil={true}
-        geral={{ ativo: true, path: "/gestor", nome: "Monitoramento" }}
+        perfil={{ ativo: true, path: "/Perfil", nome: "Perfil" }}
+        geral={{ ativo: true, path: "/TelaDoGestor", nome: "Geral" }}
         gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
         funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
         mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
+        acessos={{ ativo: true, path: "/Acesso", nome: "Acessos" }}
+        dominios={{ ativo: false, path: "/Dominio", nome: "Domínios" }}
         voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}
         setModo={setModoSidebar}
@@ -133,10 +135,10 @@ export default function Dominios() {
               <div className="linha-dominio" key={index}>
                 <span
                   className={`categoria-dominio ${item.categoria === "Produtivo"
-                      ? "produtivo-dominio"
-                      : item.categoria === "Não Produtivo"
-                        ? "nao-produtivo-dominio"
-                        : "analise-dominio"
+                    ? "produtivo-dominio"
+                    : item.categoria === "Não Produtivo"
+                      ? "nao-produtivo-dominio"
+                      : "analise-dominio"
                     }`}
                 >
                   {item.categoria}

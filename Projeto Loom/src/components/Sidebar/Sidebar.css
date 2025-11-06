@@ -131,6 +131,7 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  
 }
 
 .botao-mini {
@@ -188,9 +189,9 @@
 }
 
 .menu-lateral nav li.ativo {
-  background: white;
-  color: rgb(0, 0, 0);
   border-color: #ffffff1d;
+  background: #ffffff;
+  color: #000;
   font-weight: 700;
 }
 

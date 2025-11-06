@@ -16,10 +16,11 @@ const Acesso = () => {
   return (
     <div className={` monitoramento-container sidebar-${modoSidebar}`}>
       <MenuLateral
-        perfil={true}
-        geral={{ ativo: true, path: "/Dominio", nome: "Dominios" }}      
+       perfil={{ ativo: true, path: "/Perfil", nome: "Perfil" }}
+        geral={{ ativo: true, path: "/TelaDoGestor", nome: "Geral" }}      
         gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
         funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
+         dominios={{ ativo: true, path: "/Dominio", nome: "Domínios" }}
         mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
         voltarATela={{ ativo: true, nome: "Retornar" }}
         modo={modoSidebar}

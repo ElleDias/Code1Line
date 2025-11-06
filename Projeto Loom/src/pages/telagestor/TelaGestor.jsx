@@ -15,16 +15,17 @@ const TelaGestor = () => {
 
     return (
         <div className={`monitoramento-container sidebar-${modoSidebar}`}>
+
             <MenuLateral
-                perfil={{ ativo: true, path: "/Perfil", nome: "Perfil" }}
-                geral={{ ativo: true, path: "/acesso", nome: "Acessos" }}
-                gestores={{ ativo: false, path: "/gestor", nome: "Gestores" }}
-                funcionarios={{ ativo: false, path: "/funcionarios", nome: "Funcionários" }}
-                mensagens={{ ativo: true, path: "/mensagemGestor", nome: "Mensagens" }}
-                voltarATela={{ ativo: true, nome: "Retornar" }}
+                perfil={{ ativo: true, path: "/perfil", nome: "Perfil" }}
+                geral={{ ativo: true, path: "/Acesso", nome: "Acessos" }}
+                acessos={{ ativo: false, path: "/Acesso", nome: "Acessos" }}
+                dominios={{ ativo: true, path: "/Dominio", nome: "Domínios" }}
+                mensagens={{ ativo: true, path: "/mensagem", nome: "Mensagens" }}
                 modo={modoSidebar}
                 setModo={setModoSidebar}
             />
+
 
             <p className="saudacao">Olá, Gestor!</p>
             <p className="texto_monitoramento">
